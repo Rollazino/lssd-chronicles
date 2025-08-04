@@ -2,18 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { NavLink } from "react-router-dom";
-import { 
-  Shield, 
-  Users, 
-  Car, 
-  Phone, 
-  AlertTriangle, 
-  FileText, 
-  Calendar,
-  Award,
-  ChevronRight,
-  Building
-} from "lucide-react";
+import { Shield, Users, Car, Phone, AlertTriangle, FileText, Calendar, Award, ChevronRight, Building } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import lssdHQ from "@/assets/lssd-headquarters.jpg";
@@ -52,22 +41,22 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${lssdHQ})` }}
         >
           <div className="absolute inset-0 bg-primary/70"></div>
         </div>
-        
+
         <div className="relative z-10 text-center text-primary-foreground max-w-4xl mx-auto px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             Los Santos Sheriff's Department
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
-            Serving our community with integrity, professionalism, and dedication. 
+            Serving our community with integrity, professionalism, and dedication.
             Protecting and serving Los Santos County for over 150 years.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -89,9 +78,9 @@ const Index = () => {
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <img 
-                  src={sheriffPortrait} 
-                  alt="Sheriff Williams" 
+                <img
+                  src={sheriffPortrait}
+                  alt="Sheriff Williams"
                   className="w-full max-w-md mx-auto rounded-lg professional-shadow"
                 />
               </div>
@@ -104,18 +93,18 @@ const Index = () => {
                 </div>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    "Welcome to the Los Santos Sheriff's Department website. As your Sheriff, 
-                    I am honored to lead this exceptional team of dedicated professionals who 
+                    "Welcome to the Los Santos Sheriff's Department website. As your Sheriff,
+                    I am honored to lead this exceptional team of dedicated professionals who
                     work tirelessly to keep our community safe."
                   </p>
                   <p>
-                    "Our department is built on the foundations of integrity, respect, and 
-                    accountability. We are committed to building strong partnerships with 
-                    the communities we serve and ensuring that every citizen feels protected 
+                    "Our department is built on the foundations of integrity, respect, and
+                    accountability. We are committed to building strong partnerships with
+                    the communities we serve and ensuring that every citizen feels protected
                     and valued."
                   </p>
                   <p>
-                    "I encourage you to explore our website to learn more about our services, 
+                    "I encourage you to explore our website to learn more about our services,
                     programs, and the outstanding men and women who make up the LSSD family."
                   </p>
                 </div>
@@ -156,7 +145,7 @@ const Index = () => {
                 Recent Announcements
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Stay informed about the latest news, initiatives, and important 
+                Stay informed about the latest news, initiatives, and important
                 information from the Los Santos Sheriff's Department.
               </p>
             </div>
@@ -168,12 +157,12 @@ const Index = () => {
                     <div className="flex items-start justify-between">
                       <div className="flex-1">
                         <div className="flex items-center space-x-3 mb-3">
-                          <Badge 
-                            variant={announcement.priority === "high" ? "destructive" : 
-                                   announcement.priority === "medium" ? "default" : "secondary"}
+                          <Badge
+                            variant={announcement.priority === "high" ? "destructive" :
+                              announcement.priority === "medium" ? "default" : "secondary"}
                           >
-                            {announcement.priority === "high" ? "Priority" : 
-                             announcement.priority === "medium" ? "Important" : "Update"}
+                            {announcement.priority === "high" ? "Priority" :
+                              announcement.priority === "medium" ? "Important" : "Update"}
                           </Badge>
                           <span className="text-sm text-muted-foreground">
                             {new Date(announcement.date).toLocaleDateString()}
@@ -288,12 +277,12 @@ const Index = () => {
                 </div>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    The Los Santos Sheriff's Department maintains a modern fleet of 
-                    patrol vehicles and specialized equipment to ensure our officers 
+                    The Los Santos Sheriff's Department maintains a modern fleet of
+                    patrol vehicles and specialized equipment to ensure our officers
                     can respond effectively to any situation.
                   </p>
                   <p>
-                    Our fleet includes patrol cars, motorcycles, helicopters, and 
+                    Our fleet includes patrol cars, motorcycles, helicopters, and
                     specialized vehicles for our SWAT, K9, and Traffic Enforcement units.
                   </p>
                 </div>
@@ -311,9 +300,9 @@ const Index = () => {
                 </div>
               </div>
               <div>
-                <img 
-                  src={patrolFleet} 
-                  alt="LSSD Patrol Fleet" 
+                <img
+                  src={patrolFleet}
+                  alt="LSSD Patrol Fleet"
                   className="w-full rounded-lg professional-shadow"
                 />
               </div>
