@@ -19,23 +19,23 @@ import Footer from "@/components/Footer";
 const Contact = () => {
   const emergencyNumbers = [
     {
-      type: "Emergency",
+      type: "Tísňová linka",
       number: "911",
-      description: "Life-threatening emergencies, crimes in progress",
+      description: "Ohrožení života, trestné činy v průběhu",
       icon: AlertTriangle,
       color: "text-destructive"
     },
     {
-      type: "Non-Emergency",
+      type: "Linka pro neurgentní případy",
       number: "(555) 123-4567",
-      description: "General questions, reports, non-urgent matters",
+      description: "Obecné dotazy, oznámení, neurgentní záležitosti",
       icon: Phone,
       color: "text-primary"
     },
     {
-      type: "Anonymous Tip Line",
-      number: "(555) 123-TIPS",
-      description: "Report crimes anonymously",
+      type: "Anonymní linka",
+      number: "(555) 123-TIPS, 911a",
+      description: "Nahlášení trestných činů anonymně",
       icon: Phone,
       color: "text-muted-foreground"
     }
@@ -43,64 +43,64 @@ const Contact = () => {
 
   const departments = [
     {
-      name: "Patrol Division",
-      phone: "(555) 123-4567 ext. 1100",
+      name: "Hlídkové oddělení",
+      phone: "(555) 123-4567 kl. 1100",
       email: "patrol@lssd.gov",
-      hours: "24/7 Operations"
+      hours: "Provoz 24/7"
     },
     {
-      name: "Detective Bureau",
-      phone: "(555) 123-4567 ext. 1200",
+      name: "Kriminální oddělení",
+      phone: "(555) 123-4567 kl. 1200",
       email: "detectives@lssd.gov",
-      hours: "Monday - Friday, 8:00 AM - 6:00 PM"
+      hours: "Pondělí – Pátek, 8:00 – 18:00"
     },
     {
-      name: "Traffic Enforcement",
-      phone: "(555) 123-4567 ext. 1300",
+      name: "Dopravní oddělení",
+      phone: "(555) 123-4567 kl. 1300",
       email: "traffic@lssd.gov",
-      hours: "Monday - Friday, 7:00 AM - 7:00 PM"
+      hours: "Pondělí – Pátek, 7:00 – 19:00"
     },
     {
-      name: "Community Relations",
-      phone: "(555) 123-4567 ext. 1400",
+      name: "Vztahy s komunitou",
+      phone: "(555) 123-4567 kl. 1400",
       email: "community@lssd.gov",
-      hours: "Monday - Friday, 9:00 AM - 5:00 PM"
+      hours: "Pondělí – Pátek, 9:00 – 17:00"
     },
     {
-      name: "Records Department",
-      phone: "(555) 123-4567 ext. 1500",
+      name: "Oddělení záznamů",
+      phone: "(555) 123-4567 kl. 1500",
       email: "records@lssd.gov",
-      hours: "Monday - Friday, 8:00 AM - 4:00 PM"
+      hours: "Pondělí – Pátek, 8:00 – 16:00"
     },
     {
-      name: "Administrative Services",
-      phone: "(555) 123-4567 ext. 1000",
+      name: "Administrativní služby",
+      phone: "(555) 123-4567 kl. 1000",
       email: "admin@lssd.gov",
-      hours: "Monday - Friday, 8:00 AM - 5:00 PM"
+      hours: "Pondělí – Pátek, 8:00 – 17:00"
     }
   ];
 
   const locations = [
     {
-      name: "Main Headquarters",
-      address: "1234 Justice Drive, Los Santos, CA 90210",
+      name: "Hlavní centrála",
+      address: "Justice Drive 1234, Los Santos, CA 90210",
       phone: "(555) 123-4567",
-      hours: "24/7",
-      services: ["Administrative Services", "Records", "Detective Bureau", "Patrol Dispatch"]
+      hours: "Provoz 24/7",
+      services: ["Administrativní služby", "Záznamy", "Kriminální oddělení", "Dispečink hlídek"]
     },
     {
-      name: "North Precinct",
-      address: "5678 Oak Street, North Los Santos, CA 90211",
+      name: "Severní stanice",
+      address: "Oak Street 5678, North Los Santos, CA 90211",
       phone: "(555) 123-4568",
-      hours: "24/7",
-      services: ["Patrol Operations", "Community Relations", "Traffic Enforcement"]
+      hours: "Provoz 24/7",
+      services: ["Hlídkové operace", "Vztahy s komunitou", "Dopravní oddělení"]
     },
     {
-      name: "South Precinct",
-      address: "9101 Pine Avenue, South Los Santos, CA 90212",
+      name: "Jižní stanice",
+      address: "Pine Avenue 9101, South Los Santos, CA 90212",
       phone: "(555) 123-4569",
-      hours: "24/7",
-      services: ["Patrol Operations", "K9 Unit", "Special Operations"]
+      hours: "Provoz 24/7",
+      services: ["Hlídkové operace", "Kynologická jednotka", "Speciální operace"]
     }
   ];
 
@@ -111,13 +111,12 @@ const Contact = () => {
       {/* Hero Section */}
       <section className="py-24 bg-gradient-to-br from-primary/10 to-accent/10">
         <div className="container mx-auto px-4 text-center">
-          <Badge variant="outline" className="mb-6">Get in Touch</Badge>
+          <Badge variant="outline" className="mb-6">Kontaktujte nás</Badge>
           <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6">
-            Contact Us
+            Spojte se s námi - WIP
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            We're here to serve and protect our community. Reach out to us for assistance, 
-            information, or to report non-emergency situations.
+            Jsme tu pro vás a vaši bezpečnost. Kontaktujte nás pro pomoc, informace nebo nahlášení neurgentních situací.
           </p>
         </div>
       </section>
@@ -126,12 +125,12 @@ const Contact = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <Badge variant="outline" className="mb-4">Important Numbers</Badge>
+            <Badge variant="outline" className="mb-4">Důležitá čísla</Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Emergency & Contact Numbers
+              Tísňová a kontaktní čísla
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Know when and how to contact us for different types of situations.
+              Vědět, kdy a jak nás kontaktovat v různých situacích.
             </p>
           </div>
 
@@ -159,12 +158,12 @@ const Contact = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <Badge variant="outline" className="mb-4">Send a Message</Badge>
+              <Badge variant="outline" className="mb-4">Odeslat zprávu</Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-                Contact Form
+                Kontaktní formulář
               </h2>
               <p className="text-muted-foreground">
-                For non-emergency inquiries, feedback, or general information requests.
+                Pro neurgentní dotazy, zpětnou vazbu nebo žádosti o informace.
               </p>
             </div>
 
@@ -173,43 +172,43 @@ const Contact = () => {
                 <form className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                      <Label htmlFor="firstName">First Name</Label>
-                      <Input id="firstName" placeholder="Enter your first name" />
+                      <Label htmlFor="firstName">Jméno</Label>
+                      <Input id="firstName" placeholder="Zadejte své jméno" />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="lastName">Last Name</Label>
-                      <Input id="lastName" placeholder="Enter your last name" />
+                      <Label htmlFor="lastName">Příjmení</Label>
+                      <Input id="lastName" placeholder="Zadejte své příjmení" />
                     </div>
                   </div>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                      <Label htmlFor="email">Email</Label>
-                      <Input id="email" type="email" placeholder="Enter your email" />
+                      <Label htmlFor="email">E-mail</Label>
+                      <Input id="email" type="email" placeholder="Zadejte svůj e-mail" />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="phone">Phone Number</Label>
-                      <Input id="phone" type="tel" placeholder="Enter your phone number" />
+                      <Label htmlFor="phone">Telefon</Label>
+                      <Input id="phone" type="tel" placeholder="Zadejte své telefonní číslo" />
                     </div>
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="subject">Subject</Label>
-                    <Input id="subject" placeholder="Enter the subject of your message" />
+                    <Label htmlFor="subject">Předmět</Label>
+                    <Input id="subject" placeholder="Zadejte předmět zprávy" />
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="message">Message</Label>
+                    <Label htmlFor="message">Zpráva</Label>
                     <Textarea 
                       id="message" 
-                      placeholder="Enter your message"
+                      placeholder="Zadejte svou zprávu"
                       className="min-h-[120px]"
                     />
                   </div>
 
                   <Button className="w-full md:w-auto">
                     <Send className="mr-2 h-4 w-4" />
-                    Send Message
+                    Odeslat zprávu
                   </Button>
                 </form>
               </CardContent>
@@ -222,12 +221,12 @@ const Contact = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <Badge variant="outline" className="mb-4">Department Contacts</Badge>
+            <Badge variant="outline" className="mb-4">Kontakty na oddělení</Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Specialized Departments
+              Specializovaná oddělení
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Direct contact information for specific departments and services.
+              Přímé kontakty na konkrétní oddělení a služby.
             </p>
           </div>
 
@@ -262,12 +261,12 @@ const Contact = () => {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <Badge variant="outline" className="mb-4">Our Locations</Badge>
+            <Badge variant="outline" className="mb-4">Naše pobočky</Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Office Locations
+              Lokality úřadu
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Visit us at any of our locations throughout Los Santos County.
+              Navštivte nás na kterékoliv z našich poboček v okrese Los Santos.
             </p>
           </div>
 
@@ -292,7 +291,7 @@ const Contact = () => {
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold text-primary mb-2">Services Available:</h4>
+                    <h4 className="font-semibold text-primary mb-2">Dostupné služby:</h4>
                     <ul className="space-y-1">
                       {location.services.map((service, idx) => (
                         <li key={idx} className="text-sm text-muted-foreground flex items-center">
@@ -305,7 +304,7 @@ const Contact = () => {
                   
                   <Button variant="outline" className="w-full">
                     <MapPin className="mr-2 h-4 w-4" />
-                    Get Directions
+                    Zobrazit trasu
                   </Button>
                 </CardContent>
               </Card>

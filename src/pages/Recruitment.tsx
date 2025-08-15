@@ -18,72 +18,68 @@ const Recruitment = () => {
   const benefits = [
     {
       icon: DollarSign,
-      title: "Competitive Salary",
-      description: "Starting salary of $65,000 with regular increases and performance bonuses."
+      title: "Konkurenční plat",
+      description: "Nástupní plat od 200$ s pravidelným navyšováním a výkonnostními bonusy."
     },
     {
       icon: Heart,
-      title: "Health Benefits",
-      description: "Comprehensive medical, dental, and vision coverage for you and your family."
+      title: "Zdravotní benefity",
+      description: "Komplexní zdravotní, zubní a oční péče pro vás i vaši rodinu."
     },
     {
       icon: GraduationCap,
-      title: "Education Support",
-      description: "Tuition reimbursement and continuing education opportunities."
+      title: "Podpora vzdělávání",
+      description: "Proplácení školného a možnosti dalšího vzdělávání."
     },
     {
       icon: Calendar,
-      title: "Retirement Plan",
-      description: "Excellent pension plan with early retirement options after 20 years of service."
+      title: "Důchodový plán",
+      description: "Vynikající penzijní plán s možností předčasného důchodu po 20 letech služby."
     }
   ];
 
   const requirements = [
-    "Must be at least 21 years of age",
-    "High school diploma or equivalent required",
-    "Valid driver's license with clean driving record",
-    "Pass physical fitness and medical examinations",
-    "Complete background investigation and psychological evaluation",
-    "U.S. citizen or legally authorized to work in the United States",
-    "No felony convictions or serious misdemeanors"
+    "Minimální věk 21 let, maximální 45 let",
+    "Americké občanství",
+    "Středoškolské vzdělání nebo ekvivalent",
+    "Bez závažných trestných činů nebo přestupků",
+    "Platný řidičský průkaz a čistý záznam",
+    "Fyzická a psychická schopnost vykonávat práci",
+    "Kompletní prověření minulosti a psychologické vyšetření",
+    "Mluvit plynule a reprezentativně anglicky",
+    "Nesmíte mít žádný další služební poměr (EMS/FD atd.)"
   ];
 
   const process = [
     {
       step: "1",
-      title: "Application Submission",
-      description: "Submit your online application with all required documents and certificates.",
-      timeframe: "1-2 weeks processing"
+      title: "Podání přihlášky",
+      description: "Odešlete online přihlášku včetně všech požadovaných dokumentů a certifikátů.",
+      timeframe: "Zpracování 1–2 týdny"
     },
     {
       step: "2",
-      title: "Written Examination",
-      description: "Take the POST written examination covering basic skills and knowledge.",
-      timeframe: "Scheduled within 30 days"
+      title: "Prověření minulosti",
+      description: "Komplexní prověření včetně pohovorů a ověření referencí.",
+      timeframe: "1-2 týdny"
     },
     {
       step: "3",
-      title: "Physical Fitness Test",
-      description: "Complete the physical agility test demonstrating required fitness levels.",
-      timeframe: "Same day as written exam"
+      title: "Fyzické testy",
+      description: "Splňte test fyzické zdatnosti prokazující požadovanou úroveň kondice.",
+      timeframe: "Ve stejný den jako nástup do akademie"
     },
     {
       step: "4",
-      title: "Background Investigation",
-      description: "Comprehensive background check including interviews and reference verification.",
-      timeframe: "4-8 weeks"
+      title: "Výcviky v akademii",
+      description: "Intenzivní teoretický i praktický výcvik pod vedením zkušených instruktorů.",
+      timeframe: "2–3 týdny"
     },
     {
       step: "5",
-      title: "Medical & Psychological",
-      description: "Medical examination and psychological evaluation by certified professionals.",
-      timeframe: "2-3 weeks"
-    },
-    {
-      step: "6",
-      title: "Final Interview",
-      description: "Panel interview with command staff and final hiring decision.",
-      timeframe: "1 week"
+      title: "Závěrečný test",
+      description: "Písemná a praktická zkouška, po úspěšném absolvování slavnostní ceremonie.",
+      timeframe: "1 den"
     }
   ];
 
@@ -94,19 +90,21 @@ const Recruitment = () => {
       {/* Hero Section */}
       <section className="py-24 bg-gradient-to-br from-primary/10 to-accent/10">
         <div className="container mx-auto px-4 text-center">
-          <Badge variant="outline" className="mb-6">Join Our Team</Badge>
+          <Badge variant="outline" className="mb-6">Přidejte se k nám</Badge>
           <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6">
-            Start Your Career in Law Enforcement
+            Začněte kariéru u šerifů
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Join the Los Santos Sheriff's Department and make a difference in your community. 
-            We're looking for dedicated individuals ready to serve and protect.
+            Připojte se k Los Santos Sheriff's Department a mějte pozitivní vliv na svou komunitu. 
+            Hledáme odhodlané jedince připravené chránit a sloužit.
           </p>
           <div className="mt-8">
+            <a href="https://forms.gle/QjbCLukX6KjjKRcv5" target="_blank" rel="noopener noreferrer">
             <Button size="lg" className="text-lg px-8">
               <Shield className="mr-2 h-5 w-5" />
-              Apply Now
+              Přihlásit se
             </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -115,12 +113,12 @@ const Recruitment = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <Badge variant="outline" className="mb-4">Employee Benefits</Badge>
+            <Badge variant="outline" className="mb-4">Zaměstnanecké benefity</Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Comprehensive Benefits Package
+              Komplexní balíček výhod
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              We value our officers and provide excellent benefits to support their career and family.
+              Vážíme si našich šerifů a poskytujeme jim vynikající benefity pro podporu jejich kariéry i rodiny.
             </p>
           </div>
 
@@ -145,12 +143,12 @@ const Recruitment = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <Badge variant="outline" className="mb-4">Eligibility</Badge>
+              <Badge variant="outline" className="mb-4">Podmínky přijetí</Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-                Minimum Requirements
+                Minimální požadavky
               </h2>
               <p className="text-muted-foreground">
-                To become a Los Santos Sheriff's Deputy, candidates must meet the following requirements:
+                Pro přijetí k Los Santos Sheriff's Department musí uchazeči splnit následující podmínky:
               </p>
             </div>
 
@@ -174,12 +172,12 @@ const Recruitment = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <Badge variant="outline" className="mb-4">Application Process</Badge>
+            <Badge variant="outline" className="mb-4">Průběh přijímacího řízení</Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              How to Apply
+              Jak se přihlásit
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Our thorough selection process ensures we hire the best candidates for our team.
+              Důkladný výběrový proces zajišťuje, že do týmu přijímáme ty nejlepší kandidáty.
             </p>
           </div>
 
@@ -215,20 +213,26 @@ const Recruitment = () => {
       <section className="py-16 bg-primary/5">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-            Ready to Serve Your Community?
+            Připraveni sloužit své komunitě?
           </h2>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Take the first step towards a rewarding career in law enforcement. Join our team and make a difference.
+            Udělejte první krok ke smysluplné kariéře u šerifského sboru. Přidejte se k nám a měňte svět k lepšímu.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="https://forms.gle/QjbCLukX6KjjKRcv5" target="_blank" rel="noopener noreferrer">
             <Button size="lg" className="text-lg px-8">
               <Shield className="mr-2 h-5 w-5" />
-              Apply Online
+              Přihlásit se online
             </Button>
+            </a>
+
+            {/*
             <Button size="lg" variant="outline" className="text-lg px-8">
               <Users className="mr-2 h-5 w-5" />
-              Attend Info Session
+              Navštívit informační schůzku
             </Button>
+            */}
+
           </div>
         </div>
       </section>
