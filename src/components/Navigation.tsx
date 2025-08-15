@@ -3,20 +3,20 @@ import { NavLink } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Phone, AlertTriangle } from "lucide-react";
-import lssdBadge from "@/assets/lssd-badge.png";
+import lssdBadge from "@/assets/lssd-logo.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { to: "/", label: "Home" },
-    { to: "/about", label: "About Us" },
-    { to: "/divisions", label: "Divisions" },
-    { to: "/command", label: "Command Staff" },
-    { to: "/recruitment", label: "Careers" },
-    { to: "/community", label: "Community" },
-    { to: "/media", label: "Media" },
-    { to: "/contact", label: "Contact" },
+    { to: "/", label: "Domů" },
+    { to: "/about", label: "O nás" },
+    { to: "/command", label: "Vedení" },
+    { to: "/divisions", label: "Oddělení" },
+    { to: "/media", label: "Média" },
+    { to: "/recruitment", label: "Kariéra" },
+    // { to: "/community", label: "Komunita" },
+    // { to: "/contact", label: "Kontakt" },
   ];
 
   const NavContent = () => (
@@ -50,7 +50,7 @@ const Navigation = () => {
             <div className="flex flex-col">
               <span className="text-lg font-bold text-primary">LSSD</span>
               <span className="text-xs text-muted-foreground hidden sm:block">
-                Los Santos Sheriff Department
+                Los Santos Sheriff's Department
               </span>
             </div>
           </NavLink>
@@ -64,12 +64,14 @@ const Navigation = () => {
           <div className="hidden md:flex items-center space-x-4">
             <div className="flex items-center space-x-2 text-sm">
               <AlertTriangle className="h-4 w-4 text-destructive" />
-              <span className="font-semibold text-destructive">Emergency: 911</span>
+              <span className="font-semibold text-destructive">Tísňová linka: 911</span>
             </div>
+            {/*
             <div className="flex items-center space-x-2 text-sm">
               <Phone className="h-4 w-4 text-muted-foreground" />
-              <span className="text-muted-foreground">Non-Emergency: (555) 123-4567</span>
+              <span className="text-muted-foreground">Neurgentní: (555) 123-4567</span>
             </div>
+            */}
           </div>
 
           {/* Mobile Menu */}
@@ -77,7 +79,7 @@ const Navigation = () => {
             <SheetTrigger asChild className="lg:hidden">
               <Button variant="outline" size="icon">
                 <Menu className="h-5 w-5" />
-                <span className="sr-only">Toggle navigation menu</span>
+                <span className="sr-only">Otevřít navigaci</span>
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
@@ -87,7 +89,7 @@ const Navigation = () => {
                   <div>
                     <h2 className="text-lg font-bold text-primary">LSSD</h2>
                     <p className="text-sm text-muted-foreground">
-                      Los Santos Sheriff Department
+                      Los Santos Sheriff's Department
                     </p>
                   </div>
                 </div>
@@ -100,12 +102,14 @@ const Navigation = () => {
                 <div className="border-t pt-4 mt-6 space-y-3">
                   <div className="flex items-center space-x-2">
                     <AlertTriangle className="h-4 w-4 text-destructive" />
-                    <span className="font-semibold text-destructive">Emergency: 911</span>
+                    <span className="font-semibold text-destructive">Tísňová linka: 911</span>
                   </div>
+                  {/*
                   <div className="flex items-center space-x-2">
                     <Phone className="h-4 w-4 text-muted-foreground" />
-                    <span className="text-muted-foreground">Non-Emergency: (555) 123-4567</span>
+                    <span className="text-muted-foreground">Neurgentní: (555) 123-4567</span>
                   </div>
+                  */}
                 </div>
               </div>
             </SheetContent>

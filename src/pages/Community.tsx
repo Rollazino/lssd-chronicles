@@ -18,76 +18,76 @@ const Community = () => {
   const programs = [
     {
       icon: Shield,
-      title: "Neighborhood Watch",
-      description: "Empowering residents to work together with law enforcement to prevent crime and build safer communities.",
-      features: ["Monthly meetings", "Crime prevention training", "Direct communication with patrol officers", "Community alert system"],
-      contact: "Officer Martinez"
+      title: "Sousedská hlídka",
+      description: "Zapojení obyvatel do spolupráce s policií pro prevenci kriminality a budování bezpečnějších komunit.",
+      features: ["Měsíční setkání", "Školení v prevenci kriminality", "Přímá komunikace s hlídkovými policisty", "Systém komunitních upozornění"],
+      contact: "Policista Martinez"
     },
     {
       icon: GraduationCap,
-      title: "Youth Programs",
-      description: "Engaging young people through educational and recreational activities that promote positive relationships with law enforcement.",
-      features: ["After-school programs", "Summer camps", "Mentorship opportunities", "Educational workshops"],
-      contact: "Detective Johnson"
+      title: "Programy pro mládež",
+      description: "Zapojení mladých lidí prostřednictvím vzdělávacích a volnočasových aktivit, které podporují pozitivní vztahy s policií.",
+      features: ["Programy po škole", "Letní tábory", "Mentorské příležitosti", "Vzdělávací workshopy"],
+      contact: "Detektiv Johnson"
     },
     {
       icon: Users,
-      title: "Community Policing",
-      description: "Building partnerships between police and community members to solve problems and improve quality of life.",
-      features: ["Regular community forums", "Problem-solving partnerships", "Foot patrol programs", "Community feedback sessions"],
-      contact: "Lieutenant Davis"
+      title: "Komunitní policie",
+      description: "Budování partnerství mezi policií a občany pro řešení problémů a zlepšení kvality života.",
+      features: ["Pravidelná komunitní fóra", "Partnerství pro řešení problémů", "Programy pěších hlídek", "Setkání s občany"],
+      contact: "Poručík Davis"
     },
     {
       icon: Heart,
-      title: "Senior Safety",
-      description: "Specialized programs designed to protect and support our senior community members.",
-      features: ["Home security assessments", "Fraud prevention education", "Medical alert programs", "Regular wellness checks"],
-      contact: "Officer Thompson"
+      title: "Bezpečí seniorů",
+      description: "Speciální programy zaměřené na ochranu a podporu našich seniorů.",
+      features: ["Bezpečnostní kontroly domovů", "Vzdělávání o prevenci podvodů", "Programy zdravotních upozornění", "Pravidelné kontroly pohody"],
+      contact: "Policista Thompson"
     },
     {
       icon: Building,
-      title: "Business Partnership",
-      description: "Working with local businesses to create safer commercial districts and prevent crime.",
-      features: ["Security consultations", "Employee safety training", "Rapid response protocols", "Crime prevention planning"],
-      contact: "Sergeant Wilson"
+      title: "Partnerství s podniky",
+      description: "Spolupráce s místními podniky na vytvoření bezpečnějších obchodních oblastí a prevenci kriminality.",
+      features: ["Bezpečnostní konzultace", "Školení zaměstnanců", "Rychlé reakční protokoly", "Plánování prevence kriminality"],
+      contact: "Seržant Wilson"
     },
     {
       icon: Calendar,
-      title: "Community Events",
-      description: "Organizing and participating in community events to strengthen police-community relationships.",
-      features: ["National Night Out", "Safety fairs", "Police ride-alongs", "Coffee with a Cop"],
-      contact: "Officer Garcia"
+      title: "Komunitní akce",
+      description: "Organizace a účast na akcích pro posílení vztahů mezi policií a komunitou.",
+      features: ["Národní noc venku", "Bezpečnostní veletrhy", "Jízdy s policií", "Káva s policistou"],
+      contact: "Policista Garcia"
     }
   ];
 
   const upcomingEvents = [
     {
       date: "2024-02-15",
-      title: "Coffee with a Cop - Downtown Precinct",
-      time: "8:00 AM - 10:00 AM",
-      location: "Central Café, Main Street",
-      description: "Join us for an informal chat over coffee. No agenda, just conversation."
+      title: "Káva s policistou – stanice centrum",
+      time: "8:00 – 10:00",
+      location: "Central Café, Hlavní ulice",
+      description: "Přijďte na neformální rozhovor u kávy. Bez agendy, jen povídání."
     },
     {
       date: "2024-02-22",
-      title: "Youth Basketball League Championship",
-      time: "6:00 PM - 8:00 PM",
-      location: "Community Center Gym",
-      description: "Cheer on our youth basketball teams and celebrate community engagement."
+      title: "Finále mládežnické basketbalové ligy",
+      time: "18:00 – 20:00",
+      location: "Tělocvična komunitního centra",
+      description: "Povzbuzujte naše mládežnické týmy a oslavte zapojení komunity."
     },
     {
       date: "2024-03-05",
-      title: "Senior Safety Workshop",
-      time: "2:00 PM - 4:00 PM",
-      location: "Senior Center Auditorium",
-      description: "Learn about fraud prevention and home security measures."
+      title: "Workshop bezpečí seniorů",
+      time: "14:00 – 16:00",
+      location: "Auditorium centra pro seniory",
+      description: "Naučte se o prevenci podvodů a bezpečnosti domova."
     },
     {
       date: "2024-03-15",
-      title: "Neighborhood Watch Training",
-      time: "7:00 PM - 9:00 PM",
-      location: "Police Station Conference Room",
-      description: "Training session for new and existing neighborhood watch coordinators."
+      title: "Školení sousedské hlídky",
+      time: "19:00 – 21:00",
+      location: "Konferenční místnost policejní stanice",
+      description: "Školení pro nové i stávající koordinátory sousedské hlídky."
     }
   ];
 
@@ -98,13 +98,13 @@ const Community = () => {
       {/* Hero Section */}
       <section className="py-24 bg-gradient-to-br from-primary/10 to-accent/10">
         <div className="container mx-auto px-4 text-center">
-          <Badge variant="outline" className="mb-6">Community Engagement</Badge>
+          <Badge variant="outline" className="mb-6">Zapojení komunity</Badge>
           <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6">
-            Community Programs
+            Programy pro komunitu - WIP
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Building stronger, safer communities through partnership, engagement, and shared responsibility. 
-            Together, we create lasting positive change.
+            Budujeme silnější a bezpečnější komunity prostřednictvím partnerství, zapojení a společné odpovědnosti. 
+            Společně vytváříme trvalé pozitivní změny.
           </p>
         </div>
       </section>
@@ -113,12 +113,12 @@ const Community = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <Badge variant="outline" className="mb-4">Our Programs</Badge>
+            <Badge variant="outline" className="mb-4">Naše programy</Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Community Initiatives
+              Komunitní iniciativy
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Discover the various programs designed to strengthen the bond between law enforcement and our community.
+              Objevte různé programy, které posilují vztahy mezi policií a komunitou.
             </p>
           </div>
 
@@ -139,7 +139,7 @@ const Community = () => {
                 <CardContent className="space-y-6">
                   {/* Program Features */}
                   <div>
-                    <h4 className="font-semibold text-primary mb-3">Program Features</h4>
+                    <h4 className="font-semibold text-primary mb-3">Hlavní prvky programu</h4>
                     <ul className="space-y-2">
                       {program.features.map((feature, idx) => (
                         <li key={idx} className="flex items-start space-x-2">
@@ -154,10 +154,10 @@ const Community = () => {
                   <div className="flex items-center justify-between pt-4 border-t">
                     <div className="flex items-center space-x-2">
                       <Phone className="h-4 w-4 text-accent" />
-                      <span className="text-sm font-medium">Contact: {program.contact}</span>
+                      <span className="text-sm font-medium">Kontakt: {program.contact}</span>
                     </div>
                     <Button variant="outline" size="sm">
-                      Learn More
+                      Více informací
                     </Button>
                   </div>
                 </CardContent>
@@ -171,12 +171,12 @@ const Community = () => {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <Badge variant="outline" className="mb-4">Events Calendar</Badge>
+            <Badge variant="outline" className="mb-4">Kalendář akcí</Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Upcoming Community Events
+              Nadcházející komunitní akce
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Join us at these upcoming events to connect with your community and local law enforcement.
+              Připojte se k našim akcím a spojte se s komunitou i místní policií.
             </p>
           </div>
 
@@ -191,7 +191,7 @@ const Community = () => {
                           <Calendar className="h-6 w-6" />
                         </div>
                         <p className="font-semibold text-primary mt-2">
-                          {new Date(event.date).toLocaleDateString()}
+                          {new Date(event.date).toLocaleDateString("cs-CZ")}
                         </p>
                         <p className="text-sm text-muted-foreground">{event.time}</p>
                       </div>
@@ -205,7 +205,7 @@ const Community = () => {
                       </div>
                       <div className="text-center md:text-right">
                         <Button>
-                          Register
+                          Registrovat se
                         </Button>
                       </div>
                     </div>
@@ -221,25 +221,25 @@ const Community = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge variant="outline" className="mb-6">Get Involved</Badge>
+            <Badge variant="outline" className="mb-6">Zapojte se</Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-              How You Can Help
+              Jak můžete pomoci
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Community safety is a shared responsibility. Here are ways you can actively participate 
-              in making our community safer and stronger.
+              Bezpečnost komunity je společná odpovědnost. Zde jsou způsoby, jak se můžete aktivně zapojit 
+              a přispět k bezpečnější a silnější komunitě.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <Card>
                 <CardContent className="pt-6 text-center">
                   <Users className="h-12 w-12 mx-auto text-primary mb-4" />
-                  <h3 className="font-semibold text-primary mb-3">Join a Program</h3>
+                  <h3 className="font-semibold text-primary mb-3">Zapojte se do programu</h3>
                   <p className="text-sm text-muted-foreground mb-4">
-                    Participate in one of our community programs and make a direct impact.
+                    Připojte se k některému z našich komunitních programů a ovlivněte dění přímo.
                   </p>
                   <Button variant="outline" size="sm">
-                    Find Programs
+                    Najít programy
                   </Button>
                 </CardContent>
               </Card>
@@ -247,12 +247,12 @@ const Community = () => {
               <Card>
                 <CardContent className="pt-6 text-center">
                   <Heart className="h-12 w-12 mx-auto text-primary mb-4" />
-                  <h3 className="font-semibold text-primary mb-3">Volunteer</h3>
+                  <h3 className="font-semibold text-primary mb-3">Dobrovolnictví</h3>
                   <p className="text-sm text-muted-foreground mb-4">
-                    Donate your time and skills to support community safety initiatives.
+                    Věnujte svůj čas a dovednosti na podporu bezpečnostních iniciativ v komunitě.
                   </p>
                   <Button variant="outline" size="sm">
-                    Volunteer Today
+                    Staňte se dobrovolníkem
                   </Button>
                 </CardContent>
               </Card>
@@ -260,12 +260,12 @@ const Community = () => {
               <Card>
                 <CardContent className="pt-6 text-center">
                   <Phone className="h-12 w-12 mx-auto text-primary mb-4" />
-                  <h3 className="font-semibold text-primary mb-3">Stay Connected</h3>
+                  <h3 className="font-semibold text-primary mb-3">Zůstaňte v kontaktu</h3>
                   <p className="text-sm text-muted-foreground mb-4">
-                    Follow our updates and stay informed about community safety matters.
+                    Sledujte naše aktuality a buďte informováni o bezpečnostních otázkách v komunitě.
                   </p>
                   <Button variant="outline" size="sm">
-                    Contact Us
+                    Kontaktujte nás
                   </Button>
                 </CardContent>
               </Card>

@@ -18,93 +18,93 @@ const Divisions = () => {
   const divisions = [
     {
       icon: Car,
-      name: "Patrol Division",
-      description: "Our frontline officers providing 24/7 community protection and emergency response.",
+      name: "Patrol Unit",
+      description: "Naši šerifové v první linii zajišťují nepřetržitou ochranu komunity a pohotovostní zásahy.",
       responsibilities: [
-        "Emergency response and first aid",
-        "Traffic enforcement and accident investigation",
-        "Crime prevention and community policing",
-        "Initial investigation of reported crimes",
-        "Public safety and order maintenance"
+        "Tísňové zásahy a první pomoc",
+        "Dopravní dohled a vyšetřování nehod",
+        "Prevence kriminality a komunitní policejní práce",
+        "Prvotní vyšetřování nahlášených trestných činů",
+        "Veřejná bezpečnost a udržování pořádku"
       ],
-      coverage: "County-wide",
-      personnel: "280+ Officers",
-      vehicles: "65 Patrol Units"
+      coverage: "Celý okres",
+      personnel: "40+ šerifů",
+      vehicles: "20+ hlídkových vozidel"
     },
     {
       icon: AlertTriangle,
-      name: "Traffic Enforcement Unit",
-      description: "Specialized officers focused on road safety and traffic law enforcement.",
+      name: "Traffic Unit",
+      description: "Specializovaní šerifové zaměření na bezpečnost silničního provozu a vymáhání dopravních předpisů.",
       responsibilities: [
-        "Highway and arterial road patrol",
-        "Major accident investigation",
-        "Commercial vehicle enforcement",
-        "Speed and DUI enforcement",
-        "Traffic safety education programs"
+        "Dohled na dálnicích a hlavních komunikacích",
+        "Vyšetřování závažných dopravních nehod",
+        "Kontrola nákladních vozidel",
+        "Kontrola rychlosti a alkoholu za volantem",
+        "Vzdělávací programy pro bezpečnost silničního provozu"
       ],
-      coverage: "Major roadways and highways",
-      personnel: "45 Officers",
-      vehicles: "15 Motorcycles, 8 Patrol Cars"
+      coverage: "Hlavní silnice a dálnice",
+      personnel: "45 policistů",
+      vehicles: "15 motocyklů, 8 hlídkových vozů"
     },
     {
       icon: Search,
       name: "Detective Bureau",
-      description: "Experienced investigators handling complex criminal cases and follow-up investigations.",
+      description: "Zkušení vyšetřovatelé řeší složité trestní případy a následná šetření.",
       responsibilities: [
-        "Felony crime investigation",
-        "Evidence collection and analysis",
-        "Witness interviews and case preparation",
-        "Coordination with prosecutor's office",
-        "Cold case investigations"
+        "Vyšetřování závažných trestných činů",
+        "Sběr a analýza důkazů",
+        "Výslechy svědků a příprava případů",
+        "Spolupráce se státním zastupitelstvím",
+        "Vyšetřování nevyřešených případů"
       ],
-      coverage: "County-wide investigations",
-      personnel: "35 Detectives",
-      vehicles: "12 Unmarked Units"
+      coverage: "Vyšetřování v celém okrese",
+      personnel: "35 vyšetřovatelů",
+      vehicles: "12 neoznačených vozidel"
     },
     {
       icon: Shield,
       name: "Special Weapons and Tactics (SWAT)",
-      description: "Elite tactical unit for high-risk operations and emergency situations.",
+      description: "Elitní taktická jednotka pro vysoce rizikové operace a mimořádné situace.",
       responsibilities: [
-        "High-risk warrant service",
-        "Hostage rescue operations",
-        "Counter-terrorism activities",
-        "Dignitary protection",
-        "Crisis intervention and negotiation"
+        "Zajištění vysoce rizikových zatykačů",
+        "Záchrana rukojmí",
+        "Protiteroristické aktivity",
+        "Ochrana významných osob",
+        "Krizová intervence a vyjednávání"
       ],
-      coverage: "County-wide tactical response",
-      personnel: "20 Tactical Officers",
-      vehicles: "3 Armored Vehicles, 2 Command Units"
+      coverage: "Taktická podpora v celém okrese",
+      personnel: "20 taktických policistů",
+      vehicles: "3 obrněná vozidla, 2 velitelské vozy"
     },
     {
       icon: Plane,
       name: "Air Support Unit",
-      description: "Helicopter operations providing aerial support for ground units and emergency services.",
+      description: "Vrtulníkové operace poskytující vzdušnou podporu pozemním jednotkám a záchranným službám.",
       responsibilities: [
-        "Aerial patrol and surveillance",
-        "Search and rescue operations",
-        "Medical evacuation services",
-        "Traffic monitoring and enforcement",
-        "Emergency response coordination"
+        "Vzdušné hlídky a sledování",
+        "Pátrací a záchranné operace",
+        "Letecká evakuace",
+        "Dohled nad dopravou",
+        "Koordinace tísňových zásahů"
       ],
-      coverage: "Entire county airspace",
-      personnel: "12 Pilots and Crew",
-      vehicles: "2 Helicopters"
+      coverage: "Celý vzdušný prostor okresu",
+      personnel: "12 pilotů a členů posádky",
+      vehicles: "4 vrtulníky"
     },
     {
       icon: Dog,
-      name: "K9 Unit",
-      description: "Specially trained canine teams for detection and apprehension operations.",
+      name: "K-9 Unit",
+      description: "Speciálně vycvičené týmy psovodů pro detekci a zadržení.",
       responsibilities: [
-        "Drug and narcotic detection",
-        "Explosive device detection",
-        "Suspect tracking and apprehension",
-        "Evidence recovery operations",
-        "Community education and demonstrations"
+        "Detekce drog a omamných látek",
+        "Vyhledávání výbušnin",
+        "Sledování a zadržení podezřelých",
+        "Sběr důkazů",
+        "Vzdělávání veřejnosti a ukázky"
       ],
-      coverage: "County-wide deployment",
-      personnel: "8 K9 Teams",
-      vehicles: "8 Specialized K9 Units"
+      coverage: "Nasazení v celém okrese",
+      personnel: "8 týmů K9",
+      vehicles: "8 speciálních vozidel K9"
     }
   ];
 
@@ -115,13 +115,13 @@ const Divisions = () => {
       {/* Hero Section */}
       <section className="py-24 bg-gradient-to-br from-primary/10 to-accent/10">
         <div className="container mx-auto px-4 text-center">
-          <Badge variant="outline" className="mb-6">Specialized Units</Badge>
+          <Badge variant="outline" className="mb-6">Specializované jednotky</Badge>
           <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6">
-            Our Divisions
+            Naše divize
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            The Los Santos Sheriff's Department operates multiple specialized divisions, 
-            each expertly trained to handle specific aspects of law enforcement and community service.
+            Los Santos Sheriff's Department provozuje několik specializovaných jednotek, 
+            které jsou odborně vyškoleny pro konkrétní oblasti policejní práce a služby veřejnosti.
           </p>
         </div>
       </section>
@@ -146,7 +146,7 @@ const Divisions = () => {
                 <CardContent className="space-y-6">
                   {/* Key Responsibilities */}
                   <div>
-                    <h4 className="font-semibold text-primary mb-3">Key Responsibilities</h4>
+                    <h4 className="font-semibold text-primary mb-3">Hlavní činnosti</h4>
                     <ul className="space-y-2">
                       {division.responsibilities.map((responsibility, idx) => (
                         <li key={idx} className="flex items-start space-x-2">
@@ -162,21 +162,21 @@ const Divisions = () => {
                     <div className="flex items-center space-x-2">
                       <MapPin className="h-4 w-4 text-accent" />
                       <div>
-                        <p className="text-xs text-muted-foreground">Coverage</p>
+                        <p className="text-xs text-muted-foreground">Působnost</p>
                         <p className="text-sm font-medium">{division.coverage}</p>
                       </div>
                     </div>
                     <div className="flex items-center space-x-2">
                       <Users className="h-4 w-4 text-accent" />
                       <div>
-                        <p className="text-xs text-muted-foreground">Personnel</p>
+                        <p className="text-xs text-muted-foreground">Personál</p>
                         <p className="text-sm font-medium">{division.personnel}</p>
                       </div>
                     </div>
                     <div className="flex items-center space-x-2">
                       <Car className="h-4 w-4 text-accent" />
                       <div>
-                        <p className="text-xs text-muted-foreground">Fleet</p>
+                        <p className="text-xs text-muted-foreground">Vozový park</p>
                         <p className="text-sm font-medium">{division.vehicles}</p>
                       </div>
                     </div>
@@ -192,35 +192,34 @@ const Divisions = () => {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge variant="outline" className="mb-6">Coordination</Badge>
+            <Badge variant="outline" className="mb-6">Koordinace</Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-              Unified Command Structure
+              Jednotné velení
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              All divisions work in coordination under a unified command structure to ensure 
-              efficient resource allocation, seamless communication, and effective response 
-              to incidents requiring multiple specialties.
+              Všechny jednotky spolupracují v rámci jednotné struktury velení pro efektivní využití zdrojů, 
+              plynulou komunikaci a účinnou reakci na události vyžadující více specializací.
             </p>
             
             <Card className="text-left">
               <CardContent className="pt-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div>
-                    <h3 className="font-semibold text-primary mb-3">Inter-Division Collaboration</h3>
+                    <h3 className="font-semibold text-primary mb-3">Mezioddělová spolupráce</h3>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• Joint training exercises and scenarios</li>
-                      <li>• Shared intelligence and information systems</li>
-                      <li>• Coordinated response protocols</li>
-                      <li>• Cross-training opportunities</li>
+                      <li>• Společné výcvikové cvičení a scénáře</li>
+                      <li>• Sdílené zpravodajské a informační systémy</li>
+                      <li>• Koordinované reakční protokoly</li>
+                      <li>• Příležitosti k vzájemnému školení</li>
                     </ul>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-primary mb-3">24/7 Operations Center</h3>
+                    <h3 className="font-semibold text-primary mb-3">Operační středisko 24/7</h3>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• Central dispatch and coordination</li>
-                      <li>• Real-time resource tracking</li>
-                      <li>• Emergency response management</li>
-                      <li>• Inter-agency communication hub</li>
+                      <li>• Centrální dispečink a koordinace</li>
+                      <li>• Sledování zdrojů v reálném čase</li>
+                      <li>• Řízení pohotovostních zásahů</li>
+                      <li>• Komunikační uzel mezi agenturami</li>
                     </ul>
                   </div>
                 </div>

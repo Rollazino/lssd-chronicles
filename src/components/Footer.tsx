@@ -1,57 +1,60 @@
 import { Facebook, Twitter, Youtube, Mail, Phone, MapPin } from "lucide-react";
-import lssdBadge from "@/assets/lssd-badge.png";
+import lssdBadge from "@/assets/lssd-logo.png";
 
 const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Department Info */}
+          {/* Informace o úřadu */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
               <img src={lssdBadge} alt="LSSD Badge" className="h-12 w-12" />
               <div>
                 <h3 className="text-lg font-bold">LSSD</h3>
-                <p className="text-sm opacity-90">Serving with Honor</p>
+                <p className="text-sm opacity-90">Služba se ctí</p>
               </div>
             </div>
             <p className="text-sm opacity-80 leading-relaxed">
-              The Los Santos Sheriff's Department is committed to providing professional 
-              law enforcement services to protect and serve our community with integrity, 
-              respect, and accountability.
+              Los Santos Sheriff's Department se zavazuje poskytovat profesionální policejní služby,
+              chránit a sloužit naší komunitě s integritou, respektem a odpovědností.
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Rychlé odkazy */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold">Quick Links</h4>
+            <h4 className="text-lg font-semibold">Rychlé odkazy</h4>
             <nav className="flex flex-col space-y-2">
-              <a href="/about" className="text-sm hover:text-accent transition-colors">About Us</a>
-              <a href="/divisions" className="text-sm hover:text-accent transition-colors">Our Divisions</a>
-              <a href="/recruitment" className="text-sm hover:text-accent transition-colors">Join LSSD</a>
-              <a href="/community" className="text-sm hover:text-accent transition-colors">Community Programs</a>
-              <a href="/contact" className="text-sm hover:text-accent transition-colors">Contact Us</a>
+              <a href="/about" className="text-sm hover:text-accent transition-colors">O nás</a>
+              <a href="/divisions" className="text-sm hover:text-accent transition-colors">Oddělení</a>
+              <a href="/recruitment" className="text-sm hover:text-accent transition-colors">Kariéra</a>
+              {/*
+              <a href="/community" className="text-sm hover:text-accent transition-colors">Komunitní programy</a>
+              <a href="/contact" className="text-sm hover:text-accent transition-colors">Kontakt</a>
+              */}
             </nav>
           </div>
 
-          {/* Contact Information */}
+          {/* Kontaktní informace */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold">Contact Information</h4>
+            <h4 className="text-lg font-semibold">Kontaktní informace</h4>
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
                 <div>
-                  <p className="text-sm font-medium">Emergency: 911</p>
-                  <p className="text-xs opacity-80">Available 24/7</p>
+                  <p className="text-sm font-medium">Tísňová linka: 911</p>
+                  <p className="text-xs opacity-80">K dispozici 24/7</p>
                 </div>
               </div>
+              {/*
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
                 <div>
-                  <p className="text-sm">Non-Emergency: (555) 123-4567</p>
-                  <p className="text-xs opacity-80">Mon-Fri 8AM-6PM</p>
+                  <p className="text-sm">Neurgentní: (555) 123-4567</p>
+                  <p className="text-xs opacity-80">Po–Pá 8:00–18:00</p>
                 </div>
               </div>
+              */}
               <div className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 mt-0.5" />
                 <div>
@@ -62,9 +65,10 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Social Media & Alerts */}
+          {/* Sociální sítě & upozornění */}
+          {/*
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold">Stay Connected</h4>
+            <h4 className="text-lg font-semibold">Sledujte nás</h4>
             <div className="flex space-x-3">
               <a href="#" className="p-2 bg-primary-foreground/10 rounded-md hover:bg-accent hover:text-accent-foreground transition-colors">
                 <Facebook className="h-4 w-4" />
@@ -79,28 +83,35 @@ const Footer = () => {
                 <Mail className="h-4 w-4" />
               </a>
             </div>
+
+            {/*
             <div className="text-sm space-y-2">
-              <p className="font-medium">Community Alerts</p>
+              <p className="font-medium">Komunitní upozornění</p>
               <p className="text-xs opacity-80">
-                Sign up for emergency notifications and community updates
+                Přihlaste se k odběru tísňových oznámení a novinek z komunity
               </p>
               <button className="text-accent hover:underline text-xs font-medium">
-                Subscribe Now →
+                Přihlásit odběr →
               </button>
             </div>
+
           </div>
+          */}
+          
         </div>
 
-        {/* Bottom Bar */}
+        {/* Spodní lišta */}
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm opacity-80">
-            © 2024 Los Santos Sheriff's Department. All rights reserved.
+            © 2025 Los Santos Sheriff's Department. Všechna práva vyhrazena.
           </p>
+          {/*
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-sm opacity-80 hover:text-accent transition-colors">Privacy Policy</a>
-            <a href="#" className="text-sm opacity-80 hover:text-accent transition-colors">Terms of Service</a>
-            <a href="#" className="text-sm opacity-80 hover:text-accent transition-colors">Accessibility</a>
+            <a href="#" className="text-sm opacity-80 hover:text-accent transition-colors">Zásady ochrany osobních údajů</a>
+            <a href="#" className="text-sm opacity-80 hover:text-accent transition-colors">Podmínky použití</a>
+            <a href="#" className="text-sm opacity-80 hover:text-accent transition-colors">Přístupnost</a>
           </div>
+          */}
         </div>
       </div>
     </footer>

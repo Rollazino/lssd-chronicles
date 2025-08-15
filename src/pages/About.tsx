@@ -3,62 +3,62 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Calendar, Award, Users, TrendingUp } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import lssdHQ from "@/assets/lssd-headquarters.jpg";
+import lssdHQ from "@/assets/sbor.png";
 
 const About = () => {
   const timeline = [
     {
       year: "1872",
-      title: "Department Founded",
-      description: "Los Santos Sheriff's Department established to serve the growing county population."
+      title: "Založení oddělení",
+      description: "Los Santos Sheriff's Department byl založen pro službu rostoucí populaci okresu."
     },
     {
       year: "1923",
-      title: "First Motor Patrol Unit",
-      description: "Introduction of motorized patrol vehicles revolutionizes law enforcement capabilities."
+      title: "První motorizovaná hlídka",
+      description: "Zavedení motorizovaných hlídkových vozidel revolucionalizovalo možnosti oddělení."
     },
     {
       year: "1965",
-      title: "Communications Center",
-      description: "State-of-the-art 911 emergency communication center opens, improving response times."
+      title: "Komunikační centrum",
+      description: "Otevření moderního centra tísňové komunikace 911 zlepšilo dobu reakce."
     },
     {
       year: "1987",
-      title: "SWAT Team Formation",
-      description: "Specialized tactical unit formed to handle high-risk situations and protect our community."
+      title: "Vznik týmu SWAT",
+      description: "Vznik specializované taktické jednotky pro řešení rizikových situací a ochranu komunity."
     },
     {
       year: "1998",
-      title: "K9 Unit Expansion",
-      description: "Canine unit expanded to include drug detection, tracking, and explosive detection capabilities."
+      title: "Rozšíření K9 jednotky",
+      description: "Kynologická jednotka rozšířena o detekci drog, sledování a vyhledávání výbušnin."
     },
     {
       year: "2010",
-      title: "Air Support Unit",
-      description: "Helicopter unit established to provide aerial support for patrol operations and emergency response."
+      title: "Letecká podpora",
+      description: "Vznik vrtulníkové jednotky pro podporu hlídek a tísňové reakce."
     },
     {
       year: "2020",
-      title: "Community Policing Initiative",
-      description: "Launch of comprehensive community outreach programs to strengthen police-community relations."
+      title: "Iniciativa komunitní policie",
+      description: "Zahájení komplexních programů pro posílení vztahů s veřejností."
     }
   ];
 
   const achievements = [
     {
       icon: Award,
-      title: "Accreditation Excellence",
-      description: "Maintaining state accreditation for over 15 consecutive years, demonstrating our commitment to professional standards."
+      title: "Excelentní akreditace",
+      description: "Udržení státní akreditace více než 15 let v řadě, což dokládá náš závazek k profesionalitě."
     },
     {
       icon: Users,
-      title: "Community Trust",
-      description: "Achieving a 92% community satisfaction rating through transparent and respectful policing practices."
+      title: "Důvěra komunity",
+      description: "92% spokojenost obyvatel díky transparentnímu a respektujícímu přístupu."
     },
     {
       icon: TrendingUp,
-      title: "Crime Reduction",
-      description: "35% reduction in major crimes over the past decade through proactive community policing strategies."
+      title: "Snížení kriminality",
+      description: "Snížení závažné kriminality o 35 % za poslední dekádu díky aktivní komunitní práci."
     }
   ];
 
@@ -73,13 +73,12 @@ const About = () => {
           style={{ backgroundImage: `url(${lssdHQ})` }}
         />
         <div className="relative container mx-auto px-4 text-center">
-          <Badge variant="outline" className="mb-6">Our Story</Badge>
+          <Badge variant="outline" className="mb-6">Náš příběh</Badge>
           <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6">
-            About the Los Santos Sheriff's Department
+            O Los Santos Sheriff's Department
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            For over 150 years, we have proudly served the citizens of Los Santos County with 
-            unwavering dedication, professionalism, and integrity.
+            Již více než 150 let hrdě sloužíme občanům okresu San Andreas s neochvějným nasazením, profesionalitou a integritou.
           </p>
         </div>
       </section>
@@ -91,39 +90,36 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-2xl text-primary">Our Mission</CardTitle>
+                  <CardTitle className="text-2xl text-primary">Naše mise</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground leading-relaxed">
-                    To protect and serve the people of Los Santos County with professionalism, 
-                    integrity, and respect while maintaining the highest standards of law enforcement. 
-                    We are committed to building partnerships with our community to enhance public 
-                    safety and improve quality of life for all residents.
+                    Chráníme a sloužíme obyvatelům okresu Los Santos s profesionalitou, integritou a respektem při zachování nejvyšších standardů policejní práce. Zavazujeme se budovat partnerství s komunitou pro zvýšení bezpečnosti a kvality života všech obyvatel.
                   </p>
                 </CardContent>
               </Card>
 
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-2xl text-primary">Our Values</CardTitle>
+                  <CardTitle className="text-2xl text-primary">Naše hodnoty</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">
                     <div>
-                      <h4 className="font-semibold text-primary mb-1">Integrity</h4>
-                      <p className="text-sm text-muted-foreground">Upholding the highest ethical standards in all our actions.</p>
+                      <h4 className="font-semibold text-primary mb-1">Integrita</h4>
+                      <p className="text-sm text-muted-foreground">Dodržujeme nejvyšší etické standardy ve všech našich činnostech.</p>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-primary mb-1">Respect</h4>
-                      <p className="text-sm text-muted-foreground">Treating every individual with dignity and fairness.</p>
+                      <h4 className="font-semibold text-primary mb-1">Respekt</h4>
+                      <p className="text-sm text-muted-foreground">Jednáme s každým jednotlivcem důstojně a spravedlivě.</p>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-primary mb-1">Accountability</h4>
-                      <p className="text-sm text-muted-foreground">Taking responsibility for our actions and decisions.</p>
+                      <h4 className="font-semibold text-primary mb-1">Odpovědnost</h4>
+                      <p className="text-sm text-muted-foreground">Neseme odpovědnost za naše činy a rozhodnutí.</p>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-primary mb-1">Excellence</h4>
-                      <p className="text-sm text-muted-foreground">Striving for the highest quality in everything we do.</p>
+                      <h4 className="font-semibold text-primary mb-1">Excelence</h4>
+                      <p className="text-sm text-muted-foreground">Usilujeme o nejvyšší kvalitu ve všem, co děláme.</p>
                     </div>
                   </div>
                 </CardContent>
@@ -137,13 +133,12 @@ const About = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <Badge variant="outline" className="mb-4">Our Heritage</Badge>
+            <Badge variant="outline" className="mb-4">Naše dědictví</Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Department History
+              Historie oddělení
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Key milestones that have shaped the Los Santos Sheriff's Department 
-              into the professional organization it is today.
+              Klíčové milníky, které formovaly Los Santos Sheriff's Department v profesionální organizaci, jakou je dnes.
             </p>
           </div>
 
@@ -176,13 +171,12 @@ const About = () => {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <Badge variant="outline" className="mb-4">Recognition</Badge>
+            <Badge variant="outline" className="mb-4">Ocenění</Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Our Achievements
+              Naše úspěchy
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              We take pride in our accomplishments and continuous efforts to 
-              serve our community with excellence.
+              Jsme hrdí na naše dosažené výsledky a neustálou snahu sloužit komunitě s excelencí.
             </p>
           </div>
 
@@ -207,36 +201,43 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <Badge variant="outline" className="mb-4">Leadership</Badge>
+              <Badge variant="outline" className="mb-4">Vedení</Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-                Notable Former Sheriffs
+                Významní bývalí šerifové
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Honoring the dedicated leaders who have shaped our department's legacy 
-                of service and excellence.
+                Ocenění pro oddané vůdce, kteří formovali tradici služby a excelence našeho oddělení.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <Card>
                 <CardContent className="pt-6">
-                  <h3 className="text-xl font-semibold text-primary mb-2">Sheriff John Martinez (1985-2010)</h3>
+                  <h3 className="text-xl font-semibold text-primary mb-2">Šerif Jack Hill (1985–2010)</h3>
                   <p className="text-muted-foreground mb-4">
-                    Led the department through significant modernization, including the implementation 
-                    of advanced technology and the establishment of specialized units.
+                    Vedl oddělení během významné modernizace, včetně zavedení pokročilých technologií a vzniku specializovaných jednotek.
                   </p>
-                  <Badge variant="outline">25 Years of Service</Badge>
+                  <Badge variant="outline">25 let služby</Badge>
                 </CardContent>
               </Card>
 
               <Card>
                 <CardContent className="pt-6">
-                  <h3 className="text-xl font-semibold text-primary mb-2">Sheriff Patricia Davis (2010-2020)</h3>
+                  <h3 className="text-xl font-semibold text-primary mb-2">Šerif Charlie McAvoy (2010–2020)</h3>
                   <p className="text-muted-foreground mb-4">
-                    Pioneered community policing initiatives and diversity programs that strengthened 
-                    relationships between the department and the community.
+                    Prosadil komunitní policejní iniciativy a programy diverzity, které posílily vztahy mezi oddělením a komunitou.
                   </p>
-                  <Badge variant="outline">10 Years of Service</Badge>
+                  <Badge variant="outline">10 let služby</Badge>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardContent className="pt-6">
+                  <h3 className="text-xl font-semibold text-primary mb-2">Šerif Danny Miller (2020–2024)</h3>
+                  <p className="text-muted-foreground mb-4">
+                    Pokračoval v odkazu svých předchůdců a zároveň zlepšil přístup k řešení náročných situací, čímž posílil efektivitu a důvěru v práci LSSD.
+                  </p>
+                  <Badge variant="outline">10 let služby, 4 roky ve funkci</Badge>
                 </CardContent>
               </Card>
             </div>
