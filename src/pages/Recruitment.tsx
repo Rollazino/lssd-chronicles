@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import recruitmentBg from "@/assets/uvod.png"; // uprav cestu dle skutečného umístění
 
 const Recruitment = () => {
   const benefits = [
@@ -88,22 +89,30 @@ const Recruitment = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="py-24 bg-gradient-to-br from-primary/10 to-accent/10">
-        <div className="container mx-auto px-4 text-center">
-          <Badge variant="outline" className="mb-6">Přidejte se k nám</Badge>
-          <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6">
+      <section
+        className="py-24 bg-gradient-to-br from-primary/10 to-accent/10 relative"
+        style={{
+          backgroundImage: `url(${recruitmentBg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-primary/70"></div>
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <Badge variant="outline" className="mb-6 text-primary-foreground">Přidejte se k nám</Badge>
+          <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6">
             Začněte kariéru u šerifů
           </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-primary-foreground max-w-3xl mx-auto leading-relaxed">
             Připojte se k Los Santos Sheriff's Department a mějte pozitivní vliv na svou komunitu. 
             Hledáme odhodlané jedince připravené chránit a sloužit.
           </p>
           <div className="mt-8">
             <a href="https://forms.gle/QjbCLukX6KjjKRcv5" target="_blank" rel="noopener noreferrer">
-            <Button size="lg" className="text-lg px-8">
-              <Shield className="mr-2 h-5 w-5" />
-              Přihlásit se
-            </Button>
+              <Button size="lg" className="text-lg px-8">
+                <Shield className="mr-2 h-5 w-5" />
+                Přidejte se k nám
+              </Button>
             </a>
           </div>
         </div>
