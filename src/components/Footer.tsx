@@ -58,8 +58,15 @@ const Footer = () => {
               <div className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 mt-0.5" />
                 <div>
-                  <p className="text-sm">1200 Davis Avenue</p>
-                  <p className="text-sm">Los Santos, SA 90210</p>
+                  <p className="text-sm">Alhambra Drive</p>
+                  <p className="text-sm">Sandy Shores, SA 3004</p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-2">
+                <MapPin className="h-4 w-4 mt-0.5" />
+                <div>
+                  <p className="text-sm">Innocence Boulevard</p>
+                  <p className="text-sm">Los Santos, SA 9148</p>
                 </div>
               </div>
             </div>

@@ -11,15 +11,16 @@ const Command = () => {
       title: "Sheriff",
       experience: "30 let",
       image: "/images/Jayden Sinns.png",
-      description: "Vede oddělení s integritou a vizí, šerif Sinns zasvětil svou kariéru komunitně orientované policii a veřejné bezpečnosti.",
-      achievements: ["Absolvent státní policejní akademie s vyznamenáním", "Cena za vedení komunity 2024", "Medaile za excelenci v policejní službě"]
+      description: "Jako administrativní lídr s velkými vizemi a smyslem pro dlouhodobé plánování se šerif Sinns zaměřuje na budování přátelského a otevřeného prostředí podporujícího spolupráci a vzájemnou důvěru. Začínal jako zkušený zástupce šerifa a FTO (školící důstojník v terénu), pod jehož vedením prošla řada nováčků – z nichž někteří dnes patří mezi nejlepší. Díky svým schopnostem se stal uznávaným seržantem, který si vytrvale šel za svým snem postoupit do vyššího vedení. To se mu podařilo – nejprve na pozici poručíka, následně Commander pro administrativní činnost, a nakonec byl zvolen šerifem. Jeho cílem je neustále zlepšovat služby a vztahy s komunitou, přičemž se zaměřuje na transparentnost, otevřenou komunikaci a inovace v oblasti bezpečnosti.",
+      achievements: ["Absolvent státní policejní akademie s vyznamenáním", "Policejní medaile za záchranu života", "Pochvala za vynikající vedení a přínos k rozvoji oddělení"]
     },
     {
       name: "Peter Wellington",
       title: "Undersheriff",
       experience: "32 let",
-      description: "Dozoruje každodenní provoz a strategické plánování. Odbornice na krizové řízení a meziorganizační koordinaci.",
-      achievements: ["Certifikace krizového řízení", "Cena za excelenci ve vedení", "Medaile za inovace ve veřejné bezpečnosti"]
+      image: "/images/Wellington.png",
+      description: "Skvělý přítel a spolehlivý kolega, který se vypracoval z oblasti multimédií a fotografování do role odborníka na administrativu a komunikaci. Díky svému citu pro detail a schopnosti navazovat kontakty přirozeně přešel k práci tiskového mluvčího, kde spojuje profesionální prezentaci s lidským a přátelským přístupem.",
+      achievements: ["Komunitní policejní medaile", "Pochvala za vynikající komunikaci a vztahy s veřejností"]
     },
     {
       name: "Anthony Woods",
@@ -27,14 +28,15 @@ const Command = () => {
       experience: "25 let",
       image: "/images/Woods.png",
       description: "Anthony Woods nastoupil do prvního turnusu akademie Los Santos Police Department, kde se postupně vypracoval z řadového policisty na hodnost Sergeanta, kde vedl tým policistů a zaměřoval se na posilování vztahů mezi složkami i komunitou. Postupně se stal Sergeantem druhé třídy a byl povýšen i na poručíka. Na této hodnosti strávil největší část kariéry u LSPD. Soustředil se na interní záležitosti, rozvoj oddělení a zlepšování služeb veřejnosti. V červenci roku 2025 po přestupu k Los Santos County Sheriff’s Department byl jmenován kapitánem. Za své zásluhy, profesionální vedení a přínos společnosti obdržel Medaili za vynikající službu a byl povýšen do hodnosti Division Chiefa, kde dnes dohlíží na chod divizí, podporuje komunitní projekty a zajišťuje, aby department plnil nejvyšší standardy bezpečnosti a služeb veřejnosti.",
-      achievements: ["Absolvent úplně prvního turnusu policejní akademie", "Čestná uznání za přinos komunitě a vední týmu", "Medaile za vynikající službu a povýšení do hodnosti Division Chiefa"]
+      achievements: ["Absolvent úplně prvního turnusu policejní akademie", "Čestná uznání za přínos komunitě a vedení týmu", "Medaile za vynikající službu a povýšení do hodnosti Division Chiefa"]
     },
     {
       name: "Daniel Miller",
       title: "Captain",
       experience: "22 let",
-      description: "Vede kriminální oddělení a specializované vyšetřovací jednotky s odborností na závažné trestné činy a forenzní analýzu.",
-      achievements: ["Detektiv roku 2019", "Excelence v kriminálním vyšetřování", "Certifikace pokročilé forenzní analýzy"]
+      image: "/images/Miller.png",
+      description: "Vede své oddělení s odhodláním a profesionalitou, přičemž klade důraz na bezpečnost komunity a rozvoj týmové spolupráce. Jeho přístup kombinuje strategické plánování s lidským vztahem k občanům i kolegům. Zároveň se pečlivě a systematicky stará o FTO program, v rámci kterého podporuje a školí nové absolventy po akademii, aby z nich vyrostli schopní a sebevědomí profesionálové.",
+      achievements: ["Ocenění za přínos v rozvoji FTO programu", "Certifikace v oblasti moderních metod výcviku a veden"]
     },
     {
       name: "Raffael Jeter",
@@ -47,23 +49,26 @@ const Command = () => {
     {
       name: "Sean Fell",
       title: "Lieutenant",
-      experience: "18 let",
-      description: "Vyvíjí a realizuje programy pro komunitu a iniciativy pro zapojení veřejnosti.",
-      achievements: ["Cena za partnerství s komunitou", "Excelence ve veřejných vztazích", "Vedení v oblasti diverzity a inkluze"]
+      experience: "15 let",
+      image: "/images/Fell.png",
+      description: "Zodpovědný, klidný pod tlakem, vede s respektem, věří v tým, disciplínu, spravedlnost a rychlá rozhodnutí.",
+      achievements: ["Významný Instruktor HSIU Divize"]
     },
     {
       name: "Jacob Cage",
       title: "Lieutenant",
-      experience: "18 let",
-      description: "Vyvíjí a realizuje programy pro komunitu a iniciativy pro zapojení veřejnosti.",
-      achievements: ["Cena za partnerství s komunitou", "Excelence ve veřejných vztazích", "Vedení v oblasti diverzity a inkluze"]
+      experience: "32 let",
+      image: "/images/Cage.png",
+      description: "Spolupráce s detektivním oddělením vedoucí k rozbití celé nelegální organizace. Dopadení pachatele plánujícího únos policejního kolegy. Dlouhodobá služba s prokazatelnými výsledky v ochraně veřejné bezpečnosti",
+      achievements: ["Pochvaly od občanů za profesionální a lidský přístup k veřejnosti", "Pochvaly od kolegů z řad policie za týmovou spolupráci a odhodlání při zásazích","Policejní medaile za vynikající službu"]
     },
     {
       name: "Jake Sinns",
       title: "Lieutenant",
-      experience: "18 let",
-      description: "Vyvíjí a realizuje programy pro komunitu a iniciativy pro zapojení veřejnosti.",
-      achievements: ["Cena za partnerství s komunitou", "Excelence ve veřejných vztazích", "Vedení v oblasti diverzity a inkluze"]
+      experience: "10 let",
+      image: "/images/Jake Sinns.png",
+      description: "Celý svůj život zasvětil práci u šerifů a snaží sa byť nápomocný ostatním kolegům i občanům.",
+      achievements: ["Medaile za vynikající službu"]
     }
   ];
 

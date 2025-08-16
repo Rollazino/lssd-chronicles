@@ -36,11 +36,6 @@ const About = () => {
       year: "2010",
       title: "Letecká podpora",
       description: "Vznik vrtulníkové jednotky pro podporu hlídek a tísňové reakce."
-    },
-    {
-      year: "2020",
-      title: "Iniciativa komunitní policie",
-      description: "Zahájení komplexních programů pro posílení vztahů s veřejností."
     }
   ];
 
