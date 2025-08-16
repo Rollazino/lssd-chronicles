@@ -209,17 +209,17 @@ const Media = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
-                    <p className="font-semibold">Šerif Jayden Sinns</p>
+                    <p className="font-semibold">Sheriff - Jayden Sinns</p>
                     <p className="text-sm text-muted-foreground">Tiskový mluvčí</p>
                   </div>
                   <div className="space-y-2 text-sm">
-                    <p><strong>Telefon:</strong> (555) 123-4567 kl. 2100</p>
+                    {/*<p><strong>Telefon:</strong> (555) 123-4567 kl. 2100</p>*/}
                     <p><strong>Email:</strong> media@lssd.gov</p>
                     <p className="text-sm text-muted-foreground">DC: freezik</p>
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">
-                      <strong>Hodiny:</strong> Pondělí – Pátek, 8:00 – 17:00
+                      <strong>Hodiny:</strong> Pondělí – Pátek, 16:00 – 20:00
                     </p>
                   </div>
                 </CardContent>

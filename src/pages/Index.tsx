@@ -344,7 +344,7 @@ const Index = () => {
                   </p>
                   <p>
                     Náš vozový park zahrnuje hlídková auta, motocykly, vrtulníky a
-                    specializovaná vozidla pro jednotky SWAT, K9 a dopravní dohled.
+                    specializovaná vozidla pro jednotky SWAT, K9, dopravní dohled a mnoho dalšího.
                   </p>
                 </div>
 
