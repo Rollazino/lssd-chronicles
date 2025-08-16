@@ -35,7 +35,7 @@ const Command = () => {
       title: "Captain",
       experience: "22 let",
       image: "/images/Miller.png",
-      description: "Vede své oddělení s odhodláním a profesionalitou, přičemž klade důraz na bezpečnost komunity a rozvoj týmové spolupráce. Jeho přístup kombinuje strategické plánování s lidským vztahem k občanům i kolegům. Zároveň se pečlivě a systematicky stará o FTO program, v rámci kterého podporuje a školí nové absolventy po akademii, aby z nich vyrostli schopní a sebevědomí profesionálové.",
+      description: "Vede své oddělení s odhodláním a profesionalitou, přičemž klade důraz na bezpečnost komunity a rozvoj týmové spolupráce. Jeho přístup kombinuje strategické plánování s lidským vztahem k občanům i kolegům. Výrazně přispěl k rozvoji FTO programu, čímž podpořil vzdělávání a profesní růst nových členů týmu.",
       achievements: ["Ocenění za přínos v rozvoji FTO programu", "Certifikace v oblasti moderních metod výcviku a veden"]
     },
     {
