@@ -1,4 +1,5 @@
 import { Facebook, Twitter, Youtube, Mail, Phone, MapPin } from "lucide-react";
+import { NavLink } from "react-router-dom";
 import lssdBadge from "@/assets/lssd-logo.png";
 
 const Footer = () => {
@@ -25,12 +26,12 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Rychlé odkazy</h4>
             <nav className="flex flex-col space-y-2">
-              <a href="/about" className="text-sm hover:text-accent transition-colors">O nás</a>
-              <a href="/divisions" className="text-sm hover:text-accent transition-colors">Oddělení</a>
-              <a href="/recruitment" className="text-sm hover:text-accent transition-colors">Kariéra</a>
+              <NavLink to="/about" className="text-sm hover:text-accent transition-colors">O nás</NavLink>
+              <NavLink to="/divisions" className="text-sm hover:text-accent transition-colors">Oddělení</NavLink>
+              <NavLink to="/recruitment" className="text-sm hover:text-accent transition-colors">Kariéra</NavLink>
               {/*
-              <a href="/community" className="text-sm hover:text-accent transition-colors">Komunitní programy</a>
-              <a href="/contact" className="text-sm hover:text-accent transition-colors">Kontakt</a>
+              <NavLink to="/community" className="text-sm hover:text-accent transition-colors">Komunitní programy</NavLink>
+              <NavLink to="/contact" className="text-sm hover:text-accent transition-colors">Kontakt</NavLink>
               */}
             </nav>
           </div>
