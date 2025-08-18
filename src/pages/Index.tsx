@@ -15,6 +15,14 @@ import patrolFleet from "@/assets/auata.png";
 const Index = () => {
   const announcements = [
     {
+      date: "2025-08-18",
+      title: "Zvýšení bezpečnostních opatření v Los Santos",
+      description: "Z důvodu extrémně zvýšené kriminality v oblasti.",
+      content: "Vzhledem k aktuální bezpečnostní situaci přechází Los Santos Sheriff's Department do stavu nejvyššího stupně ohrožení. Tento krok byl přijat v reakci na bezprostřední a vážné riziko ohrožení bezpečnosti občanů a majetku. Veškeré kroky a opatření jsou zaměřeny na maximální ochranu veřejnosti a zajištění pořádku v ulicích. Žádáme obyvatele, aby dbali pokynů šerifů a zachovali klid",
+      author: "Undersheriff - Peter Wellington",
+      priority: "high"
+    },
+    {
       date: "2025-08-15",
       title: "Zvýšení bezpečnostních opatření v Los Santos",
       description: "Z důvodu zvýšené kriminality v oblasti.",
