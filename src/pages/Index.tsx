@@ -14,6 +14,14 @@ import patrolFleet from "@/assets/auata.png";
 
 const Index = () => {
   const announcements = [
+      {
+      date: "2025-08-19",
+      title: "Tisková zpráva k anonymním výhrůžkám",
+      description: "Los Santos Sheriff's Department vydává oficiální tiskovou zprávu k anonymním výhrůžkám.",
+      content: "Los Santos Sheriff's Department vydává oficiální tiskovou zprávu k anonymním výhrůžkám, které se v posledních dnech objevily na internetu a které cílí na naše příslušníky. Ve zprávě se jasně vymezujeme proti zastrašování ozbrojených složek a informujeme o krocích, které podnikáme. Více informací najdete v poslední tiskové zprávě",
+      author: "Sheriff - Jayden Sinns",
+      priority: "medium"
+    },
     {
       date: "2025-08-18",
       title: "Zvýšení bezpečnostních opatření v Los Santos",

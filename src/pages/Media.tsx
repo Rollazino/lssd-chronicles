@@ -16,8 +16,16 @@ import Footer from "@/components/Footer";
 
 const Media = () => {
   const pressReleases = [
+      {
+      date: "2025-08-19",
+      title: "Oficiální vyjádření LSSD k anonymnímu příspěvku",
+      excerpt: "Oficiální vyjádření Los Santos Sheriff's Department k anonymnímu příspěvku",
+      category: "Oficiální vyjádření",
+      content: "Ozbrojené složky San Andreas a hlavně LSSD vnímají obsah anonymního příspěvku, který se šíří na internetu, jako mimořádně závažnou a nepřijatelnou formu vyhrožování našim příslušníkům. Takovéto texty nejsou projevem svobody slova, ale pokusem šířit strach, zastrašovat šerify, policisty a ohrožovat jejich rodiny. Každý útok na bezpečnostní složky je zároveň útokem na bezpečnost občanů a na fungování státu jako celku. Chceme jasně sdělit: Nenecháme se zastrašit a nikdy neustoupíme před anonymními výhrůžkami. Naši příslušníci denně riskují své životy, aby chránili společnost před kriminalitou a nebezpečím. Tento závazek zůstává pevný a neměnný. Vyšetřovací orgány již podnikají potřebné kroky k identifikaci původce tohoto příspěvku. Každý, kdo se bude pokoušet ohrožovat ozbrojené složky nebo jejich členy, musí počítat s tím, že bude brán k odpovědnosti v plném rozsahu zákona. Zároveň děkujeme veřejnosti za podporu a důvěru. Jsme si vědomi, že drtivá většina občanů stojí na straně zákona, pořádku a bezpečnosti. Bezpečnost a důvěra jsou základními pilíři společnosti. A tyto pilíře budeme bránit vždy a za všech okolností.",
+      author: "Sheriff - Jayden Sinns"
+    },
     {
-      date: "2024-08-03",
+      date: "2025-08-03",
       title: "Vyjádření LSSD ke změně ve vedení San Andreas Highway Patrol",
       excerpt: "LSSD vítá nové vedení SAHP a očekává zlepšení spolupráce.",
       category: "Změny v jednotkách",
