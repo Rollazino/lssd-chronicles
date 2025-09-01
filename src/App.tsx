@@ -12,6 +12,7 @@ import Community from "./pages/Community";
 import Media from "./pages/Media";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import EndOfWatch from "./pages/EndOfWatch";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/community" element={<Community />} />
           <Route path="/media" element={<Media />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/endofwatch" element={<EndOfWatch />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

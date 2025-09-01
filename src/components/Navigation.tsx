@@ -15,6 +15,7 @@ const Navigation = () => {
     { to: "/divisions", label: "Oddělení" },
     { to: "/media", label: "Média" },
     { to: "/recruitment", label: "Kariéra" },
+    { to: "/endofwatch", label: "End of Watch" },
     // { to: "/community", label: "Komunita" },
     // { to: "/contact", label: "Kontakt" },
   ];
