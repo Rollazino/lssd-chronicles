@@ -25,6 +25,15 @@ const Command = () => {
       status: "alive"
     },
     {
+      name: "Daniel Miller",
+      title: "Assistant Sheriff",
+      experience: "22 let",
+      image: "/images/Miller.png",
+      description: "Vede své oddělení s odhodláním a profesionalitou, přičemž klade důraz na bezpečnost komunity a rozvoj týmové spolupráce. Jeho přístup kombinuje strategické plánování s lidským vztahem k občanům i kolegům. Výrazně přispěl k rozvoji FTO programu, čímž podpořil vzdělávání a profesní růst nových členů týmu.",
+      achievements: ["Ocenění za přínos v rozvoji FTO programu", "Certifikace v oblasti moderních metod výcviku a veden"],
+      status: "alive"
+    },
+    {
       name: "Anthony Woods",
       title: "Division Chief",
       experience: "25 let",
@@ -34,17 +43,8 @@ const Command = () => {
       status: "alive"
     },
     {
-      name: "Daniel Miller",
-      title: "Captain",
-      experience: "22 let",
-      image: "/images/Miller.png",
-      description: "Vede své oddělení s odhodláním a profesionalitou, přičemž klade důraz na bezpečnost komunity a rozvoj týmové spolupráce. Jeho přístup kombinuje strategické plánování s lidským vztahem k občanům i kolegům. Výrazně přispěl k rozvoji FTO programu, čímž podpořil vzdělávání a profesní růst nových členů týmu.",
-      achievements: ["Ocenění za přínos v rozvoji FTO programu", "Certifikace v oblasti moderních metod výcviku a veden"],
-      status: "alive"
-    },
-    {
       name: "Raffael Jeter",
-      title: "Captain",
+      title: "Commander",
       experience: "20 let, 15 let v detektivních týmech",
       image: "/images/Jeter.png",
       description: "Aktuálně společně s celým vedením vede sbor LSSD k lepším zítřkům a svými schopnostmi přispívá k disciplíně sboru.",
@@ -53,7 +53,7 @@ const Command = () => {
     },
     {
       name: "Sean Fell",
-      title: "Lieutenant",
+      title: "Captain",
       experience: "15 let",
       image: "/images/Fell.png",
       description: "Zodpovědný, klidný pod tlakem, vede s respektem, věří v tým, disciplínu, spravedlnost a rychlá rozhodnutí.",
@@ -62,7 +62,7 @@ const Command = () => {
     },
     {
       name: "Jacob Cage",
-      title: "Lieutenant",
+      title: "Captain",
       experience: "32 let",
       image: "/images/Cage.png",
       description: "Spolupráce s detektivním oddělením vedoucí k rozbití celé nelegální organizace. Dopadení pachatele plánujícího únos policejního kolegy. Dlouhodobá služba s prokazatelnými výsledky v ochraně veřejné bezpečnosti",

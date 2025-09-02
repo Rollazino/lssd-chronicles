@@ -14,6 +14,14 @@ import patrolFleet from "@/assets/auata.png";
 
 const Index = () => {
   const announcements = [
+    {
+      date: "2025-09-01",
+      title: "Znovuotevření stanice LSSD - Davis",
+      description: "Stanice LSSD v Davis je opět otevřena po kompletní rekonstrukci.",
+      content: "S radostí oznamujeme, že stanice Sheriff’s Department v Davis, která byla vážně poškozena požárem, prošla kompletní rekonstrukcí a od 1. září 2025 je znovu plně otevřena veřejnosti. Děkujeme občanům za trpělivost a podporu během období uzavření. Těšíme se na pokračování spolupráce při zajišťování bezpečnosti a pořádku v naší komunitě.",
+      author: "Sheriff - Jayden Sinns",
+      priority: "medium"
+    },
       {
       date: "2025-08-19",
       title: "Tisková zpráva k anonymním výhrůžkám",

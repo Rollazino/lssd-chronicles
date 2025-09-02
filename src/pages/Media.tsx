@@ -17,6 +17,14 @@ import Footer from "@/components/Footer";
 const Media = () => {
   const pressReleases = [
       {
+      date: "2025-08-28",
+      title: "Smutná zpráva: Zemřel Lieutenant Jake Sinns",
+      excerpt: "S hlubokým zármutkem oznamujeme úmrtí dlouholetého člena LSSD, Lieutenant Jake Sinnse.",
+      category: "Smuteční oznámení",
+      content: "S hlubokým zármutkem oznamujeme, že nás navždy opustil Lieutenant Jake Sinns, dlouholetý a respektovaný člen Los Santos Sheriff’s Department. Lieutenant Sinns zasvětil svůj profesní život službě veřejnosti, chránil občany našeho města a svým kolegům byl vzorem statečnosti, profesionality a oddanosti službě. Jeho odchod je nenahraditelnou ztrátou nejen pro naše oddělení, ale i pro celou komunitu, kterou s nasazením chránil. Jake Sinns byl také bratrancem současného šerifa Jaydena Sinnse. Celé vedení LSSD v této těžké chvíli stojí při jeho rodině a vyjadřuje upřímnou soustrast všem blízkým. Čest jeho památce.",
+      author: "Undersheriff - Peter Wellington"
+    },
+      {
       date: "2025-08-19",
       title: "Oficiální vyjádření LSSD k anonymnímu příspěvku",
       excerpt: "Oficiální vyjádření Los Santos Sheriff's Department k anonymnímu příspěvku",
