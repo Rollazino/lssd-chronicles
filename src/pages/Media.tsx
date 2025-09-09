@@ -16,6 +16,14 @@ import Footer from "@/components/Footer";
 
 const Media = () => {
   const pressReleases = [
+    {
+      date: "2025-09-09",
+      title: "LSSD zavádí možnost hlídkování na kole – bezpečnost i zdraví ruku v ruce",
+      excerpt: "Los Santos Sheriff’s Department rozšiřuje své možnosti výkonu služby a nabízí členům jednotky příležitost hlídkovat také na jízdních kolech.",
+      category: "Novinky z oddělení",
+      content: "Los Santos Sheriff’s Department rozšiřuje své možnosti výkonu služby a nabízí členům příležitost hlídkovat také na jízdních kolech. Tento způsob patrolování přináší nejen efektivnější pohyb v hustě osídlených částech města a parcích, ale zároveň podporuje fyzickou kondici samotných příslušníků. Cyklohlídky umožňují šerifům rychle reagovat tam, kde by se vozidla obtížně dostávala – pěší zóny, úzké ulice nebo veřejné prostranství plná lidí. Zároveň jde o přístup, který přibližuje šerify komunitě a posiluje osobní kontakt s občany. Nejde však jen o výkon služby – LSSD tímto krokem podporuje také zdravý životní styl svých členů. Pohyb na kole prospívá kondici, psychické pohodě a celkové odolnosti, což se odráží i v kvalitě každodenní práce. Los Santos tak získává nejen bezpečnější ulice, ale i šerify, kteří dělají něco pro své zdraví a zároveň pro svou komunitu.",
+      author: "Sheriff - Jayden Sinns"
+    },
       {
       date: "2025-08-28",
       title: "Smutná zpráva: Zemřel Lieutenant Jake Sinns",
