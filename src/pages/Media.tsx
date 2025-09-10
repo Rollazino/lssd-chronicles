@@ -13,6 +13,32 @@ import {
 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+// Utility funkce pro ikony a barvy typů assetů
+function getIcon(type: string) {
+  switch (type) {
+    case "image":
+      return Image;
+    case "video":
+      return Video;
+    case "document":
+      return FileText;
+    default:
+      return FileText;
+  }
+}
+
+function getTypeColor(type: string) {
+  switch (type) {
+    case "image":
+      return "bg-blue-100 text-blue-600";
+    case "video":
+      return "bg-purple-100 text-purple-600";
+    case "document":
+      return "bg-green-100 text-green-600";
+    default:
+      return "bg-gray-100 text-gray-600";
+  }
+}
 
 const Media = () => {
   const pressReleases = [
@@ -83,6 +109,52 @@ const Media = () => {
       ],
       author: "Undersheriff - Peter Wellington"
     }
+  ];
+
+      {/*
+      type: "document",
+      title: "Informační list oddělení",
+      description: "Klíčové statistiky, kontakty a přehled oddělení.",
+      formats: ["PDF", "DOC"],
+      size: "850 KB"
+    */}
+      {/*
+      type: "document",
+      title: "Výroční zpráva o kriminalitě",
+      description: "Komplexní data a analýzy kriminality za uplynulý rok.",
+      formats: ["PDF"],
+      size: "3,4 MB"
+    */}
+      {/*
+      type: "video",
+      title: "Prezentační video oddělení",
+      description: "5minutové video představující činnost LSSD a zapojení komunity.",
+      formats: ["MP4", "MOV"],
+      size: "45,2 MB"
+    */}
+
+  const mediaAssets = [
+    {
+      type: "image",
+      title: "LSSD logo ve vysokém rozlišení",
+      description: "Oficiální logo oddělení pro mediální využití.",
+      formats: ["PNG"],
+      size: "1,3 MB"
+    },
+    {
+      type: "image",
+      title: "Oficiální portrét šerifa Sinnse",
+      description: "Profesionální fotografie šerifa Jaydena Sinnse pro mediální účely.",
+      formats: ["PNG"],
+      size: "1,8 MB"
+    },
+    {
+      type: "image",
+      title: "Fotografie vozového parku",
+      description: "Sada fotografií služebních vozidel ve vysokém rozlišení.",
+      formats: ["PNG"],
+      size: "12,5 MB"
+    },
   ];
 
   const [showAll, setShowAll] = useState(false);
@@ -211,6 +283,81 @@ const Media = () => {
         </div>
       </section>
 
+      {/* Media Assets */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <Badge variant="outline" className="mb-4">Ke stažení</Badge>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              Mediální materiály
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Fotografie, videa a dokumenty ve vysoké kvalitě ke stažení pro média i veřejnost.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {mediaAssets.map((asset, index) => {
+              const Icon = getIcon(asset.type);
+              const highlightId = asset.title === "Fotografie vozového parku" ? "media-vozovy-park" : undefined;
+              let downloadUrl = "";
+              let downloadName = "";
+              if (asset.title === "Fotografie vozového parku") {
+                downloadUrl = "/images/media/2025-05-11/image.png";
+                downloadName = "fotografie-vozoveho-parku.png";
+              } else if (asset.title === "LSSD logo ve vysokém rozlišení") {
+                downloadUrl = "/images/lssd-logo.png";
+                downloadName = "lssd-logo";
+              } else if (asset.title === "Oficiální portrét šerifa Sinnse") {
+                downloadUrl = "/images/sheriff-portrait.jpg";
+                downloadName = "sherif-sinns.png";
+              }
+              return (
+                <Card key={index} className="hover:shadow-lg transition-shadow" id={highlightId}>
+                  <CardHeader>
+                    <div className="flex items-center space-x-3 mb-4">
+                      <div className={`p-2 rounded-lg ${getTypeColor(asset.type)}`}>
+                        <Icon className="h-6 w-6" />
+                      </div>
+                      <Badge variant="outline" className="capitalize">
+                        {asset.type === "image" ? "obrázek" : asset.type === "video" ? "video" : "dokument"}
+                      </Badge>
+                    </div>
+                    <CardTitle className="text-lg">{asset.title}</CardTitle>
+                    <CardDescription>{asset.description}</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-4">
+                      <div className="flex items-center justify-between text-sm">
+                        <span className="text-muted-foreground">Formáty:</span>
+                        <span className="font-medium">{asset.formats.join(", ")}</span>
+                      </div>
+                      <div className="flex items-center justify-between text-sm">
+                        <span className="text-muted-foreground">Velikost:</span>
+                        <span className="font-medium">{asset.size}</span>
+                      </div>
+                      {downloadUrl ? (
+                        <a href={downloadUrl} download={downloadName} className="block">
+                          <Button className="w-full">
+                            <Download className="mr-2 h-4 w-4" />
+                            Stáhnout
+                          </Button>
+                        </a>
+                      ) : (
+                        <Button className="w-full" disabled>
+                          <Download className="mr-2 h-4 w-4" />
+                          Stáhnout
+                        </Button>
+                      )}
+                    </div>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* Media Contact */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
@@ -252,7 +399,6 @@ const Media = () => {
           </div>
         </div>
       </section>
-
       <Footer />
     </div>
   );

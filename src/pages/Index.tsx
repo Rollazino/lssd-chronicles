@@ -3,6 +3,29 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { NavLink } from "react-router-dom";
+import { useCallback } from "react";
+function ScrollToTopNavLink(props: any) {
+  const handleClick = useCallback((e: any) => {
+    if (props.onClick) props.onClick(e);
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }, [props]);
+  return <NavLink {...props} onClick={handleClick} />;
+}
+
+function ScrollToMediaSectionNavLink(props: any) {
+  const handleClick = useCallback((e: any) => {
+    if (props.onClick) props.onClick(e);
+    setTimeout(() => {
+      const el = document.getElementById("media-vozovy-park");
+      if (el) {
+        el.classList.add("ring-4", "ring-primary");
+        el.scrollIntoView({ behavior: "auto" });
+        setTimeout(() => el.classList.remove("ring-4", "ring-primary"), 2000);
+      }
+    }, 100);
+  }, [props]);
+  return <NavLink {...props} onClick={handleClick} />;
+}
 import { Shield, Users, Car, Phone, AlertTriangle, FileText, Calendar, Award, ChevronRight, Building, Eye } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -299,12 +322,12 @@ const Index = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <NavLink to="/recruitment">
+                <ScrollToTopNavLink to="/recruitment">
                   <Button className="w-full">
                     Více informací
                     <ChevronRight className="ml-2 h-4 w-4" />
                   </Button>
-                </NavLink>
+                </ScrollToTopNavLink>
               </CardContent>
             </Card>
 
@@ -323,7 +346,7 @@ const Index = () => {
                     Zapojte se
                     <ChevronRight className="ml-2 h-4 w-4" />
                   </Button>
-                </NavLink>
+                </ScrollToTopNavLink>
               </CardContent>
             </Card>
             */}
@@ -337,12 +360,12 @@ const Index = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <NavLink to="/divisions">
+                <ScrollToTopNavLink to="/divisions">
                   <Button className="w-full">
                     Prozkoumat oddělení
                     <ChevronRight className="ml-2 h-4 w-4" />
                   </Button>
-                </NavLink>
+                </ScrollToTopNavLink>
               </CardContent>
             </Card>
           </div>
@@ -372,20 +395,20 @@ const Index = () => {
                   </p>
                 </div>
 
-                {/*
                 <div className="flex space-x-4">
+                  {/*
                   <Button variant="outline">
                     <FileText className="mr-2 h-4 w-4" />
                     Specifikace vozového parku
                   </Button>
-                  <NavLink to="/media">
+                  */}
+                  <ScrollToMediaSectionNavLink to="/media">
                     <Button>
                       Zobrazit galerii
                       <ChevronRight className="ml-2 h-4 w-4" />
                     </Button>
-                  </NavLink>
+                  </ScrollToMediaSectionNavLink>
                 </div>
-                */}
 
               </div>
               <div>

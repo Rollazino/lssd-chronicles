@@ -1,5 +1,14 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { useCallback } from "react";
+
+function ScrollToTopNavLink(props: any) {
+  const handleClick = useCallback((e: any) => {
+    if (props.onClick) props.onClick(e);
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }, [props]);
+  return <NavLink {...props} onClick={handleClick} />;
+}
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Phone, AlertTriangle } from "lucide-react";
@@ -23,10 +32,10 @@ const Navigation = () => {
   const NavContent = () => (
     <>
       {navItems.map((item) => (
-        <NavLink
+        <ScrollToTopNavLink
           key={item.to}
           to={item.to}
-          className={({ isActive }) =>
+          className={({ isActive }: any) =>
             `px-4 py-2 rounded-md transition-colors font-medium ${
               isActive
                 ? "bg-primary text-primary-foreground"
@@ -36,7 +45,7 @@ const Navigation = () => {
           onClick={() => setIsOpen(false)}
         >
           {item.label}
-        </NavLink>
+        </ScrollToTopNavLink>
       ))}
     </>
   );
@@ -46,7 +55,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Logo and Title */}
-          <NavLink to="/" className="flex items-center space-x-3">
+          <ScrollToTopNavLink to="/" className="flex items-center space-x-3">
             <img src={lssdBadge} alt="LSSD Badge" className="h-10 w-10 badge-glow" />
             <div className="flex flex-col">
               <span className="text-lg font-bold text-primary">LSSD</span>
@@ -54,7 +63,7 @@ const Navigation = () => {
                 Los Santos Sheriff's Department
               </span>
             </div>
-          </NavLink>
+          </ScrollToTopNavLink>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-2">
