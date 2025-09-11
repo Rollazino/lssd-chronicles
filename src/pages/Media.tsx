@@ -143,17 +143,17 @@ const Media = () => {
     },
     {
       type: "image",
-      title: "Oficiální portrét šerifa Sinnse",
+      title: "Oficiální portréty šerifa Sinnse",
       description: "Profesionální fotografie šerifa Jaydena Sinnse pro mediální účely.",
       formats: ["PNG"],
-      size: "1,8 MB"
+      size: "1,67 MB"
     },
     {
       type: "image",
       title: "Fotografie vozového parku",
       description: "Sada fotografií služebních vozidel ve vysokém rozlišení.",
-      formats: ["PNG"],
-      size: "12,5 MB"
+      formats: ["JPG"],
+      size: "7,55 MB"
     },
   ];
 
@@ -303,14 +303,14 @@ const Media = () => {
               let downloadUrl = "";
               let downloadName = "";
               if (asset.title === "Fotografie vozového parku") {
-                downloadUrl = "/images/media/2025-05-11/image.png";
-                downloadName = "fotografie-vozoveho-parku.png";
+                downloadUrl = "/images/auta/Vozový park LSSD.zip";
+                downloadName = "fotografie-vozoveho-parku";
               } else if (asset.title === "LSSD logo ve vysokém rozlišení") {
                 downloadUrl = "/images/lssd-logo.png";
                 downloadName = "lssd-logo";
-              } else if (asset.title === "Oficiální portrét šerifa Sinnse") {
-                downloadUrl = "/images/sheriff-portrait.jpg";
-                downloadName = "sherif-sinns.png";
+              } else if (asset.title === "Oficiální portréty šerifa Sinnse") {
+                downloadUrl = "/images/sheriff/Sheriff - Foto.zip";
+                downloadName = "sheriff-sinns";
               }
               return (
                 <Card key={index} className="hover:shadow-lg transition-shadow" id={highlightId}>
