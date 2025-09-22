@@ -68,15 +68,6 @@ const Command = () => {
       description: "Spolupráce s detektivním oddělením vedoucí k rozbití celé nelegální organizace. Dopadení pachatele plánujícího únos policejního kolegy. Dlouhodobá služba s prokazatelnými výsledky v ochraně veřejné bezpečnosti",
       achievements: ["Pochvaly od občanů za profesionální a lidský přístup k veřejnosti", "Pochvaly od kolegů z řad policie za týmovou spolupráci a odhodlání při zásazích","Policejní medaile za vynikající službu"],
       status: "alive"
-    },
-    {
-      name: "Jake Sinns",
-      title: "Lieutenant",
-      experience: "10 let",
-      image: "/images/Jake Sinns.png",
-      description: "Celý svůj život zasvětil práci u šerifů a snaží sa byť nápomocný ostatním kolegům i občanům.",
-      achievements: ["Medaile za vynikající službu"],
-      status: "dead"
     }
   ];
 

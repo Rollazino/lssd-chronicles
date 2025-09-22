@@ -43,6 +43,24 @@ function getTypeColor(type: string) {
 const Media = () => {
   const pressReleases = [
     {
+      date: "2025-09-19",
+      title: "Poslední rozloučení s Lieutenant Jake Sinns",
+      excerpt: "Smuteční ceremonie za účasti kolegů a přátel",
+      category: "Smuteční oznámení",
+      content: "V pátek večer, 19. září 2025, se příslušníci Los Santos Police Department, Los Santos Sheriff’s Department a San Andreas Highway Patrol naposledy rozloučili se svým kolegou, Lieutenant Jake Sinns. Smuteční ceremonie se konala za účasti desítek policistů, přátel a blízkých, kteří přišli uctít jeho památku. Rozloučení začalo v 19:30 na stanici Davis, kde proběhla závěrečná instruktáž a příprava čestné jednotky. Všichni příslušníci nastoupili ve slavnostní uniformě a s černou stuhou přes odznak, jako symbol úcty a sounáležitosti. Pohřební obřad následně pokračoval pietním průvodem, během něhož byla vyjádřena hluboká úcta nejen ze strany bezpečnostních složek, ale i široké veřejnosti. Smuteční chvíle doprovázela minuta ticha a závěrečné vzdání pocty. Lieutenant Jake Sinns byl nejen oddaným policistou, ale i kolegem a přítelem, který se nesmazatelně zapsal do srdcí těch, kteří s ním měli možnost sloužit. Jeho odkaz a služba městu i občanům budou navždy připomínány. Odpočívej v pokoji, Lieutenante Sinnsi.",
+      images: [
+        "/images/media/2025-09-19/image.png",
+        "/images/media/2025-09-19/image2.png",
+        "/images/media/2025-09-19/image3.png",
+        "/images/media/2025-09-19/image4.png",
+        "/images/media/2025-09-19/image5.jpg",
+        "/images/media/2025-09-19/image6.jpg",
+        "/images/media/2025-09-19/image7.jpg",
+        "/images/media/2025-09-19/image8.png",
+      ],
+      author: "Sheriff - Jayden Sinns"
+    },
+    {
       date: "2025-09-09",
       title: "LSSD zavádí možnost hlídkování na kole – bezpečnost i zdraví ruku v ruce",
       excerpt: "Los Santos Sheriff’s Department rozšiřuje své možnosti výkonu služby a nabízí členům jednotky příležitost hlídkovat také na jízdních kolech.",
