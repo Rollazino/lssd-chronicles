@@ -16,7 +16,7 @@ import Footer from "@/components/Footer";
 
 const Community = () => {
   const programs = [
-    {
+    /*{
       icon: Shield,
       title: "Sousedská hlídka",
       description: "Zapojení obyvatel do spolupráce s policií pro prevenci kriminality a budování bezpečnějších komunit.",
@@ -50,7 +50,7 @@ const Community = () => {
       description: "Spolupráce s místními podniky na vytvoření bezpečnějších obchodních oblastí a prevenci kriminality.",
       features: ["Bezpečnostní konzultace", "Školení zaměstnanců", "Rychlé reakční protokoly", "Plánování prevence kriminality"],
       contact: "Seržant Wilson"
-    },
+    },*/
     {
       icon: Calendar,
       title: "Komunitní akce",
@@ -118,7 +118,7 @@ const Community = () => {
               Komunitní iniciativy
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Objevte různé programy, které posilují vztahy mezi policií a komunitou.
+              Objevte různé programy, které posilují vztahy mezi policií a komunitou. Programy stále rozšiřujeme.
             </p>
           </div>
 
