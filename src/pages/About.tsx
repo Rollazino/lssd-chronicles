@@ -228,11 +228,21 @@ const About = () => {
 
               <Card>
                 <CardContent className="pt-6">
-                  <h3 className="text-xl font-semibold text-primary mb-2">Šerif Danny Miller (2020–2024)</h3>
+                  <h3 className="text-xl font-semibold text-primary mb-2">Šerif Danny Miller (2020–2022)</h3>
                   <p className="text-muted-foreground mb-4">
                     Pokračoval v odkazu svých předchůdců a zároveň zlepšil přístup k řešení náročných situací, čímž posílil efektivitu a důvěru v práci LSSD.
                   </p>
-                  <Badge variant="outline">10 let služby, 4 roky ve funkci</Badge>
+                  <Badge variant="outline">10 let služby, 2 roky ve funkci</Badge>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardContent className="pt-6">
+                  <h3 className="text-xl font-semibold text-primary mb-2">Šerif Jayden Sinns (2022–2025)</h3>
+                  <p className="text-muted-foreground mb-4">
+                    Během svého působení provedl zásadní změny ve fungování sboru, modernizoval postupy a zvýšil jeho celkovou efektivitu. Díky jeho vedení se LSSD stalo pružnějším a spolehlivějším.
+                  </p>
+                  <Badge variant="outline">30 let služby, 3 roky ve funkci</Badge>
                 </CardContent>
               </Card>
             </div>

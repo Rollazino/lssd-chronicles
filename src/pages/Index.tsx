@@ -147,7 +147,7 @@ const Index = () => {
                 <div>
                   <Badge variant="outline" className="mb-4">Uvítací zpráva</Badge>
                   <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-                    Zpráva od šerifa Sinnse
+                    Zpráva od šerifa Millera
                   </h2>
                 </div>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
@@ -167,7 +167,7 @@ const Index = () => {
                   </p>
                 </div>
                 <div className="pt-4">
-                  <p className="font-semibold text-primary">Jayden Sinns</p>
+                  <p className="font-semibold text-primary">Daniel Miller</p>
                   <p className="text-sm text-muted-foreground">Sheriff of LSSD</p>
                 </div>
               </div>

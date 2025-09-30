@@ -43,6 +43,14 @@ function getTypeColor(type: string) {
 const Media = () => {
   const pressReleases = [
     {
+      date: "2025-09-30",
+      title: "Smutná zpráva: Zemřel Commander Raffael Jeter",
+      excerpt: "S hlubokým zármutkem oznamujeme úmrtí dlouholetého člena LSSD, Commander Raffaela Jetera.",
+      category: "Smuteční oznámení",
+      content: "S hlubokým zármutkem oznamujeme, že nás navždy opustil Commander Raffael Jeter, dlouholetý a respektovaný člen Los Santos Sheriff’s Department. Commander Jeter zasvětil svůj profesní život službě veřejnosti, chránil občany našeho města a svým kolegům byl vzorem statečnosti, profesionality a oddanosti službě. Jeho odchod je nenahraditelnou ztrátou nejen pro naše oddělení, ale i pro celou komunitu, kterou s nasazením chránil. Celé vedení LSSD v této těžké chvíli stojí při jeho rodině a vyjadřuje upřímnou soustrast všem blízkým. Čest jeho památce.",
+      author: "Commander - Jayden Sinns"
+    },
+    {
       date: "2025-09-19",
       title: "Poslední rozloučení s Lieutenant Jake Sinns",
       excerpt: "Smuteční ceremonie za účasti kolegů a přátel",
@@ -68,7 +76,7 @@ const Media = () => {
       content: "Los Santos Sheriff’s Department rozšiřuje své možnosti výkonu služby a nabízí členům příležitost hlídkovat také na jízdních kolech. Tento způsob patrolování přináší nejen efektivnější pohyb v hustě osídlených částech města a parcích, ale zároveň podporuje fyzickou kondici samotných příslušníků. Cyklohlídky umožňují šerifům rychle reagovat tam, kde by se vozidla obtížně dostávala – pěší zóny, úzké ulice nebo veřejné prostranství plná lidí. Zároveň jde o přístup, který přibližuje šerify komunitě a posiluje osobní kontakt s občany. Nejde však jen o výkon služby – LSSD tímto krokem podporuje také zdravý životní styl svých členů. Pohyb na kole prospívá kondici, psychické pohodě a celkové odolnosti, což se odráží i v kvalitě každodenní práce. Los Santos tak získává nejen bezpečnější ulice, ale i šerify, kteří dělají něco pro své zdraví a zároveň pro svou komunitu.",
       author: "Sheriff - Jayden Sinns"
     },
-      {
+    {
       date: "2025-08-28",
       title: "Smutná zpráva: Zemřel Lieutenant Jake Sinns",
       excerpt: "S hlubokým zármutkem oznamujeme úmrtí dlouholetého člena LSSD, Lieutenant Jake Sinnse.",
@@ -161,8 +169,8 @@ const Media = () => {
     },
     {
       type: "image",
-      title: "Oficiální portréty šerifa Sinnse",
-      description: "Profesionální fotografie šerifa Jaydena Sinnse pro mediální účely.",
+      title: "Oficiální portréty šerifa Millera",
+      description: "Profesionální fotografie šerifa Daniela Millera pro mediální účely.",
       formats: ["PNG"],
       size: "1,67 MB"
     },
@@ -326,9 +334,9 @@ const Media = () => {
               } else if (asset.title === "LSSD logo ve vysokém rozlišení") {
                 downloadUrl = "/images/lssd-logo.png";
                 downloadName = "lssd-logo";
-              } else if (asset.title === "Oficiální portréty šerifa Sinnse") {
+              } else if (asset.title === "Oficiální portréty šerifa Millera") {
                 downloadUrl = "/images/sheriff/Sheriff - Foto.zip";
-                downloadName = "sheriff-sinns";
+                downloadName = "sheriff-miller";
               }
               return (
                 <Card key={index} className="hover:shadow-lg transition-shadow" id={highlightId}>
@@ -398,7 +406,7 @@ const Media = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
-                    <p className="font-semibold">Sheriff - Jayden Sinns</p>
+                    <p className="font-semibold">Commander - Jayden Sinns</p>
                     <p className="text-sm text-muted-foreground">Tiskový mluvčí</p>
                   </div>
                   <div className="space-y-2 text-sm">

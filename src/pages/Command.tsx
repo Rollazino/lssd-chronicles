@@ -7,12 +7,12 @@ import Footer from "@/components/Footer";
 const Command = () => {
   const commandStaff = [
     {
-      name: "Jayden Sinns",
+      name: "Daniel Miller",
       title: "Sheriff",
-      experience: "30 let",
-      image: "/images/Jayden Sinns.png",
-      description: "Jako administrativní lídr s velkými vizemi a smyslem pro dlouhodobé plánování se šerif Sinns zaměřuje na budování přátelského a otevřeného prostředí podporujícího spolupráci a vzájemnou důvěru. Začínal jako zkušený zástupce šerifa a FTO (školící důstojník v terénu), pod jehož vedením prošla řada nováčků – z nichž někteří dnes patří mezi nejlepší. Díky svým schopnostem se stal uznávaným seržantem, který si vytrvale šel za svým snem postoupit do vyššího vedení. To se mu podařilo – nejprve na pozici poručíka, následně Commander pro administrativní činnost, a nakonec byl zvolen šerifem. Jeho cílem je neustále zlepšovat služby a vztahy s komunitou, přičemž se zaměřuje na transparentnost, otevřenou komunikaci a inovace v oblasti bezpečnosti.",
-      achievements: ["Absolvent státní policejní akademie s vyznamenáním", "Policejní medaile za záchranu života", "Pochvala za vynikající vedení a přínos k rozvoji oddělení"],
+      experience: "22 let",
+      image: "/images/Miller.png",
+      description: "Vede své oddělení s odhodláním a profesionalitou, přičemž klade důraz na bezpečnost komunity a rozvoj týmové spolupráce. Jeho přístup kombinuje strategické plánování s lidským vztahem k občanům i kolegům. Výrazně přispěl k rozvoji FTO programu, čímž podpořil vzdělávání a profesní růst nových členů týmu.",
+      achievements: ["Ocenění za přínos v rozvoji FTO programu", "Certifikace v oblasti moderních metod výcviku a veden"],
       status: "alive"
     },
     {
@@ -25,15 +25,6 @@ const Command = () => {
       status: "alive"
     },
     {
-      name: "Daniel Miller",
-      title: "Assistant Sheriff",
-      experience: "22 let",
-      image: "/images/Miller.png",
-      description: "Vede své oddělení s odhodláním a profesionalitou, přičemž klade důraz na bezpečnost komunity a rozvoj týmové spolupráce. Jeho přístup kombinuje strategické plánování s lidským vztahem k občanům i kolegům. Výrazně přispěl k rozvoji FTO programu, čímž podpořil vzdělávání a profesní růst nových členů týmu.",
-      achievements: ["Ocenění za přínos v rozvoji FTO programu", "Certifikace v oblasti moderních metod výcviku a veden"],
-      status: "alive"
-    },
-    {
       name: "Anthony Woods",
       title: "Division Chief",
       experience: "25 let",
@@ -43,13 +34,22 @@ const Command = () => {
       status: "alive"
     },
     {
+      name: "Jayden Sinns",
+      title: "Commander",
+      experience: "30 let",
+      image: "/images/Jayden Sinns.png",
+      description: "Jako administrativní lídr s velkými vizemi a smyslem pro dlouhodobé plánování se šerif Sinns zaměřuje na budování přátelského a otevřeného prostředí podporujícího spolupráci a vzájemnou důvěru. Začínal jako zkušený zástupce šerifa a FTO (školící důstojník v terénu), pod jehož vedením prošla řada nováčků – z nichž někteří dnes patří mezi nejlepší. Díky svým schopnostem se stal uznávaným seržantem, který si vytrvale šel za svým snem postoupit do vyššího vedení. To se mu podařilo – nejprve na pozici poručíka, následně Commander pro administrativní činnost, a nakonec byl zvolen šerifem. Jeho cílem je neustále zlepšovat služby a vztahy s komunitou, přičemž se zaměřuje na transparentnost, otevřenou komunikaci a inovace v oblasti bezpečnosti.",
+      achievements: ["Absolvent státní policejní akademie s vyznamenáním", "Policejní medaile za záchranu života", "Pochvala za vynikající vedení a přínos k rozvoji oddělení"],
+      status: "alive"
+    },
+    {
       name: "Raffael Jeter",
       title: "Commander",
       experience: "20 let, 15 let v detektivních týmech",
       image: "/images/Jeter.png",
       description: "Aktuálně společně s celým vedením vede sbor LSSD k lepším zítřkům a svými schopnostmi přispívá k disciplíně sboru.",
       achievements: ["Ocenění z policejní služby", "Odhalení a vyšetření nelegálních buněk"],
-      status: "alive"
+      status: "dead"
     },
     {
       name: "Sean Fell",

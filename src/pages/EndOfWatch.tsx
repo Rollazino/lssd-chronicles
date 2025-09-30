@@ -11,12 +11,22 @@ const deceasedStaff = [
     title: "Lieutenant",
     experience: "10 let",
     image: "/images/Jake Sinns.png",
-    description:
-      "Celý svůj život zasvětil práci u šerifů a snažil se být nápomocný ostatním kolegům i občanům.",
+    description: "Celý svůj život zasvětil práci u šerifů a snažil se být nápomocný ostatním kolegům i občanům.",
     achievements: ["Medaile za vynikající službu"],
     status: "dead",
     dateOfDeath: "2025-08-28",
     memorialQuote: "I když si nám zničil tolik aut, nikdy nezapomeneme na tvou službu a oddanost.",
+  },
+  {
+    name: "Raffael Jeter",
+    title: "Commander",
+    experience: "20 let, 15 let v detektivních týmech",
+    image: "/images/Jeter.png",      
+    description: "Aktuálně společně s celým vedením vede sbor LSSD k lepším zítřkům a svými schopnostmi přispívá k disciplíně sboru.",
+    achievements: ["Ocenění z policejní služby", "Odhalení a vyšetření nelegálních buněk"],
+    status: "dead",
+    dateOfDeath: "2025-09-30",
+    memorialQuote: "I když si byl přísný, vždy jsi nám pomáhal stát se lepšími důstojníky. Odpočívej v pokoji.",
   },
   // Add more deceased colleagues here as needed
 ];
