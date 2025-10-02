@@ -11,7 +11,7 @@ const Command = () => {
       title: "Sheriff",
       experience: "22 let",
       image: "/images/Miller.png",
-      description: "Vede své oddělení s odhodláním a profesionalitou, přičemž klade důraz na bezpečnost komunity a rozvoj týmové spolupráce. Jeho přístup kombinuje strategické plánování s lidským vztahem k občanům i kolegům. Výrazně přispěl k rozvoji FTO programu, čímž podpořil vzdělávání a profesní růst nových členů týmu.",
+      description: "Vede své oddělení s odhodláním a profesionalitou, přičemž klade důraz na bezpečnost komunity a rozvoj týmové spolupráce. Jeho přístup kombinuje strategické plánování s lidským vztahem k občanům i kolegům. Výrazně přispěl k rozvoji FTO programu, čímž podpořil vzdělávání a profesní růst nových členů týmu. Je známý svou schopností vést v krizových situacích a motivovat ostatní k dosažení nejlepších výsledků. Díky svému klidnému, ale důraznému přístupu si získal respekt jak v rámci oddělení, tak u široké veřejnosti. Jeho prioritou je nejen efektivní vymáhání práva, ale také budování důvěry a partnerství s komunitami.",
       achievements: ["Ocenění za přínos v rozvoji FTO programu", "Certifikace v oblasti moderních metod výcviku a veden"],
       status: "alive"
     },

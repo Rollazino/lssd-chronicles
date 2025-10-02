@@ -139,12 +139,12 @@ const Index = () => {
               <div>
                 <img
                   src={sheriffPortrait}
-                  alt="Sheriff Jayden Sinns"
+                  alt="Sheriff Daniel Miller"
                   className="w-full max-w-md mx-auto rounded-lg professional-shadow"
                 />
               </div>
               <div className="space-y-6">
-                <div>
+                {/* <div>
                   <Badge variant="outline" className="mb-4">Uvítací zpráva</Badge>
                   <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
                     Zpráva od šerifa Millera
@@ -164,6 +164,28 @@ const Index = () => {
                   <p>
                     „Doporučuji vám prozkoumat naše stránky a dozvědět se více o našich službách,
                     programech a vynikajících mužích a ženách, kteří tvoří rodinu LSSD.“
+                  </p>
+                </div>
+                <div className="pt-4">
+                  <p className="font-semibold text-primary">Daniel Miller</p>
+                  <p className="text-sm text-muted-foreground">Sheriff of LSSD</p>
+                </div>
+              </div> */}
+              <div>
+                  <Badge variant="outline" className="mb-4">Uvítací zpráva</Badge>
+                  <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                    Zpráva od šerifa Millera
+                  </h2>
+                </div>
+                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                  <p>
+                    „Vítám vás na oficiálních stránkách Los Santos Sheriff’s Department. Naším posláním je chránit a sloužit všem občanům našeho města s odhodláním a profesionalitou.“
+                  </p>
+                  <p>
+                    „Náš úřad stojí na hodnotách důvěry, spravedlnosti a spolupráce. Každý den usilujeme o to, aby se naše komunity cítily bezpečně a měly jistotu, že jsme tu vždy pro ně.“
+                  </p>
+                  <p>
+                    „Prozkoumejte naše stránky a zjistěte více o našich projektech, službách a mužích i ženách, kteří s hrdostí nosí tuto uniformu.“
                   </p>
                 </div>
                 <div className="pt-4">
