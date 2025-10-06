@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { Dialog, DialogContent, DialogTitle, DialogDescription, DialogHeader } from "@/components/ui/dialog";
 
 const Contact = () => {
   // Neurgentní formulář
@@ -105,6 +106,8 @@ const Contact = () => {
   const [showNonUrgentForm, setShowNonUrgentForm] = useState(false);
   const [showAnonymousForm, setShowAnonymousForm] = useState(false);
   const firstNameRef = useRef<HTMLInputElement | null>(null);
+  const [openMapIndex, setOpenMapIndex] = useState<number | null>(null);
+  const [mapImageLoaded, setMapImageLoaded] = useState(false);
 
   // Listen for navigation click to open the non-urgent form
   useEffect(() => {
@@ -541,21 +544,38 @@ const Contact = () => {
                     </ul>
                   </div>
                   
-                  <button
-                    type="button"
-                    className="bg-primary text-white px-4 py-2 rounded w-full mt-2 flex items-center justify-center gap-2 hover:bg-primary/80 transition"
-                    onClick={() => {
-                      const mapImages = [
-                        '/public/images/map-davis.png',
-                        '/public/images/map-sandy.png',
-                        '/public/images/map-paleto.png'
-                      ];
-                      window.open(mapImages[index] || mapImages[0], '_blank');
-                    }}
-                  >
-                    <MapPin className="mr-2 h-4 w-4" />
-                    Zobrazit mapu
-                  </button>
+                  <>
+                    <button
+                      type="button"
+                      className="bg-primary text-white px-4 py-2 rounded w-full mt-2 flex items-center justify-center gap-2 hover:bg-primary/80 transition"
+                      onClick={() => setOpenMapIndex(index)}
+                    >
+                      <MapPin className="mr-2 h-4 w-4" />
+                      Zobrazit mapu
+                    </button>
+
+                    {/* Modal for map images */}
+                    <Dialog open={openMapIndex !== null} onOpenChange={(isOpen) => { if (!isOpen) setOpenMapIndex(null); }}>
+                      <DialogContent className="max-w-3xl">
+                          <DialogHeader>
+                            <DialogTitle>{locations[openMapIndex ?? 0].name} - Mapa</DialogTitle>
+                            <DialogDescription className="mb-4">Klikněte mimo nebo na křížek pro zavření.</DialogDescription>
+                          </DialogHeader>
+                          <div className="w-full">
+                            <img
+                              src={`/images/${['map-davis.png','map-sandy.png','map-paleto.png'][openMapIndex ?? 0]}`}
+                              alt={`${locations[openMapIndex ?? 0].name} mapa`}
+                              className={`w-full h-auto rounded transition-all duration-500 ${mapImageLoaded ? 'blur-0 scale-100 opacity-100' : 'blur-sm scale-105 opacity-60'}`}
+                              loading="lazy"
+                              decoding="async"
+                              width={1200}
+                              height={800}
+                              onLoad={() => setMapImageLoaded(true)}
+                            />
+                          </div>
+                        </DialogContent>
+                    </Dialog>
+                  </>
                 </CardContent>
               </Card>
             ))}
