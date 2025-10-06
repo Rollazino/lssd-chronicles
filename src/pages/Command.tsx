@@ -48,7 +48,7 @@ const Command = () => {
       experience: "20 let, 15 let v detektivních týmech",
       image: "/images/Jeter.png",
       description: "Aktuálně společně s celým vedením vede sbor LSSD k lepším zítřkům a svými schopnostmi přispívá k disciplíně sboru.",
-      achievements: ["Ocenění z policejní služby", "Odhalení a vyšetření nelegálních buněk"],
+      achievements: ["Ocenění za policejní služby", "Odhalení a vyšetření nelegálních buněk"],
       status: "dead"
     },
     {

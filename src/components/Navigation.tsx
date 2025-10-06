@@ -25,8 +25,8 @@ const Navigation = () => {
     { to: "/media", label: "Média" },
     { to: "/recruitment", label: "Kariéra" },
     // { to: "/community", label: "Komunita" },
+    { to: "/contact", label: "Kontakt" },
     { to: "/endofwatch", label: "End of Watch" },
-    // { to: "/contact", label: "Kontakt" },
   ];
 
   const NavContent = () => (

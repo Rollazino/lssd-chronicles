@@ -82,25 +82,25 @@ const Contact = () => {
 
   const locations = [
     {
-      name: "Hlavní centrála",
-      address: "Justice Drive 1234, Los Santos, CA 90210",
+      name: "Davis Station",
+      address: "Innocence Boulevard, Los Santos, SA 9148",
       phone: "(555) 123-4567",
       hours: "Provoz 24/7",
-      services: ["Administrativní služby", "Záznamy", "Kriminální oddělení", "Dispečink hlídek"]
+      services: ["Administrativní služby", "Hlídkové operace", "Vztahy s komunitou"]
     },
     {
-      name: "Severní stanice",
-      address: "Oak Street 5678, North Los Santos, CA 90211",
+      name: "Sandy Shores Station",
+      address: "Alhambra Drive, Sandy Shores, SA 3004",
       phone: "(555) 123-4568",
       hours: "Provoz 24/7",
-      services: ["Hlídkové operace", "Vztahy s komunitou", "Dopravní oddělení"]
+      services: ["Administrativní služby", "Hlídkové operace", "Vztahy s komunitou"]
     },
     {
-      name: "Jižní stanice",
-      address: "Pine Avenue 9101, South Los Santos, CA 90212",
+      name: "Paleto Bay Station",
+      address: "Paleto Boulevard, Paleto Bay, SA 1038",
       phone: "(555) 123-4569",
       hours: "Provoz 24/7",
-      services: ["Hlídkové operace", "Kynologická jednotka", "Speciální operace"]
+      services: ["Park Rangers", "Hunting Permits", "Search and Rescue"]
     }
   ];
 
@@ -218,6 +218,7 @@ const Contact = () => {
       </section>
 
       {/* Department Contacts */}
+      {/*
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -256,9 +257,10 @@ const Contact = () => {
           </div>
         </div>
       </section>
+      */}
 
       {/* Locations */}
-      <section className="py-16 bg-muted/30">
+      <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-4">Naše pobočky</Badge>
@@ -266,7 +268,7 @@ const Contact = () => {
               Lokality úřadu
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Navštivte nás na kterékoliv z našich poboček v okrese Los Santos.
+              Navštivte nás na kterékoliv z našich poboček v San Andreas.
             </p>
           </div>
 
@@ -302,10 +304,21 @@ const Contact = () => {
                     </ul>
                   </div>
                   
-                  <Button variant="outline" className="w-full">
+                  <button
+                    type="button"
+                    className="bg-primary text-white px-4 py-2 rounded w-full mt-2 flex items-center justify-center gap-2 hover:bg-primary/80 transition"
+                    onClick={() => {
+                      const mapImages = [
+                        '/public/images/map-davis.png',
+                        '/public/images/map-sandy.jpg',
+                        '/public/images/map-paleto.jpg'
+                      ];
+                      window.open(mapImages[index] || mapImages[0], '_blank');
+                    }}
+                  >
                     <MapPin className="mr-2 h-4 w-4" />
-                    Zobrazit trasu
-                  </Button>
+                    Zobrazit mapu
+                  </button>
                 </CardContent>
               </Card>
             ))}
