@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import { useState, useEffect, useRef } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -17,6 +18,108 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 const Contact = () => {
+  // Neurgentní formulář
+  const [nonUrgentFirstName, setNonUrgentFirstName] = useState("");
+  const [nonUrgentLastName, setNonUrgentLastName] = useState("");
+  const [nonUrgentEmail, setNonUrgentEmail] = useState("");
+  const [nonUrgentPhone, setNonUrgentPhone] = useState("");
+  const [nonUrgentDiscord, setNonUrgentDiscord] = useState("");
+  const [nonUrgentSubject, setNonUrgentSubject] = useState("");
+  const [nonUrgentMessage, setNonUrgentMessage] = useState("");
+  const [nonUrgentSending, setNonUrgentSending] = useState(false);
+  const [nonUrgentSent, setNonUrgentSent] = useState(false);
+  const [nonUrgentError, setNonUrgentError] = useState("");
+
+  const handleNonUrgentSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setNonUrgentSending(true);
+    setNonUrgentError("");
+    setNonUrgentSent(false);
+    try {
+      const res = await fetch("https://discord.com/api/webhooks/1424772640853200987/L8nGHZOGEuLmWclq0pBNBjYKcUF9zE-KuelArnKwltYCa6S3M9RVgBSK9a-dfwQ6ydCE", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          content:
+            `**Jméno:** ${nonUrgentFirstName} ${nonUrgentLastName}\n` +
+            `**E-mail:** ${nonUrgentEmail}\n` +
+            `**Telefon:** ${nonUrgentPhone}\n` +
+            `**Discord/Discord ID:** ${nonUrgentDiscord}\n` +
+            `**Předmět:** ${nonUrgentSubject}\n` +
+            `**Zpráva:** ${nonUrgentMessage}`
+        })
+      });
+      if (!res.ok) throw new Error("Chyba při odesílání na Discord");
+      setNonUrgentSent(true);
+  setNonUrgentFirstName("");
+  setNonUrgentLastName("");
+  setNonUrgentEmail("");
+  setNonUrgentPhone("");
+  setNonUrgentDiscord("");
+  setNonUrgentSubject("");
+  setNonUrgentMessage("");
+    } catch (err: any) {
+      setNonUrgentError(err.message || "Chyba při odesílání");
+    } finally {
+      setNonUrgentSending(false);
+    }
+  };
+  const [anonDiscord, setAnonDiscord] = useState("");
+  const [anonSubject, setAnonSubject] = useState("");
+  const [anonMessage, setAnonMessage] = useState("");
+  const [anonSending, setAnonSending] = useState(false);
+  const [anonSent, setAnonSent] = useState(false);
+  const [anonError, setAnonError] = useState("");
+
+  const handleAnonymousSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setAnonSending(true);
+    setAnonError("");
+    setAnonSent(false);
+    try {
+      const res = await fetch("https://discord.com/api/webhooks/1424771162990444634/chUQdZCfThDtgpGVLBLssXNDaNG2sbJVcvxoKHQ7MG_tv9RvhANrscM1vv6jFOTpjsmb", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          content:
+            `**Discord/Discord ID:** ${anonDiscord}\n` +
+            `**Předmět:** ${anonSubject}\n` +
+            `**Zpráva:** ${anonMessage}`
+        })
+      });
+      if (!res.ok) throw new Error("Chyba při odesílání na Discord");
+      setAnonSent(true);
+  setAnonDiscord("");
+  setAnonSubject("");
+  setAnonMessage("");
+    } catch (err: any) {
+      setAnonError(err.message || "Chyba při odesílání");
+    } finally {
+      setAnonSending(false);
+    }
+  };
+  const [showNonUrgentForm, setShowNonUrgentForm] = useState(false);
+  const [showAnonymousForm, setShowAnonymousForm] = useState(false);
+  const firstNameRef = useRef<HTMLInputElement | null>(null);
+
+  // Listen for navigation click to open the non-urgent form
+  useEffect(() => {
+    const handler = () => setShowNonUrgentForm(true);
+    window.addEventListener("open-nonurgent-form", handler);
+    return () => window.removeEventListener("open-nonurgent-form", handler);
+  }, []);
+
+  // Focus the first input when the non-urgent form becomes visible
+  useEffect(() => {
+    if (showNonUrgentForm) {
+      // small timeout to ensure DOM is updated
+      setTimeout(() => firstNameRef.current?.focus(), 50);
+    }
+  }, [showNonUrgentForm]);
   const emergencyNumbers = [
     {
       type: "Tísňová linka",
@@ -34,7 +137,7 @@ const Contact = () => {
     },
     {
       type: "Anonymní linka",
-      number: "(555) 123-TIPS, 911a",
+      number: "911a",
       description: "Nahlášení trestných činů anonymně",
       icon: Phone,
       color: "text-muted-foreground"
@@ -113,7 +216,7 @@ const Contact = () => {
         <div className="container mx-auto px-4 text-center">
           <Badge variant="outline" className="mb-6">Kontaktujte nás</Badge>
           <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6">
-            Spojte se s námi - WIP
+            Spojte se s námi
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Jsme tu pro vás a vaši bezpečnost. Kontaktujte nás pro pomoc, informace nebo nahlášení neurgentních situací.
@@ -146,6 +249,16 @@ const Contact = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">{contact.description}</p>
+                  {contact.type === "Linka pro neurgentní případy" && (
+                    <Button className="mt-4 w-full" onClick={() => setShowNonUrgentForm(v => !v)}>
+                      {showNonUrgentForm ? "Skrýt formulář" : "Zobrazit kontaktní formulář"}
+                    </Button>
+                  )}
+                  {contact.type === "Anonymní linka" && (
+                    <Button className="mt-4 w-full" onClick={() => setShowAnonymousForm(v => !v)}>
+                      {showAnonymousForm ? "Skrýt formulář" : "Zobrazit anonymní formulář"}
+                    </Button>
+                  )}
                 </CardContent>
               </Card>
             ))}
@@ -153,69 +266,193 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Contact Form */}
-      <section className="py-16 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <Badge variant="outline" className="mb-4">Odeslat zprávu</Badge>
-              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-                Kontaktní formulář
-              </h2>
-              <p className="text-muted-foreground">
-                Pro neurgentní dotazy, zpětnou vazbu nebo žádosti o informace.
-              </p>
+      {/* Contact Form - Linka pro neurgentni pripady */}
+      {showNonUrgentForm && (
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-12">
+                <Badge variant="outline" className="mb-4">Linka pro neurgentní případy</Badge>
+                <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                  Kontaktní formulář
+                </h2>
+                <p className="text-muted-foreground">
+                  Pro neurgentní dotazy, zpětnou vazbu nebo žádosti o informace.
+                </p>
+              </div>
+              <Card>
+                <CardContent className="p-6">
+                  <form className="space-y-6" onSubmit={handleNonUrgentSubmit}>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <Label htmlFor="firstName">Jméno</Label>
+                        <Input
+                          id="firstName"
+                          placeholder="Zadejte své jméno"
+                          value={nonUrgentFirstName}
+                          onChange={e => setNonUrgentFirstName(e.target.value)}
+                          disabled={nonUrgentSending}
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="lastName">Příjmení</Label>
+                        <Input
+                          id="lastName"
+                          placeholder="Zadejte své příjmení"
+                          value={nonUrgentLastName}
+                          onChange={e => setNonUrgentLastName(e.target.value)}
+                          disabled={nonUrgentSending}
+                        />
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                      <div className="space-y-2">
+                        <Label htmlFor="email">E-mail</Label>
+                        <Input
+                          id="email"
+                          type="email"
+                          placeholder="Zadejte svůj e-mail"
+                          value={nonUrgentEmail}
+                          onChange={e => setNonUrgentEmail(e.target.value)}
+                          disabled={nonUrgentSending}
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="phone">Telefon</Label>
+                        <Input
+                          id="phone"
+                          type="tel"
+                          placeholder="Zadejte své telefonní číslo"
+                          value={nonUrgentPhone}
+                          onChange={e => setNonUrgentPhone(e.target.value)}
+                          disabled={nonUrgentSending}
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="discord">Discord/Discord ID</Label>
+                        <Input
+                          id="discord"
+                          placeholder="Např. uzivatel#1234 nebo ID"
+                          value={nonUrgentDiscord}
+                          onChange={e => setNonUrgentDiscord(e.target.value)}
+                          disabled={nonUrgentSending}
+                        />
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="subject">Předmět</Label>
+                      <Input
+                        id="subject"
+                        placeholder="Zadejte předmět zprávy"
+                        value={nonUrgentSubject}
+                        onChange={e => setNonUrgentSubject(e.target.value)}
+                        disabled={nonUrgentSending}
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="message">Zpráva</Label>
+                      <Textarea
+                        id="message"
+                        placeholder="Zadejte svou zprávu"
+                        className="min-h-[120px]"
+                        value={nonUrgentMessage}
+                        onChange={e => setNonUrgentMessage(e.target.value)}
+                        disabled={nonUrgentSending}
+                      />
+                    </div>
+                    <Button
+                      className="w-full md:w-auto"
+                      type="submit"
+                      disabled={nonUrgentSending || !nonUrgentFirstName || !nonUrgentLastName || !nonUrgentEmail || !nonUrgentSubject || !nonUrgentMessage}
+                    >
+                      <Send className="mr-2 h-4 w-4" />
+                      {nonUrgentSending ? "Odesílám..." : "Odeslat zprávu"}
+                    </Button>
+                    {nonUrgentSent && (
+                      <div className="text-green-600 text-sm mt-2">Zpráva byla úspěšně odeslána na centrálu Los Santos Sheriff's Department.</div>
+                    )}
+                    {nonUrgentError && (
+                      <div className="text-red-600 text-sm mt-2">{nonUrgentError}</div>
+                    )}
+                  </form>
+                  <div>
+                    <a href="https://discord.com/api/webhooks/1424772640853200987/L8nGHZOGEuLmWclq0pBNBjYKcUF9zE-KuelArnKwltYCa6S3M9RVgBSK9a-dfwQ6ydCE" target="_blank" rel="noopener noreferrer" className="underline text-primary"></a>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
-
-            <Card>
-              <CardContent className="p-6">
-                <form className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <Label htmlFor="firstName">Jméno</Label>
-                      <Input id="firstName" placeholder="Zadejte své jméno" />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="lastName">Příjmení</Label>
-                      <Input id="lastName" placeholder="Zadejte své příjmení" />
-                    </div>
-                  </div>
-                  
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <Label htmlFor="email">E-mail</Label>
-                      <Input id="email" type="email" placeholder="Zadejte svůj e-mail" />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="phone">Telefon</Label>
-                      <Input id="phone" type="tel" placeholder="Zadejte své telefonní číslo" />
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="subject">Předmět</Label>
-                    <Input id="subject" placeholder="Zadejte předmět zprávy" />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="message">Zpráva</Label>
-                    <Textarea 
-                      id="message" 
-                      placeholder="Zadejte svou zprávu"
-                      className="min-h-[120px]"
-                    />
-                  </div>
-
-                  <Button className="w-full md:w-auto">
-                    <Send className="mr-2 h-4 w-4" />
-                    Odeslat zprávu
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
+
+      {/* Contact Form - Anonymní linka */}
+      {showAnonymousForm && (
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-12">
+                <Badge variant="outline" className="mb-4">Anonymní linka</Badge>
+                <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                  Anonymní kontaktní formulář
+                </h2>
+                <p className="text-muted-foreground">
+                  Nahlaste trestný čin nebo podezření zcela anonymně. Nevyplňujte osobní údaje.
+                </p>
+              </div>
+              <Card>
+                <CardContent className="p-6">
+                  <form className="space-y-6" onSubmit={handleAnonymousSubmit}>
+                    <div className="space-y-2">
+                      <Label htmlFor="discord-anon">Discord/Discord ID</Label>
+                      <Input
+                        id="discord-anon"
+                        placeholder="Např. uzivatel#1234 nebo ID. Pouze kvůli předcházení trollingu"
+                        value={anonDiscord}
+                        onChange={e => setAnonDiscord(e.target.value)}
+                        disabled={anonSending}
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="subject-anon">Předmět</Label>
+                      <Input
+                        id="subject-anon"
+                        placeholder="Zadejte předmět zprávy"
+                        value={anonSubject}
+                        onChange={e => setAnonSubject(e.target.value)}
+                        disabled={anonSending}
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="message-anon">Zpráva</Label>
+                      <Textarea
+                        id="message-anon"
+                        placeholder="Popište co nejpřesněji situaci, podezření nebo trestný čin."
+                        className="min-h-[120px]"
+                        value={anonMessage}
+                        onChange={e => setAnonMessage(e.target.value)}
+                        disabled={anonSending}
+                      />
+                    </div>
+                    <Button className="w-full md:w-auto" type="submit" disabled={anonSending || !anonSubject || !anonMessage}>
+                      <Send className="mr-2 h-4 w-4" />
+                      {anonSending ? "Odesílám..." : "Odeslat anonymně"}
+                    </Button>
+                    {anonSent && (
+                      <div className="text-green-600 text-sm mt-2">Zpráva byla úspěšně odeslána na centrálu Los Santos Sheriff's Department.</div>
+                    )}
+                    {anonError && (
+                      <div className="text-red-600 text-sm mt-2">{anonError}</div>
+                    )}
+                  </form>
+                  <div>
+                    <a href="https://discord.com/api/webhooks/1424771162990444634/chUQdZCfThDtgpGVLBLssXNDaNG2sbJVcvxoKHQ7MG_tv9RvhANrscM1vv6jFOTpjsmb" target="_blank" rel="noopener noreferrer" className="underline text-primary"></a>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Department Contacts */}
       {/*
@@ -260,7 +497,7 @@ const Contact = () => {
       */}
 
       {/* Locations */}
-      <section className="py-16 bg-background">
+      <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-4">Naše pobočky</Badge>
@@ -310,8 +547,8 @@ const Contact = () => {
                     onClick={() => {
                       const mapImages = [
                         '/public/images/map-davis.png',
-                        '/public/images/map-sandy.jpg',
-                        '/public/images/map-paleto.jpg'
+                        '/public/images/map-sandy.png',
+                        '/public/images/map-paleto.png'
                       ];
                       window.open(mapImages[index] || mapImages[0], '_blank');
                     }}

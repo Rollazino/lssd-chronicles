@@ -31,8 +31,8 @@ const Footer = () => {
               <NavLink to="/recruitment" className="text-sm hover:text-accent transition-colors">Kariéra</NavLink>
               {/*
               <NavLink to="/community" className="text-sm hover:text-accent transition-colors">Komunitní programy</NavLink>
-              <NavLink to="/contact" className="text-sm hover:text-accent transition-colors">Kontakt</NavLink>
               */}
+              <NavLink to="/contact" className="text-sm hover:text-accent transition-colors">Kontakt</NavLink>
             </nav>
           </div>
 
@@ -68,6 +68,13 @@ const Footer = () => {
                 <div>
                   <p className="text-sm">Innocence Boulevard</p>
                   <p className="text-sm">Los Santos, SA 9148</p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-2">
+                <MapPin className="h-4 w-4 mt-0.5" />
+                <div>
+                  <p className="text-sm">Paleto Boulevard</p>
+                  <p className="text-sm">Paleto Bay, SA 1038</p>
                 </div>
               </div>
             </div>
