@@ -52,15 +52,6 @@ const Command = () => {
       status: "dead"
     },
     {
-      name: "Sean Fell",
-      title: "Captain",
-      experience: "15 let",
-      image: "/images/Fell.png",
-      description: "Zodpovědný, klidný pod tlakem, vede s respektem, věří v tým, disciplínu, spravedlnost a rychlá rozhodnutí.",
-      achievements: ["Významný Instruktor HSIU Divize"],
-      status: "alive"
-    },
-    {
       name: "Jacob Cage",
       title: "Captain",
       experience: "32 let",
@@ -68,8 +59,26 @@ const Command = () => {
       description: "Spolupráce s detektivním oddělením vedoucí k rozbití celé nelegální organizace. Dopadení pachatele plánujícího únos policejního kolegy. Dlouhodobá služba s prokazatelnými výsledky v ochraně veřejné bezpečnosti",
       achievements: ["Pochvaly od občanů za profesionální a lidský přístup k veřejnosti", "Pochvaly od kolegů z řad policie za týmovou spolupráci a odhodlání při zásazích","Policejní medaile za vynikající službu"],
       status: "alive"
+    },
+    {
+      name: "William Greenwood",
+      title: "Lieutenant",
+      experience: "",
+      image: "/images/Greenwood.png",
+      description: "",
+      achievements: [""],
+      status: "alive"
     }
   ];
+      {/*
+      name: "Sean Fell",
+      title: "Captain",
+      experience: "15 let",
+      image: "/images/Fell.png",
+      description: "Zodpovědný, klidný pod tlakem, vede s respektem, věří v tým, disciplínu, spravedlnost a rychlá rozhodnutí.",
+      achievements: ["Významný Instruktor HSIU Divize"],
+      status: "alive"
+    */}
 
   return (
     <div className="min-h-screen bg-background">

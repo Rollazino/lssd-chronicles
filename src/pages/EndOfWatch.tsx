@@ -7,17 +7,6 @@ import { Medal, Calendar } from "lucide-react";
 // Deceased colleagues with date of death and memorial quote
 const deceasedStaff = [
   {
-    name: "Jake Sinns",
-    title: "Lieutenant",
-    experience: "10 let",
-    image: "/images/Jake Sinns.png",
-    description: "Celý svůj život zasvětil práci u šerifů a snažil se být nápomocný ostatním kolegům i občanům.",
-    achievements: ["Medaile za vynikající službu"],
-    status: "dead",
-    dateOfDeath: "2025-08-28",
-    memorialQuote: "I když si nám zničil tolik aut, nikdy nezapomeneme na tvou službu a oddanost.",
-  },
-  {
     name: "Raffael Jeter",
     title: "Commander",
     experience: "20 let, 15 let v detektivních týmech",
@@ -27,6 +16,17 @@ const deceasedStaff = [
     status: "dead",
     dateOfDeath: "2025-09-30",
     memorialQuote: "I když si byl přísný, vždy jsi nám pomáhal stát se lepšími důstojníky. Odpočívej v pokoji.",
+  },
+  {
+    name: "Jake Sinns",
+    title: "Lieutenant",
+    experience: "10 let",
+    image: "/images/Jake Sinns.png",
+    description: "Celý svůj život zasvětil práci u šerifů a snažil se být nápomocný ostatním kolegům i občanům.",
+    achievements: ["Medaile za vynikající službu"],
+    status: "dead",
+    dateOfDeath: "2025-08-28",
+    memorialQuote: "I když si nám zničil tolik aut, nikdy nezapomeneme na tvou službu a oddanost.",
   },
   // Add more deceased colleagues here as needed
 ];

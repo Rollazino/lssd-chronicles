@@ -48,6 +48,9 @@ const Media = () => {
       excerpt: "S hlubokým zármutkem oznamujeme úmrtí dlouholetého člena LSSD, Commander Raffaela Jetera.",
       category: "Smuteční oznámení",
       content: "S hlubokým zármutkem oznamujeme, že nás navždy opustil Commander Raffael Jeter, dlouholetý a respektovaný člen Los Santos Sheriff’s Department. Commander Jeter zasvětil svůj profesní život službě veřejnosti, chránil občany našeho města a svým kolegům byl vzorem statečnosti, profesionality a oddanosti službě. Jeho odchod je nenahraditelnou ztrátou nejen pro naše oddělení, ale i pro celou komunitu, kterou s nasazením chránil. Celé vedení LSSD v této těžké chvíli stojí při jeho rodině a vyjadřuje upřímnou soustrast všem blízkým. Čest jeho památce.",
+      images: [
+        "/images/media/2025-09-30/image.png"
+      ],
       author: "Commander - Jayden Sinns"
     },
     {
