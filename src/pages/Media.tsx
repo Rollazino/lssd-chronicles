@@ -43,6 +43,17 @@ function getTypeColor(type: string) {
 const Media = () => {
   const pressReleases = [
     {
+      date: "2025-10-12",
+      title: "Změna vedení v Los Santos Sheriff's Department",
+      excerpt: "Nový Sheriff Daniel Miller přebírá vedení po Jaydenu Sinnsovi",
+      category: "Změny v jednotkách",
+      content: "K určitým změnám ve vedení LSSD došlo dne 21.9.2025, kde se dosavadní Sheriff Jayden Sinns rozhodl ze svojí pozice rezignovat z časových důvodů. Za jeho působnosti sbor prošel mnoha reformacemi, také přispěl k perfektní spolupráci s ostatními bezpečnostními sbory či s komunitou a fungování sboru bylo perfektní. Za jeho práci mu patří velké poděkování. Dne 22.9.2025 byl zvolen novým Sheriffem Daniel Miller, který se doposud zapojil do fungování sboru. Prošel výběrovým řízením konajícím policejním komisařstvím. Na pozici Sheriffa se hlásilo nespočet jedinců, jak z řad LSSD tak i LSPD.  Pan Miller prokázal jeho dlouholeté zkušenosti a místo zaujmul zaslouženě. Pod vedením Sheriffa Millera se sbor bude nadále zlepšovat a soustředit na zvyšování efektivity služby, komunikaci s občany a spolupráci s ostatními bezpečnostními sbory. Tímto mu patří velká gratulace a hodně úspěchů do budoucna.",
+      images: [
+        "/images/media/2025-10-12/image.png"
+      ],
+      author: "Sergeant - Emma Carter"
+    },
+    {
       date: "2025-09-30",
       title: "Smutná zpráva: Zemřel Commander Raffael Jeter",
       excerpt: "S hlubokým zármutkem oznamujeme úmrtí dlouholetého člena LSSD, Commander Raffaela Jetera.",
@@ -404,21 +415,75 @@ const Media = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <Card>
                 <CardHeader>
                   <Users className="h-8 w-8 text-primary mb-2" />
-                  <CardTitle>Tiskový mluvčí</CardTitle>
+                  <CardTitle>Vedoucí tiskového oddělení</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
                     <p className="font-semibold">Commander - Jayden Sinns</p>
-                    <p className="text-sm text-muted-foreground">Tiskový mluvčí</p>
+                    <p className="text-sm text-muted-foreground">Vedoucí tiskového oddělení, tiskový mluvčí</p>
                   </div>
                   <div className="space-y-2 text-sm">
                     {/*<p><strong>Telefon:</strong> (555) 123-4567 kl. 2100</p>*/}
                     <p><strong>Email:</strong> media@lssd.gov</p>
-                    <p className="text-sm text-muted-foreground">DC: freezik</p>
+                    <div className="flex items-center space-x-2">
+                      <span className="text-muted-foreground text-sm">Kontakt:</span>
+                      <a
+                        href={`https://discord.com/users/${"275335685970460672"}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center space-x-2 text-primary hover:underline"
+                        aria-label="Otevřít Discord profil"
+                      >
+                        {/* jednoduchá ikona Discord (inline SVG) */}
+                        <svg className="h-4 w-4" viewBox="0 0 71 55" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                          <path d="M60.104 4.552A58.9 58.9 0 0 0 46.87.5a41.6 41.6 0 0 0-1.984 4.03 55.1 55.1 0 0 0-14.776 0A41.6 41.6 0 0 0 27.128.5 58.9 58.9 0 0 0 11.996 4.552C3.892 19.22-.317 33.63.78 47.88a59.6 59.6 0 0 0 18.28 9.3 43.3 43.3 0 0 0 4.55-7.4 37.6 37.6 0 0 1-6.77-3.2c.57-.4 1.123-.82 1.654-1.26 13.34 6.2 29.32 6.2 42.6 0 .53.44 1.08.86 1.65 1.26a37.6 37.6 0 0 1-6.77 3.2 43.3 43.3 0 0 0 4.55 7.4 59.6 59.6 0 0 0 18.28-9.3c1.148-14.25-3.964-28.66-11.07-43.328z" fill="currentColor" />
+                          <path d="M23.5 34.5c-2.2 0-4-2-4-4.5s1.8-4.5 4-4.5 4 2 4 4.5-1.8 4.5-4 4.5zm24 0c-2.2 0-4-2-4-4.5s1.8-4.5 4-4.5 4 2 4 4.5-1.8 4.5-4 4.5z" fill="#fff" />
+                        </svg>
+                        <span className="text-sm">Jayden Sinns</span>
+                      </a>
+                    </div>
+                   </div>
+                   <div>
+                     <p className="text-sm text-muted-foreground">
+                       <strong>Hodiny:</strong> Pondělí – Pátek, 16:00 – 20:00
+                     </p>
+                   </div>
+                 </CardContent>
+               </Card>
+              {/* druhý kontakt */}
+              <Card>
+                <CardHeader>
+                  <Users className="h-8 w-8 text-primary mb-2" />
+                  <CardTitle>Tisková mluvčí</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <p className="font-semibold">Sergeant - Emma Carter</p>
+                    <p className="text-sm text-muted-foreground">Tisková mluvčí</p>
+                  </div>
+                  <div className="space-y-2 text-sm">
+                    {/*<p><strong>Telefon:</strong> (555) 123-4567 kl. 2100</p>*/}
+                    <p><strong>Email:</strong> media@lssd.gov</p>
+                    <div className="flex items-center space-x-2">
+                      <span className="text-muted-foreground text-sm">Kontakt:</span>
+                      <a
+                        href={`https://discord.com/users/${"906171404498632784"}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center space-x-2 text-primary hover:underline"
+                        aria-label="Otevřít Discord profil"
+                      >
+                        <svg className="h-4 w-4" viewBox="0 0 71 55" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                          <path d="M60.104 4.552A58.9 58.9 0 0 0 46.87.5a41.6 41.6 0 0 0-1.984 4.03 55.1 55.1 0 0 0-14.776 0A41.6 41.6 0 0 0 27.128.5 58.9 58.9 0 0 0 11.996 4.552C3.892 19.22-.317 33.63.78 47.88a59.6 59.6 0 0 0 18.28 9.3 43.3 43.3 0 0 0 4.55-7.4 37.6 37.6 0 0 1-6.77-3.2c.57-.4 1.123-.82 1.654-1.26 13.34 6.2 29.32 6.2 42.6 0 .53.44 1.08.86 1.65 1.26a37.6 37.6 0 0 1-6.77 3.2 43.3 43.3 0 0 0 4.55 7.4 59.6 59.6 0 0 0 18.28-9.3c1.148-14.25-3.964-28.66-11.07-43.328z" fill="currentColor" />
+                          <path d="M23.5 34.5c-2.2 0-4-2-4-4.5s1.8-4.5 4-4.5 4 2 4 4.5-1.8 4.5-4 4.5zm24 0c-2.2 0-4-2-4-4.5s1.8-4.5 4-4.5 4 2 4 4.5-1.8 4.5-4 4.5z" fill="#fff" />
+                        </svg>
+                        <span className="text-sm">Emma Carter</span>
+                      </a>
+                    </div>
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">
