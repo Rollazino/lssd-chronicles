@@ -26,9 +26,14 @@ function EventRegistrationForm({ event, onClose }: { event: { title: string; web
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSending(true);
-    const payload = {
-      content: `Nová registrace na akci: ${event.title}\nJméno: ${name}\nEmail: ${email}\nDiscord: ${discord}\nKolega: ${colleague ? colleague : "(nevybráno)"}\nPoznámka: ${note}`
-    };
+    // Build content and optional role mention
+    const roleMention = (event as any).roleId ? `<@&${(event as any).roleId}> ` : "";
+    const content = `${roleMention}Nová registrace na akci: ${event.title}\nJméno: ${name}\nEmail: ${email}\nDiscord: ${discord}\nKolega: ${colleague ? colleague : "(nevybráno)"}\nPoznámka: ${note}`;
+    const payload: any = { content };
+    // If a roleId was provided, add allowed_mentions so Discord will actually ping the role
+    if ((event as any).roleId) {
+      payload.allowed_mentions = { parse: [], roles: [(event as any).roleId] };
+    }
     try {
       await fetch(event.webhook, {
         method: "POST",
@@ -129,7 +134,9 @@ const Community = () => {
       time: "8:00 – 10:00",
       location: "Central Café, Hlavní ulice",
       description: "Přijďte na neformální rozhovor u kávy. Bez agendy, jen povídání.",
-      webhook: "https://discord.com/api/webhooks/1422606074003066987/50G_RxkOhLyahIvhCgG36bXgErFgFBgc55__qT7LMEUxAgpJ-E8yd1m4K7AmQbvmXe7f" // upravte dle potřeby
+      webhook: "https://discord.com/api/webhooks/1429104317004120064/Dja0k5Yp1L5xkKdIM3Rdwd6s049RfcnismzhkJ-TCCsY3vr4xrI1ukX1nRbK6JETWMTM", // upravte dle potřeby
+      // Optional: Discord Role ID to ping when a new registration is submitted
+      roleId: "1429103061384691732"
     }
   ];
 
