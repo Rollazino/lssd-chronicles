@@ -37,21 +37,29 @@ const Contact = () => {
     setNonUrgentError("");
     setNonUrgentSent(false);
     try {
-      const res = await fetch("https://discord.com/api/webhooks/1424772640853200987/L8nGHZOGEuLmWclq0pBNBjYKcUF9zE-KuelArnKwltYCa6S3M9RVgBSK9a-dfwQ6ydCE", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          content:
-            `**Jméno:** ${nonUrgentFirstName} ${nonUrgentLastName}\n` +
-            `**E-mail:** ${nonUrgentEmail}\n` +
-            `**Telefon:** ${nonUrgentPhone}\n` +
-            `**Discord/Discord ID:** ${nonUrgentDiscord}\n` +
-            `**Předmět:** ${nonUrgentSubject}\n` +
-            `**Zpráva:** ${nonUrgentMessage}`
-        })
-      });
+      const roleId = "1396927378432721104"; // Replace with actual role ID if needed
+      const roleMention = roleId ? `<@&${roleId}> ` : "";
+      const content =
+        `${roleMention}**Jméno:** ${nonUrgentFirstName} ${nonUrgentLastName}\n` +
+        `**E-mail:** ${nonUrgentEmail}\n` +
+        `**Telefon:** ${nonUrgentPhone}\n` +
+        `**Discord/Discord ID:** ${nonUrgentDiscord}\n` +
+        `**Předmět:** ${nonUrgentSubject}\n` +
+        `**Zpráva:** ${nonUrgentMessage}`;
+      const payload: any = { content };
+      if (roleId) {
+        payload.allowed_mentions = { parse: [], roles: [roleId] };
+      }
+      const res = await fetch(
+        "https://discord.com/api/webhooks/1424772640853200987/L8nGHZOGEuLmWclq0pBNBjYKcUF9zE-KuelArnKwltYCa6S3M9RVgBSK9a-dfwQ6ydCE",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
+        }
+      );
       if (!res.ok) throw new Error("Chyba při odesílání na Discord");
       setNonUrgentSent(true);
   setNonUrgentFirstName("");
@@ -80,18 +88,26 @@ const Contact = () => {
     setAnonError("");
     setAnonSent(false);
     try {
-      const res = await fetch("https://discord.com/api/webhooks/1424771162990444634/chUQdZCfThDtgpGVLBLssXNDaNG2sbJVcvxoKHQ7MG_tv9RvhANrscM1vv6jFOTpjsmb", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          content:
-            `**Discord/Discord ID:** ${anonDiscord}\n` +
-            `**Předmět:** ${anonSubject}\n` +
-            `**Zpráva:** ${anonMessage}`
-        })
-      });
+      const roleId = "1396927378432721104"; // Replace with actual role ID if needed
+      const roleMention = roleId ? `<@&${roleId}> ` : "";
+      const content =
+        `${roleMention}**Discord/Discord ID:** ${anonDiscord}\n` +
+        `**Předmět:** ${anonSubject}\n` +
+        `**Zpráva:** ${anonMessage}`;
+      const payload: any = { content };
+      if (roleId) {
+        payload.allowed_mentions = { parse: [], roles: [roleId] };
+      }
+      const res = await fetch(
+        "https://discord.com/api/webhooks/1424771162990444634/chUQdZCfThDtgpGVLBLssXNDaNG2sbJVcvxoKHQ7MG_tv9RvhANrscM1vv6jFOTpjsmb",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
+        }
+      );
       if (!res.ok) throw new Error("Chyba při odesílání na Discord");
       setAnonSent(true);
   setAnonDiscord("");
