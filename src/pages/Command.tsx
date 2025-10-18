@@ -43,15 +43,6 @@ const Command = () => {
       status: "alive"
     },
     {
-      name: "Raffael Jeter",
-      title: "Commander",
-      experience: "20 let, 15 let v detektivních týmech",
-      image: "/images/Jeter.png",
-      description: "Aktuálně společně s celým vedením vede sbor LSSD k lepším zítřkům a svými schopnostmi přispívá k disciplíně sboru.",
-      achievements: ["Ocenění za policejní služby", "Odhalení a vyšetření nelegálních buněk"],
-      status: "dead"
-    },
-    {
       name: "Jacob Cage",
       title: "Captain",
       experience: "32 let",
@@ -60,6 +51,7 @@ const Command = () => {
       achievements: ["Pochvaly od občanů za profesionální a lidský přístup k veřejnosti", "Pochvaly od kolegů z řad policie za týmovou spolupráci a odhodlání při zásazích","Policejní medaile za vynikající službu"],
       status: "alive"
     },
+    {/*
     {
       name: "William Greenwood",
       title: "Lieutenant",
@@ -69,6 +61,7 @@ const Command = () => {
       achievements: [""],
       status: "alive"
     }
+      */}
   ];
       {/*
       name: "Sean Fell",
