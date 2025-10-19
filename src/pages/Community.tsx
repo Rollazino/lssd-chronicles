@@ -119,10 +119,10 @@ const Community = () => {
     icon: Calendar,
     title: "Komunitní akce",
     description: "Organizace a účast na akcích pro posílení vztahů mezi policií a komunitou.",
-    features: ["Káva s policistou"],
-    benefits: ["Možnost osobního kontaktu s policisty v přátelské atmosféře", "Rychlejší předávání podnětů a zpětné vazby", "Posílení pocitu bezpečí a důvěry", "Podpora spolupráce mezi občany a policií při řešení lokálních problémů"],
-    contact: "Policista Garcia",
-    discord: "1", // zde zadejte správné Discord ID
+    features: ["Káva se šerifem"],
+    benefits: ["Možnost osobního kontaktu se šerify v přátelské atmosféře", "Rychlejší předávání podnětů a zpětné vazby", "Posílení pocitu bezpečí a důvěry", "Podpora spolupráce mezi občany a policií při řešení lokálních problémů"],
+    contact: "Deputy Sheriff - Cunha",
+    discord: "444470659226140673", // zde zadejte správné Discord ID
     detail: "Cílem programu je budování důvěry, otevřená komunikace a posílení vzájemného porozumění mezi policií a komunitou. Akce mají neformální charakter, aby lidé mohli policisty poznat i mimo služební rámec."
   }
   ];
@@ -130,7 +130,7 @@ const Community = () => {
   const upcomingEvents = [
     {
       date: "2024-02-15",
-      title: "Káva s policistou – stanice centrum",
+      title: "NEPLATNÉ - Káva s policistou – stanice centrum",
       time: "8:00 – 10:00",
       location: "Central Café, Hlavní ulice",
       description: "Přijďte na neformální rozhovor u kávy. Bez agendy, jen povídání.",

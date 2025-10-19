@@ -50,8 +50,7 @@ const Command = () => {
       description: "Spolupráce s detektivním oddělením vedoucí k rozbití celé nelegální organizace. Dopadení pachatele plánujícího únos policejního kolegy. Dlouhodobá služba s prokazatelnými výsledky v ochraně veřejné bezpečnosti",
       achievements: ["Pochvaly od občanů za profesionální a lidský přístup k veřejnosti", "Pochvaly od kolegů z řad policie za týmovou spolupráci a odhodlání při zásazích","Policejní medaile za vynikající službu"],
       status: "alive"
-    },
-    {/*
+    }/*
     {
       name: "William Greenwood",
       title: "Lieutenant",
@@ -61,7 +60,7 @@ const Command = () => {
       achievements: [""],
       status: "alive"
     }
-      */}
+      */
   ];
       {/*
       name: "Sean Fell",
