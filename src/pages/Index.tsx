@@ -38,6 +38,14 @@ import patrolFleet from "@/assets/auata.png";
 const Index = () => {
   const announcements = [
     {
+      date: "2025-10-28",
+      title: "Nové usnesení vedení ohledně stížností v rámci sboru",
+      description: "Los Santos County Sheriff’s Department přijímá nové usnesení týkající se přijímání a řešení stížností.",
+      content: "Los Santos County Sheriff’s Department oznamuje přijetí nového usnesení vedení ze dne 26.10.2025 týkajícího se přijímání a řešení stížností v rámci sboru. Dokument stanovuje jednotný a transparentní postup pro vyhodnocování podnětů, jejich rozdělení podle závažnosti a následné řešení odpovědnými složkami. Cílem usnesení je zajistit přehledný a spravedlivý systém nakládání se stížnostmi členů i veřejnosti, posílit odpovědnost a zachovat profesionální přístup při každém interním šetření. Součástí usnesení je také uznání Internal Affairs Division ze strany LSSD, jejímž primárním úkolem je dohlížet na závažné případy vyžadující prošetření ze strany komisařství. Tento krok představuje další posílení transparentnosti, důvěry veřejnosti a integrity Los Santos County Sheriff’s Department. Více informací naleznete v záložce média -> Mediální materiály.",
+      author: "Division Chief - Anthony Woods",
+      priority: "medium"
+    },
+    {
       date: "2025-09-01",
       title: "Znovuotevření stanice LSSD - Davis",
       description: "Stanice LSSD v Davis je opět otevřena po kompletní rekonstrukci.",

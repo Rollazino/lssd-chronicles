@@ -198,6 +198,13 @@ const Media = () => {
       formats: ["JPG"],
       size: "7,55 MB"
     },
+    {
+      type: "document",
+      title: "Směrnice pro přijímání stížností",
+      description: "Přijímání a řešení stížností v rámci sboru LSSD.",
+      formats: ["PDF"],
+      size: "556 KB"
+    },
   ];
 
   const [showAll, setShowAll] = useState(false);
@@ -354,6 +361,9 @@ const Media = () => {
               } else if (asset.title === "Oficiální portréty šerifa Millera") {
                 downloadUrl = "/images/sheriff/Sheriff - Foto.zip";
                 downloadName = "sheriff-miller";
+              } else if (asset.title === "Směrnice pro přijímání stížností") {
+                downloadUrl = "/images/stiznosti/směrnice-prijimani-stiznosti-lssd.pdf";
+                downloadName = "směrnice-prijimani-stiznosti-lssd";
               }
               return (
                 <Card key={index} className="hover:shadow-lg transition-shadow" id={highlightId}>
