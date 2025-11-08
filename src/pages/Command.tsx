@@ -16,15 +16,6 @@ const Command = () => {
       status: "alive"
     },
     {
-      name: "Peter Wellington",
-      title: "Undersheriff",
-      experience: "32 let",
-      image: "/images/Wellington.png",
-      description: "Skvělý přítel a spolehlivý kolega, který se vypracoval z oblasti multimédií a fotografování do role odborníka na administrativu a komunikaci. Díky svému citu pro detail a schopnosti navazovat kontakty přirozeně přešel k práci tiskového mluvčího, kde spojuje profesionální prezentaci s lidským a přátelským přístupem.",
-      achievements: ["Komunitní policejní medaile", "Pochvala za vynikající komunikaci a vztahy s veřejností"],
-      status: "alive"
-    },
-    {
       name: "Anthony Woods",
       title: "Division Chief",
       experience: "25 let",
