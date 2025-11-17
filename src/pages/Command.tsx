@@ -4,6 +4,16 @@ import { Users, Medal, Calendar } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
+// Adjusted z-index of the overlay to ensure Navigation is clickable
+const UnderConstructionOverlay = () => (
+  <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-40">
+    <div className="text-center">
+      <h1 className="text-5xl font-bold text-yellow-400 mb-4">Ve výstavbě</h1>
+      <p className="text-lg text-white">Proběhla změna vedení, na aktualizaci tvrdě pracujeme.</p>
+    </div>
+  </div>
+);
+
 const Command = () => {
   const commandStaff = [
     {
@@ -64,9 +74,12 @@ const Command = () => {
     */}
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
-      
+    <div className="min-h-screen bg-background relative">
+      <Navigation className="relative z-50" />
+
+      {/* Overlay */}
+      <UnderConstructionOverlay />
+
       {/* Hero Section */}
       <section className="py-24 bg-gradient-to-br from-primary/10 to-accent/10">
         <div className="container mx-auto px-4 text-center">

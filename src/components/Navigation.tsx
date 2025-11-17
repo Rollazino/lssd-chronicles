@@ -14,7 +14,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Phone, AlertTriangle } from "lucide-react";
 import lssdBadge from "@/assets/lssd-logo.png";
 
-const Navigation = () => {
+const Navigation = ({ className }: { className?: string }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
@@ -51,7 +51,9 @@ const Navigation = () => {
   );
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 professional-shadow">
+    <nav
+      className={`sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 professional-shadow ${className}`}
+    >
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Logo and Title */}
@@ -76,12 +78,6 @@ const Navigation = () => {
               <AlertTriangle className="h-4 w-4 text-destructive" />
               <span className="font-semibold text-destructive">Tísňová linka: 911</span>
             </div>
-            {/*
-            <div className="flex items-center space-x-2 text-sm">
-              <Phone className="h-4 w-4 text-muted-foreground" />
-              <span className="text-muted-foreground">Neurgentní: (555) 123-4567</span>
-            </div>
-            */}
           </div>
 
           {/* Mobile Menu */}
@@ -103,7 +99,7 @@ const Navigation = () => {
                     </p>
                   </div>
                 </div>
-                
+
                 <div className="flex flex-col space-y-2">
                   <NavContent />
                 </div>
@@ -114,12 +110,6 @@ const Navigation = () => {
                     <AlertTriangle className="h-4 w-4 text-destructive" />
                     <span className="font-semibold text-destructive">Tísňová linka: 911</span>
                   </div>
-                  {/*
-                  <div className="flex items-center space-x-2">
-                    <Phone className="h-4 w-4 text-muted-foreground" />
-                    <span className="text-muted-foreground">Neurgentní: (555) 123-4567</span>
-                  </div>
-                  */}
                 </div>
               </div>
             </SheetContent>
