@@ -51,7 +51,7 @@ const Contact = () => {
         payload.allowed_mentions = { parse: [], roles: [roleId] };
       }
       const res = await fetch(
-        "https://discord.com/api/webhooks/1424772640853200987/L8nGHZOGEuLmWclq0pBNBjYKcUF9zE-KuelArnKwltYCa6S3M9RVgBSK9a-dfwQ6ydCE",
+        "https://discord.com/api/webhooks/1456656433918771221/iegl2oD91ZQqumkhG7rzZ1uPqxmz-m_BzR6Gss8el0--F6lNAHBe45h_kCLTJZ3R-vA-",
         {
           method: "POST",
           headers: {
@@ -99,7 +99,7 @@ const Contact = () => {
         payload.allowed_mentions = { parse: [], roles: [roleId] };
       }
       const res = await fetch(
-        "https://discord.com/api/webhooks/1424771162990444634/chUQdZCfThDtgpGVLBLssXNDaNG2sbJVcvxoKHQ7MG_tv9RvhANrscM1vv6jFOTpjsmb",
+        "https://discord.com/api/webhooks/1456657164926980107/WAjtCNMtn75VJguY7IokyHkQ9-7alJV4I5Qb3UusHbcKNvam-ErTSgidkE7uGqH6Shur",
         {
           method: "POST",
           headers: {
@@ -395,7 +395,7 @@ const Contact = () => {
                     )}
                   </form>
                   <div>
-                    <a href="https://discord.com/api/webhooks/1424772640853200987/L8nGHZOGEuLmWclq0pBNBjYKcUF9zE-KuelArnKwltYCa6S3M9RVgBSK9a-dfwQ6ydCE" target="_blank" rel="noopener noreferrer" className="underline text-primary"></a>
+                    <a href="https://discord.com/api/webhooks/1456656433918771221/iegl2oD91ZQqumkhG7rzZ1uPqxmz-m_BzR6Gss8el0--F6lNAHBe45h_kCLTJZ3R-vA-" target="_blank" rel="noopener noreferrer" className="underline text-primary"></a>
                   </div>
                 </CardContent>
               </Card>
@@ -464,7 +464,7 @@ const Contact = () => {
                     )}
                   </form>
                   <div>
-                    <a href="https://discord.com/api/webhooks/1424771162990444634/chUQdZCfThDtgpGVLBLssXNDaNG2sbJVcvxoKHQ7MG_tv9RvhANrscM1vv6jFOTpjsmb" target="_blank" rel="noopener noreferrer" className="underline text-primary"></a>
+                    <a href="https://discord.com/api/webhooks/1456657164926980107/WAjtCNMtn75VJguY7IokyHkQ9-7alJV4I5Qb3UusHbcKNvam-ErTSgidkE7uGqH6Shur" target="_blank" rel="noopener noreferrer" className="underline text-primary"></a>
                   </div>
                 </CardContent>
               </Card>

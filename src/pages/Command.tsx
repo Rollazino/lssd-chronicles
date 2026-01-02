@@ -5,47 +5,56 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 // Adjusted z-index of the overlay to ensure Navigation is clickable
-const UnderConstructionOverlay = () => (
+/*const UnderConstructionOverlay = () => (
   <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-40">
     <div className="text-center">
       <h1 className="text-5xl font-bold text-yellow-400 mb-4">Ve výstavbě</h1>
       <p className="text-lg text-white">Proběhla změna vedení, na aktualizaci tvrdě pracujeme.</p>
     </div>
   </div>
-);
+);*/
 
 const Command = () => {
   const commandStaff = [
     {
-      name: "Daniel Miller",
+      name: "Dino Lopez",
       title: "Sheriff",
       experience: "22 let",
       image: "/images/Miller.png",
-      description: "Vede své oddělení s odhodláním a profesionalitou, přičemž klade důraz na bezpečnost komunity a rozvoj týmové spolupráce. Jeho přístup kombinuje strategické plánování s lidským vztahem k občanům i kolegům. Výrazně přispěl k rozvoji FTO programu, čímž podpořil vzdělávání a profesní růst nových členů týmu. Je známý svou schopností vést v krizových situacích a motivovat ostatní k dosažení nejlepších výsledků. Díky svému klidnému, ale důraznému přístupu si získal respekt jak v rámci oddělení, tak u široké veřejnosti. Jeho prioritou je nejen efektivní vymáhání práva, ale také budování důvěry a partnerství s komunitami.",
-      achievements: ["Ocenění za přínos v rozvoji FTO programu", "Certifikace v oblasti moderních metod výcviku a veden"],
+      description: "Vedení sandy stanice, vedoucí pozice v policejní akademii jako Training Officer. Zkušenosti s řízením operací, školením nových důstojníků a implementací výcvikových programů. Silný důraz na profesionální rozvoj a efektivní komunikaci v rámci oddělení.",
+      achievements: ["Absolvent policejní akademie s vyznamenáním", "Dvě medaile za vynikající službu"],
       status: "alive"
     },
     {
-      name: "Anthony Woods",
-      title: "Division Chief",
-      experience: "25 let",
-      image: "/images/Woods.png",
-      description: "Anthony Woods nastoupil do prvního turnusu akademie Los Santos Police Department, kde se postupně vypracoval z řadového policisty na hodnost Sergeanta, kde vedl tým policistů a zaměřoval se na posilování vztahů mezi složkami i komunitou. Postupně se stal Sergeantem druhé třídy a byl povýšen i na poručíka. Na této hodnosti strávil největší část kariéry u LSPD. Soustředil se na interní záležitosti, rozvoj oddělení a zlepšování služeb veřejnosti. V červenci roku 2025 po přestupu k Los Santos County Sheriff’s Department byl jmenován kapitánem. Za své zásluhy, profesionální vedení a přínos společnosti obdržel Medaili za vynikající službu a byl povýšen do hodnosti Division Chiefa, kde dnes dohlíží na chod divizí, podporuje komunitní projekty a zajišťuje, aby department plnil nejvyšší standardy bezpečnosti a služeb veřejnosti.",
-      achievements: ["Absolvent úplně prvního turnusu policejní akademie", "Čestná uznání za přínos komunitě a vedení týmu", "Medaile za vynikající službu a povýšení do hodnosti Division Chiefa"],
+      name: "Emma Carter",
+      title: "Captain",
+      experience: "12 let",
+      image: "/images/Carter.png",
+      description: "Vedení sandy stanice, vedoucí pozice v policejní akademii jako Training Officer. Zkušenosti s řízením operací, školením nových důstojníků a implementací výcvikových programů. Silný důraz na profesionální rozvoj a efektivní komunikaci v rámci oddělení.",
+      achievements: ["Absolvent policejní akademie s vyznamenáním", "Dvě medaile za vynikající službu"],
       status: "alive"
     },
     {
-      name: "Jayden Sinns",
-      title: "Commander",
+      name: "Ned Tanner",
+      title: "Captain",
       experience: "30 let",
-      image: "/images/Jayden Sinns.png",
+      image: "/images/Tanner.png",
       description: "Jako administrativní lídr s velkými vizemi a smyslem pro dlouhodobé plánování se šerif Sinns zaměřuje na budování přátelského a otevřeného prostředí podporujícího spolupráci a vzájemnou důvěru. Začínal jako zkušený zástupce šerifa a FTO (školící důstojník v terénu), pod jehož vedením prošla řada nováčků – z nichž někteří dnes patří mezi nejlepší. Díky svým schopnostem se stal uznávaným seržantem, který si vytrvale šel za svým snem postoupit do vyššího vedení. To se mu podařilo – nejprve na pozici poručíka, následně Commander pro administrativní činnost, a nakonec byl zvolen šerifem. Jeho cílem je neustále zlepšovat služby a vztahy s komunitou, přičemž se zaměřuje na transparentnost, otevřenou komunikaci a inovace v oblasti bezpečnosti.",
       achievements: ["Absolvent státní policejní akademie s vyznamenáním", "Policejní medaile za záchranu života", "Pochvala za vynikající vedení a přínos k rozvoji oddělení"],
       status: "alive"
     },
     {
-      name: "Jacob Cage",
-      title: "Captain",
+      name: "Ruby White",
+      title: "Lieutenant",
+      experience: "32 let",
+      image: "/images/Cage.png",
+      description: "Spolupráce s detektivním oddělením vedoucí k rozbití celé nelegální organizace. Dopadení pachatele plánujícího únos policejního kolegy. Dlouhodobá služba s prokazatelnými výsledky v ochraně veřejné bezpečnosti",
+      achievements: ["Pochvaly od občanů za profesionální a lidský přístup k veřejnosti", "Pochvaly od kolegů z řad policie za týmovou spolupráci a odhodlání při zásazích","Policejní medaile za vynikající službu"],
+      status: "alive"
+    },
+    {
+      name: "Nathan Collins",
+      title: "Lieutenant",
       experience: "32 let",
       image: "/images/Cage.png",
       description: "Spolupráce s detektivním oddělením vedoucí k rozbití celé nelegální organizace. Dopadení pachatele plánujícího únos policejního kolegy. Dlouhodobá služba s prokazatelnými výsledky v ochraně veřejné bezpečnosti",
@@ -53,12 +62,12 @@ const Command = () => {
       status: "alive"
     }/*
     {
-      name: "William Greenwood",
-      title: "Lieutenant",
-      experience: "",
-      image: "/images/Greenwood.png",
-      description: "",
-      achievements: [""],
+      name: "Jayden Sinns",
+      title: "Commander",
+      experience: "30 let",
+      image: "/images/Jayden Sinns.png",
+      description: "Jako administrativní lídr s velkými vizemi a smyslem pro dlouhodobé plánování se šerif Sinns zaměřuje na budování přátelského a otevřeného prostředí podporujícího spolupráci a vzájemnou důvěru. Začínal jako zkušený zástupce šerifa a FTO (školící důstojník v terénu), pod jehož vedením prošla řada nováčků – z nichž někteří dnes patří mezi nejlepší. Díky svým schopnostem se stal uznávaným seržantem, který si vytrvale šel za svým snem postoupit do vyššího vedení. To se mu podařilo – nejprve na pozici poručíka, následně Commander pro administrativní činnost, a nakonec byl zvolen šerifem. Jeho cílem je neustále zlepšovat služby a vztahy s komunitou, přičemž se zaměřuje na transparentnost, otevřenou komunikaci a inovace v oblasti bezpečnosti.",
+      achievements: ["Absolvent státní policejní akademie s vyznamenáním", "Policejní medaile za záchranu života", "Pochvala za vynikající vedení a přínos k rozvoji oddělení"],
       status: "alive"
     }
       */
@@ -77,8 +86,9 @@ const Command = () => {
     <div className="min-h-screen bg-background relative">
       <Navigation className="relative z-50" />
 
+
       {/* Overlay */}
-      <UnderConstructionOverlay />
+      {/*<UnderConstructionOverlay />*/}
 
       {/* Hero Section */}
       <section className="py-24 bg-gradient-to-br from-primary/10 to-accent/10">

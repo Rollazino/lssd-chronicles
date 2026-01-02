@@ -134,7 +134,7 @@ const Community = () => {
       time: "8:00 – 10:00",
       location: "Central Café, Hlavní ulice",
       description: "Přijďte na neformální rozhovor u kávy. Bez agendy, jen povídání.",
-      webhook: "https://discord.com/api/webhooks/1429104317004120064/Dja0k5Yp1L5xkKdIM3Rdwd6s049RfcnismzhkJ-TCCsY3vr4xrI1ukX1nRbK6JETWMTM", // upravte dle potřeby
+      webhook: "https://discord.com/api/webhooks/1456657952932102175/Pn6Ja5w6CA5RHRLOlJdLc2h1pO6i4uBCK1WNnlSQi_exAw-M4I4mdgOJnWcr_53uwVUj", // upravte dle potřeby
       // Optional: Discord Role ID to ping when a new registration is submitted
       roleId: "1429103061384691732"
     }
