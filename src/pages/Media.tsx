@@ -43,7 +43,7 @@ function getTypeColor(type: string) {
 const Media = () => {
   const pressReleases = [
     {
-      date: "2026-01-39",
+      date: "2026-01-09",
       title: "Více než jen odznak: LSSD si připomíná Národní den ocenění donucovacích orgánů",
       excerpt: "Los Santos Sheriff's Department si každoročně připomíná Národní den ocenění donucovacích orgánů, aby vyjádřil vděčnost a uznání svým členům za jejich neúnavnou službu a obětavost.",
       category: "Ocenění donucovacích orgánů",
