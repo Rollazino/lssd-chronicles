@@ -43,6 +43,29 @@ function getTypeColor(type: string) {
 const Media = () => {
   const pressReleases = [
     {
+      date: "2026-01-39",
+      title: "Více než jen odznak: LSSD si připomíná Národní den ocenění donucovacích orgánů",
+      excerpt: "Los Santos Sheriff's Department si každoročně připomíná Národní den ocenění donucovacích orgánů, aby vyjádřil vděčnost a uznání svým členům za jejich neúnavnou službu a obětavost.",
+      category: "Ocenění donucovacích orgánů",
+      content: "Každý rok 9. ledna si celá země připomíná National Law Enforcement Appreciation Day. Pro Los Santos Sheriff's Department není tento den jen datem v kalendáři, ale příležitostí k zamyšlení nad tím, co služba veřejnosti skutečně znamená. Být šerifem v Los Santos není jen práce od devíti do pěti. Znamená to být připraven reagovat v okamžiku, kdy ostatní utíkají do bezpečí. Znamená to trávit svátky daleko od rodiny, hlídkovat v ulicích za každého počasí a čelit situacím, které vyžadují nejen fyzickou sílu, ale i empatii a rozvahu. \"Naše motto 'A Tradition of Service' bereme vážně,\" uvedlo vedení LSSD ve svém prohlášení. \"Dnešní den patří všem našim šerifům, od těch v hlídkových vozech, přes detektivy řešící složité případy, až po personál ve věznici. Vážíme si jejich obětí a nasazení.\" V tento den LSSD také děkuje komunitě Los Santos County. Důvěra mezi občany a strážci zákona je klíčová pro fungování bezpečné společnosti. Pokud dnes potkáte šerifa, neváhejte mu pokynout nebo poděkovat. I malé gesto podpory může pro ty, kteří nosí hvězdu na hrudi, znamenat mnoho. Děkujeme, že stojíte při nás. Los Santos Sheriff's Deparment\"A Tradition of Service\"",
+      images: [
+        "/images/media/2026-01-09/image.png"
+      ],
+      author: "Sergeant II - Jayden Sinns"
+    },
+    {
+      date: "2025-12-31",
+      title: "Štastný nový rok od Los Santos Sheriff's Department",
+      excerpt: "Přejeme všem občanům bezpečný a šťastný nový rok 2026! Děkujeme za vaši důvěru a podporu - i v novém roce tu budeme pro vás.",
+      category: "Přání",
+      content: "Los Santos Sheriff's Department přeje všem občanům bezpečný a šťastný nový rok 2026! Děkujeme za vaši důvěru a podporu v uplynulém roce. Vaše bezpečnost je naší nejvyšší prioritou a i v novém roce budeme pokračovat v naší misi chránit a sloužit komunitě s odhodláním a profesionalitou. Společně můžeme čelit výzvám, které přinese nový rok, a zajistit, že Los Santos zůstane bezpečným místem pro všechny jeho obyvatele. Těšíme se na další rok spolupráce a společných úspěchů. Šťastný nový rok 2026!",
+      images: [
+        "/images/media/2025-12-31/image.png",
+        "/images/media/2025-12-31/image2.png"
+      ],
+      author: "Sergeant II - Jayden Sinns"
+    },
+    {
       date: "2025-10-12",
       title: "Změna vedení v Los Santos Sheriff's Department",
       excerpt: "Nový Sheriff Daniel Miller přebírá vedení po Jaydenu Sinnsovi",
