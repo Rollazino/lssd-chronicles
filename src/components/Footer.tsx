@@ -66,13 +66,6 @@ const Footer = () => {
               <div className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 mt-0.5" />
                 <div>
-                  <p className="text-sm">Innocence Boulevard</p>
-                  <p className="text-sm">Los Santos, SA 9148</p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-2">
-                <MapPin className="h-4 w-4 mt-0.5" />
-                <div>
                   <p className="text-sm">Paleto Boulevard</p>
                   <p className="text-sm">Paleto Bay, SA 1038</p>
                 </div>
@@ -109,7 +102,6 @@ const Footer = () => {
                 Přihlásit odběr →
               </button>
             </div>
-
           </div>
           */}
           
@@ -118,7 +110,7 @@ const Footer = () => {
         {/* Spodní lišta */}
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm opacity-80">
-            © 2025 Los Santos Sheriff's Department. Všechna práva vyhrazena.
+            © 2026 Los Santos Sheriff's Department. Všechna práva vyhrazena.
           </p>
           {/*
           <div className="flex space-x-6 mt-4 md:mt-0">

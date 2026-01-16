@@ -245,6 +245,16 @@ const About = () => {
                   <Badge variant="outline">30 let služby, 3 roky ve funkci</Badge>
                 </CardContent>
               </Card>
+
+              <Card>
+                <CardContent className="pt-6">
+                  <h3 className="text-xl font-semibold text-primary mb-2">Šerif Daniel Miller (2025–2025)</h3>
+                  <p className="text-muted-foreground mb-4">
+                    Ve svém krátkém působení pokračoval v modernizačních trendech a kladl důraz na profesionální rozvoj důstojníků, čímž přispěl k dalšímu posílení reputace LSSD.
+                  </p>
+                  <Badge variant="outline">30 let služby, 5 měsíců ve funkci</Badge>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>

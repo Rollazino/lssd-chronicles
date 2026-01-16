@@ -19,46 +19,37 @@ const Command = () => {
     {
       name: "Dino Lopez",
       title: "Sheriff",
-      experience: "22 let",
-      image: "/images/Miller.png",
-      description: "Vedení sandy stanice, vedoucí pozice v policejní akademii jako Training Officer. Zkušenosti s řízením operací, školením nových důstojníků a implementací výcvikových programů. Silný důraz na profesionální rozvoj a efektivní komunikaci v rámci oddělení.",
-      achievements: ["Absolvent policejní akademie s vyznamenáním", "Dvě medaile za vynikající službu"],
-      status: "alive"
-    },
-    {
-      name: "Emma Carter",
-      title: "Captain",
-      experience: "12 let",
-      image: "/images/Carter.png",
-      description: "Vedení sandy stanice, vedoucí pozice v policejní akademii jako Training Officer. Zkušenosti s řízením operací, školením nových důstojníků a implementací výcvikových programů. Silný důraz na profesionální rozvoj a efektivní komunikaci v rámci oddělení.",
-      achievements: ["Absolvent policejní akademie s vyznamenáním", "Dvě medaile za vynikající službu"],
+      experience: "33 let",
+      image: "/images/Lopez.png",
+      description: "V čele LSSD stavím na pevných základech a hodnotách, které jsem si osvojil v rodině s hlubokou policejní historií. Kráčet ve stopách svého otce pro mě znamená spojit osvědčené principy policejní práce s moderními metodami řízení. Mým cílem je vést sbor tak, aby byl hrdým nástupcem generací, které chránily zákon před námi",
+      achievements: ["Krirové řízení a komunikace", "Zavedení certifikací krizového vyjednávání"],
       status: "alive"
     },
     {
       name: "Ned Tanner",
       title: "Captain",
-      experience: "30 let",
+      experience: "15 let",
       image: "/images/Tanner.png",
-      description: "Jako administrativní lídr s velkými vizemi a smyslem pro dlouhodobé plánování se šerif Sinns zaměřuje na budování přátelského a otevřeného prostředí podporujícího spolupráci a vzájemnou důvěru. Začínal jako zkušený zástupce šerifa a FTO (školící důstojník v terénu), pod jehož vedením prošla řada nováčků – z nichž někteří dnes patří mezi nejlepší. Díky svým schopnostem se stal uznávaným seržantem, který si vytrvale šel za svým snem postoupit do vyššího vedení. To se mu podařilo – nejprve na pozici poručíka, následně Commander pro administrativní činnost, a nakonec byl zvolen šerifem. Jeho cílem je neustále zlepšovat služby a vztahy s komunitou, přičemž se zaměřuje na transparentnost, otevřenou komunikaci a inovace v oblasti bezpečnosti.",
-      achievements: ["Absolvent státní policejní akademie s vyznamenáním", "Policejní medaile za záchranu života", "Pochvala za vynikající vedení a přínos k rozvoji oddělení"],
+      description: "Narodil se v Texasu po studiu se přestěhoval do Los Santos, celý život zasvětil práce pro úřad okresního šerifa LS kde vykonává funkci vedení sboru mezi jeho hodnoty patří vymáhaní práva, ctění spravedlnosti a ochrana občanu",
+      achievements: ["Úspěšně absolvovaná policejní akademie Los Santos", "Medaile za záslužnou službu", "Medaile za výbornou službu"],
       status: "alive"
     },
     {
       name: "Ruby White",
       title: "Lieutenant",
-      experience: "32 let",
-      image: "/images/Cage.png",
-      description: "Spolupráce s detektivním oddělením vedoucí k rozbití celé nelegální organizace. Dopadení pachatele plánujícího únos policejního kolegy. Dlouhodobá služba s prokazatelnými výsledky v ochraně veřejné bezpečnosti",
-      achievements: ["Pochvaly od občanů za profesionální a lidský přístup k veřejnosti", "Pochvaly od kolegů z řad policie za týmovou spolupráci a odhodlání při zásazích","Policejní medaile za vynikající službu"],
+      experience: "4 roky",
+      image: "/images/White.png",
+      description: "Vede svou službu s profesionalitou, důrazem na odpovědnost a respekt k pravidlům. Poručík Ruby White je známá svým pevným postojem, spolehlivostí v terénu a schopností rozhodovat se i v náročných situacích.",
+      achievements: ["Medaile za záslužnou službu", "Dlouhodobě stabilní výkon ve velení","Prokázané velitelské schopnosti v operařní praxi"],
       status: "alive"
     },
     {
       name: "Nathan Collins",
       title: "Lieutenant",
-      experience: "32 let",
-      image: "/images/Cage.png",
-      description: "Spolupráce s detektivním oddělením vedoucí k rozbití celé nelegální organizace. Dopadení pachatele plánujícího únos policejního kolegy. Dlouhodobá služba s prokazatelnými výsledky v ochraně veřejné bezpečnosti",
-      achievements: ["Pochvaly od občanů za profesionální a lidský přístup k veřejnosti", "Pochvaly od kolegů z řad policie za týmovou spolupráci a odhodlání při zásazích","Policejní medaile za vynikající službu"],
+      experience: "15 let",
+      image: "/images/Collins.png",
+      description: "Nathan Collins se z absolventa policejní akademie postupně vypracoval až na hodnost Lieutenant u Los Santos Sheriff’s Department. Díky svému nasazení a spolehlivosti se stal členem zásahové jednotky SWAT, kde působí jako flight instructor a věnuje se výcviku pilotů pro letecké operace. Současně zastává funkci Assistant Commandera v Air Support Division, kde se podílí na řízení divize. Preferuje profesionální a slušné vystupování a dokáže zachovat chladnou hlavu i v náročných situacích.",
+      achievements: ["Absolvent policejní akademie s vyznamenáním", "Člen SWAT týmu", "Flight Instructor pro letecké operace"],
       status: "alive"
     }/*
     {

@@ -202,14 +202,15 @@ const Contact = () => {
     }
   ];
 
-  const locations = [
-    {
+    /*{
       name: "Davis Station",
       address: "Innocence Boulevard, Los Santos, SA 9148",
       phone: "(555) 123-4567",
       hours: "Provoz 24/7",
       services: ["Administrativní služby", "Hlídkové operace", "Vztahy s komunitou"]
-    },
+    },*/
+
+  const locations = [
     {
       name: "Sandy Shores Station",
       address: "Alhambra Drive, Sandy Shores, SA 3004",
@@ -528,7 +529,7 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {locations.map((location, index) => (
               <Card key={index}>
                 <CardHeader>
@@ -579,7 +580,7 @@ const Contact = () => {
                           </DialogHeader>
                           <div className="w-full">
                             <img
-                              src={`/images/${['map-davis.png','map-sandy.png','map-paleto.png'][openMapIndex ?? 0]}`}
+                              src={`/images/${['map-sandy.png','map-paleto.png'][openMapIndex ?? 0]}`}
                               alt={`${locations[openMapIndex ?? 0].name} mapa`}
                               className={`w-full h-auto rounded transition-all duration-500 ${mapImageLoaded ? 'blur-0 scale-100 opacity-100' : 'blur-sm scale-105 opacity-60'}`}
                               loading="lazy"

@@ -186,8 +186,8 @@ const Media = () => {
     },
     {
       type: "image",
-      title: "Oficiální portréty šerifa Millera",
-      description: "Profesionální fotografie šerifa Daniela Millera pro mediální účely.",
+      title: "Oficiální portréty šerifa Lopez",
+      description: "Profesionální fotografie šerifa Dina Lopez pro mediální účely.",
       formats: ["PNG"],
       size: "1,67 MB"
     },
@@ -358,9 +358,9 @@ const Media = () => {
               } else if (asset.title === "LSSD logo ve vysokém rozlišení") {
                 downloadUrl = "/images/lssd-logo.png";
                 downloadName = "lssd-logo";
-              } else if (asset.title === "Oficiální portréty šerifa Millera") {
+              } else if (asset.title === "Oficiální portréty šerifa Lopez") {
                 downloadUrl = "/images/sheriff/Sheriff - Foto.zip";
-                downloadName = "sheriff-miller";
+                downloadName = "sheriff-lopez";
               } else if (asset.title === "Směrnice pro přijímání stížností") {
                 downloadUrl = "/images/stiznosti/směrnice-prijimani-stiznosti-lssd.pdf";
                 downloadName = "směrnice-prijimani-stiznosti-lssd";
@@ -425,7 +425,7 @@ const Media = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
               <Card>
                 <CardHeader>
                   <Users className="h-8 w-8 text-primary mb-2" />
@@ -433,7 +433,7 @@ const Media = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
-                    <p className="font-semibold">Commander - Jayden Sinns</p>
+                    <p className="font-semibold">Sergeant II - Jayden Sinns</p>
                     <p className="text-sm text-muted-foreground">Vedoucí tiskového oddělení, tiskový mluvčí</p>
                   </div>
                   <div className="space-y-2 text-sm">
@@ -465,43 +465,6 @@ const Media = () => {
                  </CardContent>
                </Card>
               {/* druhý kontakt */}
-              <Card>
-                <CardHeader>
-                  <Users className="h-8 w-8 text-primary mb-2" />
-                  <CardTitle>Tisková mluvčí</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div>
-                    <p className="font-semibold">Sergeant - Emma Carter</p>
-                    <p className="text-sm text-muted-foreground">Tisková mluvčí</p>
-                  </div>
-                  <div className="space-y-2 text-sm">
-                    {/*<p><strong>Telefon:</strong> (555) 123-4567 kl. 2100</p>*/}
-                    <p><strong>Email:</strong> media@lssd.gov</p>
-                    <div className="flex items-center space-x-2">
-                      <span className="text-muted-foreground text-sm">Kontakt:</span>
-                      <a
-                        href={`https://discord.com/users/${"906171404498632784"}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center space-x-2 text-primary hover:underline"
-                        aria-label="Otevřít Discord profil"
-                      >
-                        <svg className="h-4 w-4" viewBox="0 0 71 55" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                          <path d="M60.104 4.552A58.9 58.9 0 0 0 46.87.5a41.6 41.6 0 0 0-1.984 4.03 55.1 55.1 0 0 0-14.776 0A41.6 41.6 0 0 0 27.128.5 58.9 58.9 0 0 0 11.996 4.552C3.892 19.22-.317 33.63.78 47.88a59.6 59.6 0 0 0 18.28 9.3 43.3 43.3 0 0 0 4.55-7.4 37.6 37.6 0 0 1-6.77-3.2c.57-.4 1.123-.82 1.654-1.26 13.34 6.2 29.32 6.2 42.6 0 .53.44 1.08.86 1.65 1.26a37.6 37.6 0 0 1-6.77 3.2 43.3 43.3 0 0 0 4.55 7.4 59.6 59.6 0 0 0 18.28-9.3c1.148-14.25-3.964-28.66-11.07-43.328z" fill="currentColor" />
-                          <path d="M23.5 34.5c-2.2 0-4-2-4-4.5s1.8-4.5 4-4.5 4 2 4 4.5-1.8 4.5-4 4.5zm24 0c-2.2 0-4-2-4-4.5s1.8-4.5 4-4.5 4 2 4 4.5-1.8 4.5-4 4.5z" fill="#fff" />
-                        </svg>
-                        <span className="text-sm">Emma Carter</span>
-                      </a>
-                    </div>
-                  </div>
-                  <div>
-                    <p className="text-sm text-muted-foreground">
-                      <strong>Hodiny:</strong> Pondělí – Pátek, 16:00 – 20:00
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
             </div>
           </div>
         </div>

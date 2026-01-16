@@ -95,7 +95,7 @@ const Index = () => {
     { icon: Shield, label: "Počet sloužících šerifů", value: "40+" },
     { icon: Users, label: "Obyvatel chráněných", value: "2,1M" },
     { icon: Car, label: "Typů služebních vozidel", value: "30+" },
-    { icon: Building, label: "Stanice", value: "3" }
+    { icon: Building, label: "Stanice", value: "2" }
   ];
 
   const [showAll, setShowAll] = useState(false);
@@ -182,23 +182,27 @@ const Index = () => {
               <div>
                   <Badge variant="outline" className="mb-4">Uvítací zpráva</Badge>
                   <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-                    Zpráva od šerifa Millera
+                    Zpráva od šerifa Lopez
                   </h2>
                 </div>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    „Vítám vás na oficiálních stránkách Los Santos Sheriff’s Department. Naším posláním je chránit a sloužit všem občanům našeho města s odhodláním a profesionalitou.“
+                    „Vítejte na stranách úřadu Los Santos Sheriffʼs Department“
                   </p>
                   <p>
-                    „Náš úřad stojí na hodnotách důvěry, spravedlnosti a spolupráce. Každý den usilujeme o to, aby se naše komunity cítily bezpečně a měly jistotu, že jsme tu vždy pro ně.“
+                    „Naším posláním je udržovat klid a pořádek a harmonii nejen Blaine County.“
                   </p>
                   <p>
-                    „Prozkoumejte naše stránky a zjistěte více o našich projektech, službách a mužích i ženách, kteří s hrdostí nosí tuto uniformu.“
+                    „Úřad Sherrifa zastává tradiční hodnoty, kdy každý kolega a kolegyně denně usilují o zachování bezpečí a klidu.“
+                  </p>
+                  <p>
+                    „Objevte projekty a práci sboru Los Santos Sheriffʼs Department na těchto stránkách.“
                   </p>
                 </div>
                 <div className="pt-4">
-                  <p className="font-semibold text-primary">Daniel Miller</p>
-                  <p className="text-sm text-muted-foreground">Sheriff of LSSD</p>
+                  <p className="font-semibold text-primary">Dino Lopez</p>
+                  <p className="text-sm text-muted-foreground">Sheriff of Los Santos Sheriff’s Department</p>
+                  <p>"A Tradition of Service"</p>
                 </div>
               </div>
             </div>
