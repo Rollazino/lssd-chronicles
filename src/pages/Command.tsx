@@ -20,7 +20,7 @@ const Command = () => {
       name: "Dino Lopez",
       title: "Sheriff",
       experience: "33 let",
-      image: "/images/Lopez.png",
+      image: "/images/Lopez2.png",
       description: "V čele LSSD stavím na pevných základech a hodnotách, které jsem si osvojil v rodině s hlubokou policejní historií. Kráčet ve stopách svého otce pro mě znamená spojit osvědčené principy policejní práce s moderními metodami řízení. Mým cílem je vést sbor tak, aby byl hrdým nástupcem generací, které chránily zákon před námi",
       achievements: ["Krirové řízení a komunikace", "Zavedení certifikací krizového vyjednávání"],
       status: "alive"
