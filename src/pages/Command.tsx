@@ -63,6 +63,7 @@ const Command = () => {
     }
       */
   ];
+  
   const supervisorStaff = [
     {
       name: "Jayden Sinns",
