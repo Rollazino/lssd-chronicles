@@ -43,6 +43,17 @@ function getTypeColor(type: string) {
 const Media = () => {
   const pressReleases = [
     {
+      date: "2026-01-28",
+      title: "TISKOVÁ ZPRÁVA: LSSD SI PŘIPOMNĚLO OBĚTI HOLOCAUSTU",
+      excerpt: "Los Santos Sheriff's Department si připomnělo Mezinárodní den",
+      category: "Holocaust Remembrance Day",
+      content: "Včera, dne 27. ledna, se Los Santos Sheriff's Department připojilo k celosvětovému uctění Mezinárodního dne památky obětí holocaustu. Tento den, který značí výročí osvobození koncentračního tábora Osvětim-Březinka, je mementem jedné z nejtemnějších kapitol lidských dějin. Velení LSSD i řadoví zástupci si včera připomněli nejen rozsah této tragédie, ale i morální zodpovědnost, kterou nositelé odznaku mají. Historie nás učí, jak křehká může být hranice mezi právem a bezprávím. „Včerejší vzpomínka nebyla jen o pohledu do minulosti,“ uvedlo tiskové oddělení úřadu šerifa. „Byla o uvědomění si naší role v současnosti. Přísahali jsme chránit komunitu a dbát na to, aby se předsudky a nenávist v našem kraji nikdy neuchytily. Včera jsme vzpomínali na oběti a tiše obnovili tento slib.“ Úřad šerifa okresu Los Santos zůstává oddán principům rovnosti a spravedlnosti pro všechny občany bez ohledu na jejich původ či vyznání.",
+      images: [
+        "/images/media/2026-01-28/image.png"
+      ],
+      author: "Sergeant II - Jayden Sinns"
+    },
+    {
       date: "2026-01-09",
       title: "Více než jen odznak: LSSD si připomíná Národní den ocenění donucovacích orgánů",
       excerpt: "Los Santos Sheriff's Department si každoročně připomíná Národní den ocenění donucovacích orgánů, aby vyjádřil vděčnost a uznání svým členům za jejich neúnavnou službu a obětavost.",

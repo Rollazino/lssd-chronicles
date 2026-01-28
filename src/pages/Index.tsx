@@ -193,7 +193,7 @@ const Index = () => {
                     „Naším posláním je udržovat klid a pořádek a harmonii nejen Blaine County.“
                   </p>
                   <p>
-                    „Úřad Sherrifa zastává tradiční hodnoty, kdy každý kolega a kolegyně denně usilují o zachování bezpečí a klidu.“
+                    „Úřad Sheriffa zastává tradiční hodnoty, kdy každý kolega a kolegyně denně usilují o zachování bezpečí a klidu.“
                   </p>
                   <p>
                     „Objevte projekty a práci sboru Los Santos Sheriffʼs Department na těchto stránkách.“
