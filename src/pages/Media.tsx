@@ -43,6 +43,22 @@ function getTypeColor(type: string) {
 const Media = () => {
   const pressReleases = [
     {
+      date: "2026-01-31",
+      title: "LSSD odhaluje novou tvář zákona: Modernizace uniforem v Los Santos County",
+      excerpt: "Los Santos Sheriff's Department představuje novou řadu služebních uniforem s důrazem na bezpečnost a profesionalitu.",
+      category: "Uniformy a výstroj",
+      content: "Kancelář šerifa okresu Los Santos (LSSD) dnes oficiálně představila novou řadu služebních uniforem. Tato významná změna přichází jako součást širší iniciativy vedení, která je zaměřena na celkovou modernizaci sboru a především na zvýšení bezpečnosti a komfortu strážců zákona při práci v terénu. Na tiskové konferenci byl veřejnosti předveden design, který sice zachovává ikonickou 'Sheriff Green' barvu a tradici úřadu, ale zároveň přináší modernější střih a využití vysoce funkčních materiálů. Nové uniformy kladou důraz především na ostřejší rysy a vysoce profesionální vzhled, jemuž nyní dominuje tradiční klobouk typu Stetson, který podtrhuje autoritu zástupců šerifa. Kromě estetických změn však došlo i k zásadním úpravám ve funkčnosti. Uniformy jsou nyní plně uzpůsobeny pro bezproblémovou integraci nejnovější generace tělesných kamer, což má zajistit maximální transparentnost každého zásahu. Ruku v ruce s tím jde i taktická připravenost; upravené opasky a vesty umožňují ergonomičtější rozložení vybavení, a to včetně nesmrtících prostředků, které jsou na nové výstroji jasněji identifikovatelné. Šerif Lopez, který měl tu čest novou výstroj převzít poznamenal, že nová uniforma není jen o změně vzhledu. Podle jeho slov jde o symbol připravenosti sboru sloužit a chránit občany v neustále se měnícím a náročném prostředí. Občané okresu Los Santos mohou očekávat, že deputies v novém, modernizovaném ustrojení potkají v ulicích Paleto Bay, Sandy Shores i v okrajových částech metropole již v průběhu tohoto týdne. Nové uniformy naleznete níže v sekci Přehled uniforem.",
+      images: [
+        "/images/media/2026-01-31/image.png",
+        "/images/media/2026-01-31/image2.png",
+        "/images/media/2026-01-31/image3.png",
+        "/images/media/2026-01-31/image4.png",
+        "/images/media/2026-01-31/image5.png",
+        "/images/media/2026-01-31/image6.png"
+      ],
+      author: "Lieutenant - Jayden Sinns"
+    },
+    {
       date: "2026-01-28",
       title: "TISKOVÁ ZPRÁVA: LSSD SI PŘIPOMNĚLO OBĚTI HOLOCAUSTU",
       excerpt: "Los Santos Sheriff's Department si připomnělo Mezinárodní den",
@@ -241,8 +257,57 @@ const Media = () => {
     },
   ];
 
+  const uniformShowcase = [
+    {
+      title: "Ceremoniální uniforma",
+      description: "Elegantní uniforma určená pro formální události a ceremoniály.",
+      image: "/images/uniformy/Ceremonie.png"
+    },
+    {
+      title: "Patrolní uniforma s kravatou",
+      description: "Standardní uniforma pro denní patrolní služby, navržená pro pohodlí a odolnost.",
+      image: "/images/uniformy/Kravata.png"
+    },
+    {
+      title: "Patrolní uniforma s dlouhým rukávem a límcem",
+      description: "Standardní uniforma pro denní patrolní služby, navržená pro pohodlí a odolnost.",
+      image: "/images/uniformy/Dlouha1.png"
+    },
+    {
+      title: "Patrolní uniforma s dlouhým rukávem bez límce",
+      description: "Standardní uniforma pro denní patrolní služby, navržená pro pohodlí a odolnost.",
+      image: "/images/uniformy/Dlouha2.png"
+    },
+    {
+      title: "Patrolní uniforma s dlouhým rukávem s límcem i bez límce",
+      description: "Porovnatelný model patrolní uniformy s dlouhým rukávem, dostupný ve variantách s límcem i bez límce.",
+      image: "/images/uniformy/Dlouhe.png"
+    },
+    {
+      title: "Patrolní uniforma s krátkým rukávem",
+      description: "Standardní uniforma pro denní patrolní služby, navržená pro pohodlí a odolnost.",
+      image: "/images/uniformy/Kratka.png"
+    },
+    {
+      title: "Lehčí bunda pro patrolní službu",
+      description: "Lehká a pohodlná bunda ideální pro mírné počasí během patrolní služby.",
+      image: "/images/uniformy/Bundicka.png"
+    },
+    {
+      title: "Teplejší bunda pro patrolní službu",
+      description: "Teplá a pohodlná bunda ideální pro chladné počasí během patrolní služby. S reflekční prvky pro zvýšenou viditelnost.",
+      image: "/images/uniformy/Bunda.png"
+    },
+    {
+      title: "Gang Inteligence Unit (GIU) uniforma",
+      description: "Uniforma speciálně navržená pro členy jednotky Gang Intelligence Unit, která kombinuje profesionální vzhled s funkčností pro práci v terénu.",
+      image: "/images/uniformy/GIU.png"
+    }
+  ];
+
   const [showAll, setShowAll] = useState(false);
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+  const [fullscreenImage, setFullscreenImage] = useState<string | null>(null);
 
   // Zobrazit pouze první 3 nebo všechny podle stavu
   const visibleReleases = showAll ? pressReleases : pressReleases.slice(0, 3);
@@ -445,6 +510,61 @@ const Media = () => {
         </div>
       </section>
 
+      {/* Uniform Showcase */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <Badge variant="outline" className="mb-4">Uniformy</Badge>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              Přehled uniforem
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Prozkoumejte různé uniformy používané LSSD.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {uniformShowcase.map((uniform, index) => (
+              <Card key={index} className="hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <CardTitle>{uniform.title}</CardTitle>
+                  <CardDescription>{uniform.description}</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <img
+                    src={uniform.image}
+                    alt={uniform.title}
+                    className="w-full h-auto rounded-lg border cursor-pointer"
+                    style={{ objectFit: "contain", maxHeight: "600px" }}
+                    onClick={() => setFullscreenImage(uniform.image)}
+                  />
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Fullscreen Image Modal */}
+      {fullscreenImage && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
+          onClick={() => setFullscreenImage(null)}
+        >
+          <img
+            src={fullscreenImage}
+            alt="Fullscreen Uniform"
+            className="max-w-full max-h-full rounded-lg"
+          />
+          <button
+            className="absolute top-4 right-4 text-white text-2xl"
+            onClick={() => setFullscreenImage(null)}
+          >
+            ×
+          </button>
+        </div>
+      )}
+
       {/* Media Contact */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
@@ -467,7 +587,7 @@ const Media = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
-                    <p className="font-semibold">Sergeant II - Jayden Sinns</p>
+                    <p className="font-semibold">Lieutenant - Jayden Sinns</p>
                     <p className="text-sm text-muted-foreground">Vedoucí tiskového oddělení, tiskový mluvčí</p>
                   </div>
                   <div className="space-y-2 text-sm">

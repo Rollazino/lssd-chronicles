@@ -26,6 +26,22 @@ function ScrollToMediaSectionNavLink(props: any) {
   }, [props]);
   return <NavLink {...props} onClick={handleClick} />;
 }
+function ScrollToUniformSectionNavLink(props: any) {
+  const handleClick = useCallback((e: any) => {
+    if (props.onClick) props.onClick(e);
+    setTimeout(() => {
+      const el = document.getElementById("uniform-showcase");
+      if (el) {
+        const yOffset = -window.innerHeight * 0.1; // Adjust to ensure the section starts at the top
+        const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: "smooth" });
+        el.classList.add("ring-4", "ring-primary");
+        setTimeout(() => el.classList.remove("ring-4", "ring-primary"), 2000);
+      }
+    }, 100);
+  }, [props]);
+  return <NavLink {...props} onClick={handleClick} />;
+}
 import { Shield, Users, Car, Phone, AlertTriangle, FileText, Calendar, Award, ChevronRight, Building, Eye } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -187,7 +203,7 @@ const Index = () => {
                 </div>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    „Vítejte na stranách úřadu Los Santos Sheriffʼs Department“
+                    „Vítejte na strankách úřadu Los Santos Sheriffʼs Department“
                   </p>
                   <p>
                     „Naším posláním je udržovat klid a pořádek a harmonii nejen Blaine County.“
@@ -451,6 +467,50 @@ const Index = () => {
                   alt="Vozový park LSSD"
                   className="w-full rounded-lg professional-shadow"
                 />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Uniform Showcase */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <img
+                  src="/images/uniformy/Uniformy.png"
+                  alt="Uniformy LSSD"
+                  className="w-full rounded-lg professional-shadow"
+                />
+              </div>
+              <div className="space-y-6">
+                <div>
+                  <Badge variant="outline" className="mb-4">Naše uniformy</Badge>
+                  <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                    Profesionální a moderní uniformy
+                  </h2>
+                </div>
+                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                  <p>
+                    Los Santos Sheriff's Department klade důraz na moderní a funkční uniformy,
+                    které zajišťují pohodlí a bezpečnost našich šerifů při výkonu služby.
+                  </p>
+                  <p>
+                    Naše uniformy zahrnují standardní hlídkové oblečení, slavnostní uniformy
+                    a specializované vybavení pro taktické operace.
+                  </p>
+                </div>
+
+                <div className="flex space-x-4">
+                  <ScrollToUniformSectionNavLink to="/media">
+                    <Button>
+                      Zobrazit uniformy
+                      <ChevronRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </ScrollToUniformSectionNavLink>
+                </div>
               </div>
             </div>
           </div>

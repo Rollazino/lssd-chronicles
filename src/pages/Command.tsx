@@ -27,7 +27,7 @@ const Command = () => {
     },
     {
       name: "Ned Tanner",
-      title: "Captain",
+      title: "Commander",
       experience: "15 let",
       image: "/images/Tanner.png",
       description: "Narodil se v Texasu po studiu se přestěhoval do Los Santos, celý život zasvětil práce pro úřad okresního šerifa LS kde vykonává funkci vedení sboru mezi jeho hodnoty patří vymáhaní práva, ctění spravedlnosti a ochrana občanu",
@@ -36,7 +36,7 @@ const Command = () => {
     },
     {
       name: "Ruby White",
-      title: "Lieutenant",
+      title: "Captain",
       experience: "4 roky",
       image: "/images/White.png",
       description: "Vede svou službu s profesionalitou, důrazem na odpovědnost a respekt k pravidlům. Poručík Ruby White je známá svým pevným postojem, spolehlivostí v terénu a schopností rozhodovat se i v náročných situacích.",
@@ -51,7 +51,26 @@ const Command = () => {
       description: "Nathan Collins se z absolventa policejní akademie postupně vypracoval až na hodnost Lieutenant u Los Santos Sheriff’s Department. Díky svému nasazení a spolehlivosti se stal členem zásahové jednotky SWAT, kde působí jako flight instructor a věnuje se výcviku pilotů pro letecké operace. Současně zastává funkci Assistant Commandera v Air Support Division, kde se podílí na řízení divize. Preferuje profesionální a slušné vystupování a dokáže zachovat chladnou hlavu i v náročných situacích.",
       achievements: ["Absolvent policejní akademie s vyznamenáním", "Člen SWAT týmu", "Flight Instructor pro letecké operace"],
       status: "alive"
-    }/*
+    },    
+    {
+      name: "Jayden Sinns",
+      title: "Lieutenant",
+      experience: "35 let",
+      image: "/images/Jayden Sinns.png",
+      description: "Jako administrativní talent s velkými vizemi a smyslem pro dlouhodobé plánování se Lieutenant Sinns zaměřuje na budování přátelského a otevřeného prostředí podporujícího spolupráci a vzájemnou důvěru. Svou kariéru zahájil jako zkušený deputy a FTO, pod jehož vedením prošla řada nováčků, z nichž někteří dnes patří mezi nejlepší členy sboru. Díky svým schopnostem, vytrvalosti a profesionálnímu přístupu si postupně vybudoval respekt napříč oddělením a dosáhl hodnosti Lieutenant. V této roli se nyní především soustředí na PR a mediální prezentaci LSSD, posilování vztahů s veřejností a budování pozitivního obrazu sboru. Klade důraz na transparentnost, otevřenou komunikaci a moderní přístup k informování komunity, přičemž aktivně podporuje inovace v oblasti bezpečnosti a práce s médii.",
+      achievements: ["Absolvent státní policejní akademie s vyznamenáním", "Policejní medaile za záchranu života", "Pochvala za vynikající vedení a přínos k rozvoji oddělení"],
+      status: "alive"
+    },
+    {
+      name: "Aiden Pearce",
+      title: "Lieutenant",
+      experience: "",
+      image: "/images/Pearce.png",
+      description: "",
+      achievements: [""],
+      status: "alive"
+    },
+    /*
     {
       name: "Jayden Sinns",
       title: "Commander",
