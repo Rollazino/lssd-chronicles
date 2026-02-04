@@ -43,6 +43,17 @@ function getTypeColor(type: string) {
 const Media = () => {
   const pressReleases = [
     {
+      date: "2026-02-04",
+      title: "TISKOVÁ ZPRÁVA: LSSD PODPORUJE SVĚTOVÝ DEN BOJE PROTI RAKOVINĚ",
+      excerpt: "Los Santos Sheriff's Department se připojuje k celosvětové iniciativě v rámci Světového dne boje proti rakovině.",
+      category: "Světový den boje proti rakovině",
+      content: "Dnes, dne 4. února, se Los Santos Sheriff's Department připojuje k celosvětové iniciativě v rámci Světového dne boje proti rakovině. Tento den, věnovaný zvýšení povědomí a podpoře prevence, je pro nás příležitostí vyjádřit solidaritu všem, kteří s touto nemocí svádějí svůj každodenní boj. Velení LSSD si uvědomuje, že nebezpečí nečíhá pouze v ulicích v podobě kriminality. Rakovina je nepřítelem, který nerespektuje zákony, hodnosti ani uniformu. Zasahuje do životů našich občanů i našich vlastních řad a připomíná nám, jak křehké a vzácné je lidské zdraví. „Boj proti rakovině vyžaduje stejnou odvahu a odhodlání, jakou prokazují naši deputies v terénu,“ uvedlo tiskové oddělení úřadu šerifa. „Dnešním dnem chceme vyslat jasný vzkaz: Nikdo v tomto boji nemusí být sám. Naší povinností je chránit životy, a to zahrnuje i podporu zdravotní osvěty a prevence, která je tou nejsilnější zbraní.“ Úřad šerifa okresu Los Santos stojí pevně za všemi pacienty, přeživšími i jejich rodinami a zůstává oddán podpoře celé naší komunity.",
+      images: [
+        "/images/media/2026-02-04/image.png"
+      ],
+      author: "Lieutenant - Jayden Sinns"
+    },
+    {
       date: "2026-01-31",
       title: "LSSD odhaluje novou tvář zákona: Modernizace uniforem v Los Santos County",
       excerpt: "Los Santos Sheriff's Department představuje novou řadu služebních uniforem s důrazem na bezpečnost a profesionalitu.",
