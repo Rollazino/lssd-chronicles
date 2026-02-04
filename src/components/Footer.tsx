@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Youtube, Mail, Phone, MapPin } from "lucide-react";
+import { Facebook, Twitter, Youtube, Mail, Phone, MapPin, Instagram, Music } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import lssdBadge from "@/assets/lssd-logo.png";
 
@@ -74,25 +74,22 @@ const Footer = () => {
           </div>
 
           {/* Sociální sítě & upozornění */}
-          {/*
+          
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Sledujte nás</h4>
             <div className="flex space-x-3">
-              <a href="#" className="p-2 bg-primary-foreground/10 rounded-md hover:bg-accent hover:text-accent-foreground transition-colors">
-                <Facebook className="h-4 w-4" />
+              <a href="https://www.instagram.com/lssd.hqcmrp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="p-2 bg-primary-foreground/10 rounded-md hover:bg-accent hover:text-accent-foreground transition-colors">
+                <Instagram className="h-4 w-4" />
               </a>
-              <a href="#" className="p-2 bg-primary-foreground/10 rounded-md hover:bg-accent hover:text-accent-foreground transition-colors">
-                <Twitter className="h-4 w-4" />
+              <a href="https://www.tiktok.com/@lssdhq_cmrp?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" className="p-2 bg-primary-foreground/10 rounded-md hover:bg-accent hover:text-accent-foreground transition-colors">
+                <Music className="h-4 w-4" />
               </a>
-              <a href="#" className="p-2 bg-primary-foreground/10 rounded-md hover:bg-accent hover:text-accent-foreground transition-colors">
+              <a href="https://www.youtube.com/@LSSDHQ_CMRP" target="_blank" rel="noopener noreferrer" className="p-2 bg-primary-foreground/10 rounded-md hover:bg-accent hover:text-accent-foreground transition-colors">
                 <Youtube className="h-4 w-4" />
-              </a>
-              <a href="#" className="p-2 bg-primary-foreground/10 rounded-md hover:bg-accent hover:text-accent-foreground transition-colors">
-                <Mail className="h-4 w-4" />
               </a>
             </div>
 
-            {/*
+            {/*    
             <div className="text-sm space-y-2">
               <p className="font-medium">Komunitní upozornění</p>
               <p className="text-xs opacity-80">
@@ -102,8 +99,9 @@ const Footer = () => {
                 Přihlásit odběr →
               </button>
             </div>
+            */}
           </div>
-          */}
+          
           
         </div>
 
