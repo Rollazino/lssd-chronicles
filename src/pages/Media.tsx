@@ -43,6 +43,17 @@ function getTypeColor(type: string) {
 const Media = () => {
   const pressReleases = [
     {
+      date: "2026-02-11",
+      title: "Hlasy v pozadí linky bezpečí: Mezinárodní den linky 911",
+      excerpt: "Los Santos Sheriff's Department si připomíná Mezinárodní den linky 911 a vzdává hold těm, kteří jsou prvními na místě události.",
+      category: "Mezinárodní den linky 911",
+      content: "Když se v okrese Los Santos rozezní tísňové volání, začíná souboj s časem, ve kterém hraje hlavní roli klidný a rozhodný hlas na druhém konci linky. Mezinárodní den linky 911 je pro Los Santos Sheriff’s Department příležitostí k vyjádření hluboké úcty našim dispečerům, kteří tvoří neviditelný, ale naprosto nezbytný most mezi občany v nouzi a zástupci šerifa v terénu. Práce na našem komunikačním centru vyžaduje mnohem víc než jen technickou zručnost. Je to poslání, které v sobě spojuje roli krizového psychologa, stratéga a koordinátora. Tito profesionálové musí během několika vteřin odfiltrovat emoce a paniku, aby získali klíčové informace o poloze a povaze nebezpečí. Často jsou to právě oni, kdo poskytuje první instrukce k záchraně života nebo uklidňuje oběti v jejich nejtěžších chvílích, a to vše v době, kdy hlídky teprve míří na místo zásahu. Efektivita naší reakce však závisí také na zodpovědnosti veřejnosti. Je nesmírně důležité si uvědomit, že linka 911 je vyhrazena výhradně pro situace, kdy je bezprostředně ohrožen život, zdraví nebo majetek. Každé zneužití této linky nebo dotaz na běžné administrativní záležitosti může znamenat zpoždění pro někoho, kdo skutečně bojuje o přežití. Stejně tak je klíčové, aby volající v případě omylu nikdy okamžitě nepokládali sluchátko, ale vyčkali na spojení s operátorem a chybu vysvětlili, čímž zabrání zbytečnému výjezdu prověřovací hlídky. Dnešní den patří právě těmto mužům a ženám za pulty plnými monitorů, kteří zůstávají v anonymitě, přestože jejich rozhodnutí zachraňují životy každý den. Jsou to hrdinové, které nevidíte v záři majáků, ale bez kterých by naše komunita nebyla v bezpečí. Děkujeme našim dispečerům za jejich vytrvalost a za to, že jsou pevným bodem v chaosu, na který se můžeme my i občané Los Santos County kdykoliv spolehnout.",
+      images: [
+        "/images/media/2026-02-11/image.png"
+      ],
+      author: "Lieutenant - Jayden Sinns"
+    },
+    {
       date: "2026-02-04",
       title: "TISKOVÁ ZPRÁVA: LSSD PODPORUJE SVĚTOVÝ DEN BOJE PROTI RAKOVINĚ",
       excerpt: "Los Santos Sheriff's Department se připojuje k celosvětové iniciativě v rámci Světového dne boje proti rakovině.",
