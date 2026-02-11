@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Calendar, Award, Users, TrendingUp } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import lssdHQ from "@/assets/sbor.png";
+import lssdHQ from "@/assets/Sbor.png";
 
 const About = () => {
   const timeline = [

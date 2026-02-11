@@ -45,7 +45,7 @@ function ScrollToUniformSectionNavLink(props: any) {
 import { Shield, Users, Car, Phone, AlertTriangle, FileText, Calendar, Award, ChevronRight, Building, Eye } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import lssdHQ from "@/assets/sbor.png";
+import lssdHQ from "@/assets/Sbor.png";
 import sheriffPortrait from "@/assets/Sheriff.png";
 import patrolFleet from "@/assets/auata.png";
 
