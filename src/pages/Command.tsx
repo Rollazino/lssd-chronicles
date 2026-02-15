@@ -37,21 +37,12 @@ const Command = () => {
     {
       name: "Ruby White",
       title: "Captain",
-      experience: "4 roky",
+      experience: "10 let",
       image: "/images/White.png",
       description: "Vede svou službu s profesionalitou, důrazem na odpovědnost a respekt k pravidlům. Poručík Ruby White je známá svým pevným postojem, spolehlivostí v terénu a schopností rozhodovat se i v náročných situacích.",
-      achievements: ["Medaile za záslužnou službu", "Dlouhodobě stabilní výkon ve velení","Prokázané velitelské schopnosti v operařní praxi"],
+      achievements: ["Medaile za záslužnou službu", "Dlouhodobě stabilní výkon ve velení","Prokázané velitelské schopnosti v operařní praxi", "Captain of Academy"],
       status: "alive"
-    },
-    {
-      name: "Nathan Collins",
-      title: "Lieutenant",
-      experience: "15 let",
-      image: "/images/Collins.png",
-      description: "Nathan Collins se z absolventa policejní akademie postupně vypracoval až na hodnost Lieutenant u Los Santos Sheriff’s Department. Díky svému nasazení a spolehlivosti se stal členem zásahové jednotky SWAT, kde působí jako flight instructor a věnuje se výcviku pilotů pro letecké operace. Současně zastává funkci Assistant Commandera v Air Support Division, kde se podílí na řízení divize. Preferuje profesionální a slušné vystupování a dokáže zachovat chladnou hlavu i v náročných situacích.",
-      achievements: ["Absolvent policejní akademie s vyznamenáním", "Člen SWAT týmu", "Flight Instructor pro letecké operace"],
-      status: "alive"
-    },    
+    }, 
     {
       name: "Jayden Sinns",
       title: "Lieutenant",
