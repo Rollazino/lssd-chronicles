@@ -43,6 +43,19 @@ function getTypeColor(type: string) {
 const Media = () => {
   const pressReleases = [
     {
+      date: "2026-02-22",
+      title: "TISKOVÁ ZPRÁVA: Zásah LSSD a součinnostních složek u incidentu „Stand for Liberty“",
+      excerpt: "Los Santos Sheriff's Department informuje o zásahu a koordinaci s LSPD a SAHP během incidentu „Stand for Liberty“.",
+      category: "Zásahy a operace",
+      content: "V podvečerních hodinách dohlíželi deputies z Los Santos Sheriff's Department na ohlášené veřejné shromáždění s názvem „Stand for Liberty“. Tato bezpečnostní operace probíhala v úzké koordinaci s kolegy z Los Santos Police Department a San Andreas Highway Patrol s cílem zajistit klidný průběh pochodu od hlavních garáží směrem k budově Department of Justice. Původně pokojný průběh akce se začal dramatizovat v oblasti Rockford Plaza, kde uvnitř davu vygradovaly názorové neshody ohledně další trasy. Situace vyvrcholila před samotnou budovou DOJ, kde se shromáždění zvrhlo v otevřené násilné střety mezi jednotlivými účastníky. Vzhledem k eskalaci agresivity a narušení veřejného pořádku musely jednotky LSSD za aktivní podpory hlídek LSPD a SAHP přistoupit k zákonnému zákroku. K obnovení klidu a ochraně okolního majetku byly využity adekvátní donucovací prostředky. Zasahující deputies a policisté použili fyzické zákroky k eliminaci přímých útoků, méně smrtící munici typu BeanBag k pacifikaci nejnebezpečnějších jedinců a v závěrečné fázi také vodní dělo, které pomohlo efektivně vyklidit prostor před vládní budovou. Celý zásah komplikovalo odpalování pyrotechniky a poškozování městského inventáře. Do probíhajících nepokojů navíc zasáhl separátní incident, při němž projíždějící motocyklista zahájil střelbu do prostoru. Tento útok je nyní předmětem intenzivního vyšetřování detektivních útvarů. Díky profesionální spolupráci všech tří bezpečnostních složek bylo na místě zadrženo více než deset osob pro podezření z výtržnictví a napadení. I přes nutnost použití síly neevidujeme žádná úmrtí ani zranění vyžadující hospitalizaci. Všem zraněným osobám z řad civilistů i příslušníků sborů byla poskytnuta okamžitá péče přímo na místě, a to díky asistenci a profesionálnímu nasazení jednotek EMS a Fire Department, které po celou dobu incidentu zajišťovaly zdravotnický dozor. LSSD děkuje partnerům z LSPD, SAHP i záchranným složkám za efektivní součinnost při ochraně bezpečnosti občanů Los Santos.",
+      images: [
+        "/images/media/2026-02-22/image.png",
+        "/images/media/2026-02-22/image2.png",
+        "/images/media/2026-02-22/image3.png",
+      ],
+      author: "Lieutenant - Jayden Sinns"
+    },
+    {
       date: "2026-02-11",
       title: "Hlasy v pozadí linky bezpečí: Mezinárodní den linky 911",
       excerpt: "Los Santos Sheriff's Department si připomíná Mezinárodní den linky 911 a vzdává hold těm, kteří jsou prvními na místě události.",

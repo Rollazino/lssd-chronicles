@@ -96,10 +96,10 @@ const Command = () => {
     {
       name: "Elliot Cage",
       title: "Sergeant",
-      experience: "",
+      experience: "5 let",
       image: "/images/Elliot Cage.png",
-      description: "",
-      achievements: [""],
+      description: "Elliot Cage je dlhoročným pilierom LSSD, ktorý si svoju povesť vybudoval na nekompromisnom dodržiavaní zákona a chladnej hlave v tých najvypätejších situáciách. Od svojho nástupu do zboru preukazoval výnimočný inštinkt pre prácu v teréne, čo ho prirodzene doviedlo až k hodnosti Sergeant. Medzi kolegami je známy ako priamy a čestný líder, ktorý sa nebojí prevziať zodpovednosť v momentoch, kedy ide o sekundy. Jeho prítomnosť v službe je pre mladších deputy zárukou bezpečia a odborného vedenia.",
+      achievements: ["Medaila za vynikíjúcu službu"],
       status: "alive"
     },
     {
