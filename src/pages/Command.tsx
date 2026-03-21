@@ -27,7 +27,7 @@ const Command = () => {
     },
     {
       name: "Ned Tanner",
-      title: "Commander",
+      title: "Captain",
       experience: "15 let",
       image: "/images/Tanner.png",
       description: "Narodil se v Texasu po studiu se přestěhoval do Los Santos, celý život zasvětil práce pro úřad okresního šerifa LS kde vykonává funkci vedení sboru mezi jeho hodnoty patří vymáhaní práva, ctění spravedlnosti a ochrana občanu",
@@ -76,15 +76,6 @@ const Command = () => {
   
   const supervisorStaff = [
     {
-      name: "Nathan Rivers",
-      title: "Sergeant II",
-      experience: "5 let",
-      image: "/images/Rivers.png",
-      description: "Nathan Rivers je bývalý absolvent policajnej akadémie, kde začal svoju cestu v službách zákona. Už od začiatku vynikal disciplínou, odhodlaním a zmyslom pre spravodlivosť. Po nástupe do LSSD sa postupne vypracoval cez rôzne pozície až na hodnosť sergeanta. Vďaka svojim schopnostiam, vodcovstvu a skúsenostiam si získal rešpekt kolegov aj nadriadených a stal sa dôležitou súčasťou zboru.",
-      achievements: ["Chief Instructor Akademie"],
-      status: "alive"
-    },
-    {
       name: "Michael Callahan",
       title: "Sergeant II",
       experience: "5 let",
@@ -95,7 +86,7 @@ const Command = () => {
     },
     {
       name: "Elliot Cage",
-      title: "Sergeant",
+      title: "Sergeant II",
       experience: "5 let",
       image: "/images/Elliot Cage.png",
       description: "Elliot Cage je dlhoročným pilierom LSSD, ktorý si svoju povesť vybudoval na nekompromisnom dodržiavaní zákona a chladnej hlave v tých najvypätejších situáciách. Od svojho nástupu do zboru preukazoval výnimočný inštinkt pre prácu v teréne, čo ho prirodzene doviedlo až k hodnosti Sergeant. Medzi kolegami je známy ako priamy a čestný líder, ktorý sa nebojí prevziať zodpovednosť v momentoch, kedy ide o sekundy. Jeho prítomnosť v službe je pre mladších deputy zárukou bezpečia a odborného vedenia.",
@@ -104,18 +95,54 @@ const Command = () => {
     },
     {
       name: "Ryan Brooks",
-      title: "Sergeant",
-      experience: "",
+      title: "Sergeant II",
+      experience: "5 let",
       image: "/images/Brooks.png",
-      description: "",
-      achievements: [""],
+      description: "Celý svoj profesionálny život zasvätil službe v úrade okresného šerifa LS, kde si postupne vybudoval rešpekt a silné postavenie v zbore. Vďaka disciplíne, odhodlaniu a dlhoročným skúsenostiam sa vypracoval až na člena jednotky SWAT. Verí v zákon, poriadok a osobnú zodpovednosť ako základ bezpečnej spoločnosti.",
+      achievements: ["Člen jednotky SWAT", "MBU instruktor"],
       status: "alive"
     },
     {
       name: "James Hathron",
       title: "Sergeant",
-      experience: "",
+      experience: "31 let",
       image: "/images/Hathron.png",
+      description: "James Hathron začal jako klasický Officer u LSPD a následně se za brzkou dobu stal vedením jednotky K-9 Unit ktrerá v té době teprve začínala u policie působit. Díky jeho vedení a zkušenosti u SAR týmu ve Washingtonu pomohl divizi začít fungovat a dnes operuje policie s více než 16 K-9 jednotky. Při službě u K-9 Unit pomalu budoval kariéru u detektivního oddělení kde se za několik let později stal i Cmd. Detective Bureau V součastnosti stále vede jednotku K-9 ale nyní už není zazařen u Detective Bureau ale u Los Santos Sheriff Department kde slouží jako Sergeant. Zkušenosti které nabral u Detective Bureau se snaží využít i u LSSD převážně u prvních momentů místa činu a provádění odborných výslechů a prvních kroků.",
+      achievements: ["Vedení detektivního oddělení na pozici Commander", "Zodpovědné řízení a rozvoj K-9 jednotky", "Medaile za vynikajicí službu", "Vyšetření vraždy a zkorumpovaného přislušníka policie"],
+      status: "alive"
+    },
+    {
+      name: "Bruno Cunha",
+      title: "Sergeant",
+      experience: "",
+      image: "",
+      description: "",
+      achievements: [""],
+      status: "alive"
+    },
+        {
+      name: "Axel Foley",
+      title: "Sergeant",
+      experience: "",
+      image: "",
+      description: "",
+      achievements: [""],
+      status: "alive"
+    },
+        {
+      name: "Bryan Walker",
+      title: "Sergeant",
+      experience: "",
+      image: "",
+      description: "",
+      achievements: [""],
+      status: "alive"
+    },
+        {
+      name: "Mason Cooper",
+      title: "Sergeant",
+      experience: "",
+      image: "",
       description: "",
       achievements: [""],
       status: "alive"
