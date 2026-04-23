@@ -27,20 +27,38 @@ const Command = () => {
     },
     {
       name: "Ned Tanner",
-      title: "Captain",
+      title: "Undersheriff",
       experience: "15 let",
-      image: "/images/Tanner.png",
+      image: "/images/Tanner.jpg",
       description: "Narodil se v Texasu po studiu se přestěhoval do Los Santos, celý život zasvětil práce pro úřad okresního šerifa LS kde vykonává funkci vedení sboru mezi jeho hodnoty patří vymáhaní práva, ctění spravedlnosti a ochrana občanu",
       achievements: ["Úspěšně absolvovaná policejní akademie Los Santos", "Medaile za záslužnou službu", "Medaile za výbornou službu"],
       status: "alive"
     },
     {
       name: "Ruby White",
-      title: "Captain",
+      title: "Assistant Sheriff",
       experience: "10 let",
       image: "/images/White.png",
       description: "Vede svou službu s profesionalitou, důrazem na odpovědnost a respekt k pravidlům. Poručík Ruby White je známá svým pevným postojem, spolehlivostí v terénu a schopností rozhodovat se i v náročných situacích.",
       achievements: ["Medaile za záslužnou službu", "Dlouhodobě stabilní výkon ve velení","Prokázané velitelské schopnosti v operařní praxi", "Captain of Academy"],
+      status: "alive"
+    },
+    {
+      name: "Michael Callahan",
+      title: "Captain",
+      experience: "5 let",
+      image: "/images/Callahan.png",
+      description: "Během služby u LSSD prošel akademií s nadprůměrnými praktickými výsledky a následně se podílel na desítkách zásahů, při kterých přispěl k záchraně lidských životů. Je známý klidným rozhodováním v krizových situacích a spolehlivým výkonem v terénu. Kromě operativní činnosti se aktivně zapojil do interního rozvoje oddělení, kdy navrhl úpravy služební aplikace zjednodušující administrativu a každodenní práci deputies. Díky kombinaci zkušeností, technického přehledu a schopnosti vést ostatní byl jmenován do hodnosti Sergeant.",
+      achievements: ["Iniciativa pro zlepšení služební aplikace"],
+      status: "alive"
+    },
+    {
+      name: "Elliot Cage",
+      title: "Captain",
+      experience: "5 let",
+      image: "/images/Elliot Cage.png",
+      description: "Elliot Cage je dlhoročným pilierom LSSD, ktorý si svoju povesť vybudoval na nekompromisnom dodržiavaní zákona a chladnej hlave v tých najvypätejších situáciách. Od svojho nástupu do zboru preukazoval výnimočný inštinkt pre prácu v teréne, čo ho prirodzene doviedlo až k hodnosti Sergeant. Medzi kolegami je známy ako priamy a čestný líder, ktorý sa nebojí prevziať zodpovednosť v momentoch, kedy ide o sekundy. Jeho prítomnosť v službe je pre mladších deputy zárukou bezpečia a odborného vedenia.",
+      achievements: ["Medaila za vynikíjúcu službu"],
       status: "alive"
     }, 
     {
@@ -50,6 +68,15 @@ const Command = () => {
       image: "/images/Jayden Sinns.png",
       description: "Jako administrativní talent s velkými vizemi a smyslem pro dlouhodobé plánování se Lieutenant Sinns zaměřuje na budování přátelského a otevřeného prostředí podporujícího spolupráci a vzájemnou důvěru. Svou kariéru zahájil jako zkušený deputy a FTO, pod jehož vedením prošla řada nováčků, z nichž někteří dnes patří mezi nejlepší členy sboru. Díky svým schopnostem, vytrvalosti a profesionálnímu přístupu si postupně vybudoval respekt napříč oddělením a dosáhl hodnosti Lieutenant. V této roli se nyní především soustředí na PR a mediální prezentaci LSSD, posilování vztahů s veřejností a budování pozitivního obrazu sboru. Klade důraz na transparentnost, otevřenou komunikaci a moderní přístup k informování komunity, přičemž aktivně podporuje inovace v oblasti bezpečnosti a práce s médii.",
       achievements: ["Absolvent státní policejní akademie s vyznamenáním", "Policejní medaile za záchranu života", "Pochvala za vynikající vedení a přínos k rozvoji oddělení"],
+      status: "alive"
+    },
+    {
+      name: "Ryan Brooks",
+      title: "Lieutenant",
+      experience: "5 let",
+      image: "/images/Brooks.jpg",
+      description: "Celý svoj profesionálny život zasvätil službe v úrade okresného šerifa LS, kde si postupne vybudoval rešpekt a silné postavenie v zbore. Vďaka disciplíne, odhodlaniu a dlhoročným skúsenostiam sa vypracoval až na člena jednotky SWAT. Verí v zákon, poriadok a osobnú zodpovednosť ako základ bezpečnej spoločnosti.",
+      achievements: ["Člen jednotky SWAT", "MBU instruktor"],
       status: "alive"
     },
     {
@@ -76,37 +103,10 @@ const Command = () => {
   
   const supervisorStaff = [
     {
-      name: "Michael Callahan",
-      title: "Sergeant II",
-      experience: "5 let",
-      image: "/images/Callahan.png",
-      description: "Během služby u LSSD prošel akademií s nadprůměrnými praktickými výsledky a následně se podílel na desítkách zásahů, při kterých přispěl k záchraně lidských životů. Je známý klidným rozhodováním v krizových situacích a spolehlivým výkonem v terénu. Kromě operativní činnosti se aktivně zapojil do interního rozvoje oddělení, kdy navrhl úpravy služební aplikace zjednodušující administrativu a každodenní práci deputies. Díky kombinaci zkušeností, technického přehledu a schopnosti vést ostatní byl jmenován do hodnosti Sergeant.",
-      achievements: ["Iniciativa pro zlepšení služební aplikace"],
-      status: "alive"
-    },
-    {
-      name: "Elliot Cage",
-      title: "Sergeant II",
-      experience: "5 let",
-      image: "/images/Elliot Cage.png",
-      description: "Elliot Cage je dlhoročným pilierom LSSD, ktorý si svoju povesť vybudoval na nekompromisnom dodržiavaní zákona a chladnej hlave v tých najvypätejších situáciách. Od svojho nástupu do zboru preukazoval výnimočný inštinkt pre prácu v teréne, čo ho prirodzene doviedlo až k hodnosti Sergeant. Medzi kolegami je známy ako priamy a čestný líder, ktorý sa nebojí prevziať zodpovednosť v momentoch, kedy ide o sekundy. Jeho prítomnosť v službe je pre mladších deputy zárukou bezpečia a odborného vedenia.",
-      achievements: ["Medaila za vynikíjúcu službu"],
-      status: "alive"
-    },
-    {
-      name: "Ryan Brooks",
-      title: "Sergeant II",
-      experience: "5 let",
-      image: "/images/Brooks.png",
-      description: "Celý svoj profesionálny život zasvätil službe v úrade okresného šerifa LS, kde si postupne vybudoval rešpekt a silné postavenie v zbore. Vďaka disciplíne, odhodlaniu a dlhoročným skúsenostiam sa vypracoval až na člena jednotky SWAT. Verí v zákon, poriadok a osobnú zodpovednosť ako základ bezpečnej spoločnosti.",
-      achievements: ["Člen jednotky SWAT", "MBU instruktor"],
-      status: "alive"
-    },
-    {
       name: "James Hathron",
       title: "Sergeant",
       experience: "31 let",
-      image: "/images/Hathron.png",
+      image: "/images/Hathron.jpg",
       description: "James Hathron začal jako klasický Officer u LSPD a následně se za brzkou dobu stal vedením jednotky K-9 Unit ktrerá v té době teprve začínala u policie působit. Díky jeho vedení a zkušenosti u SAR týmu ve Washingtonu pomohl divizi začít fungovat a dnes operuje policie s více než 16 K-9 jednotky. Při službě u K-9 Unit pomalu budoval kariéru u detektivního oddělení kde se za několik let později stal i Cmd. Detective Bureau V součastnosti stále vede jednotku K-9 ale nyní už není zazařen u Detective Bureau ale u Los Santos Sheriff Department kde slouží jako Sergeant. Zkušenosti které nabral u Detective Bureau se snaží využít i u LSSD převážně u prvních momentů místa činu a provádění odborných výslechů a prvních kroků.",
       achievements: ["Vedení detektivního oddělení na pozici Commander", "Zodpovědné řízení a rozvoj K-9 jednotky", "Medaile za vynikajicí službu", "Vyšetření vraždy a zkorumpovaného přislušníka policie"],
       status: "alive"
@@ -114,36 +114,27 @@ const Command = () => {
     {
       name: "Bruno Cunha",
       title: "Sergeant",
-      experience: "",
-      image: "",
+      experience: "15 let",
+      image: "/images/Cunha.png",
       description: "",
-      achievements: [""],
+      achievements: ["Člen jednotky SWAT", "MBU instruktor"],
       status: "alive"
     },
-        {
-      name: "Axel Foley",
-      title: "Sergeant",
-      experience: "",
-      image: "",
-      description: "",
-      achievements: [""],
-      status: "alive"
-    },
-        {
+    {
       name: "Bryan Walker",
       title: "Sergeant",
       experience: "",
-      image: "",
+      image: "/images/Walker.png",
       description: "",
       achievements: [""],
       status: "alive"
     },
-        {
+    {
       name: "Mason Cooper",
       title: "Sergeant",
-      experience: "",
-      image: "",
-      description: "",
+      experience: "15 let",
+      image: "/images/Cooper.jpg",
+      description: "Jmenuju se Mason Cooper a jsem seržant u Los Santos County Sheriff's Department. Ve službě jsem patnáct let. Když jsem nastupoval, byl jsem mladej kluk, co si myslel, že ví, co je správný a co špatný. Dneska už vím, že svět takhle jednoduchej není. Začínal jsem v patrolách v částech Los Sabtis, kde se člověk rychle naučí dávat pozor. První roky mě změnily nejvíc. Viděl jsem věci, na který se nedá připravit – gangy, domácí násilí, nehody, u kterých bys nejradši zavřel oči a dělal, že to není skutečný. Ale taky jsem zažil chvíle, kdy jsem někomu fakt pomohl. A právě ty tě drží nad vodou. Postupně jsem si vybudoval respekt. Ne tím, že bych byl nejtvrdší, ale tím, že jsem byl spolehlivej. Když jsem na směně, lidi ví, že udělám všechno pro to, aby se situace zvládla. Dneska vedu vlastní tým. Už to není jen o mně – nesu odpovědnost za každýho z nich. Rozhoduju vteřiny před tím, než se něco pokazí, a učím nový kluky, jak přežít první roky ve službě. Protože to je ta nejtěžší část. Nejsem žádnej hrdina. Mám za sebou rozvod, pár nocí, kdy jsem nespal, a vzpomínky, který se občas vrací. Naučíš se s tím žít, ale nikdy to úplně nezmizí. Můj přístup je jednoduchej: „Nechci hrdiny. Chci, aby se všichni vrátili domů živí.“ Po patnácti letech už nehledám uznání ani postup. Vím, že tahle práce není o slávě. Je o tom být tam, když to ostatní nezvládnou. A i když jsem už párkrát přemýšlel, že s tím skončím… vždycky si tu uniformu oblíknu znovu.",
       achievements: [""],
       status: "alive"
     },
