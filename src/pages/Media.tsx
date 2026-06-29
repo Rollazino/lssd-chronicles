@@ -42,6 +42,39 @@ function getTypeColor(type: string) {
 
 const Media = () => {
   const pressReleases = [
+      {
+      date: "2026-06-29",
+      title: "Tisková zpráva: Ocenění příslušníků LSSD policejním komisařstvím",
+      excerpt: "Los Santos Sheriff's Department s hrdostí oznamuje, že několik našich příslušníků bylo oceněno Policejním komisařstvím za jejich vynikající službu a přínos pro bezpečnost komunity.",
+      category: "Ocenění a vyznamenání",
+      content: "Policejní komisařství s hrdostí oznamuje udělení prestižních policejních medailí vybraným příslušníkům Los Santos Sheriff's Department. Tato ocenění reflektují jejich mimořádné pracovní nasazení, vysokou profesionalitu a dlouhodobé zásluhy v oblasti zajišťování bezpečnosti a veřejného pořádku. Společně s našimi zástupci byli v rámci této události oceněni také příslušníci Los Santos Police Department a San Andreas Highway Patrol. Medaile byly předány jako výraz uznání za příkladnou reprezentaci sborů a oddanost službě. Zástupci šerifa i členové velení denně nasazují své životy při ochraně obyvatel a tyto medaile jsou poděkováním za jejich neúnavnou práci a obětavost. Vedení policejního komisařství i celého oddělení tímto gratuluje všem oceněným. Níže uvádíme seznam vyznamenaných příslušníků za LSSD:  Policejní medaile za Vynikající službu od komisařství - Sheriff Dino Lopez, Undersheriff Ned Tanner, Assistant Sheriff Ruby White, Commander Eliot Cage. Policejní medaile za záslužnou službu - Lieutenant Bryan Walker, Sergeant Kenji Kiroshi, Sergeant II Bruno Cunha, Deputy III+I Harry Potterson, Deputy III Mason Sebranski, Deputy III James Clark, Deputy II Enzo Reyes. Děkujeme všem oceněným za jejich příkladnou službu a přínos pro bezpečí našich občanů. Čest jejich nasazení.",
+      images: [
+        "/images/media/2026-06-29/image.png",
+      ],
+      author: "Lieutenant - Jayden Sinns"
+    },
+    {
+      date: "2026-05-27",
+      title: "Tisková zpráva: Ohlédnutí za Memorial Day",
+      excerpt: "Los Santos Sheriff's Department vzdává hold všem padlým hrdinům ozbrojených sil, jejichž odvaha a obětavost nám umožňují žít v bezpečí a svobodě.",
+      category: "Memorial Day",
+      content: "Včera jsme si v tichosti připomněli Memorial Day, den věnovaný památce těch, kteří položili svůj život při službě naší zemi. Los Santos Sheriff's Department vzdává hold všem padlým hrdinům ozbrojených sil, jejichž odvaha a obětavost nám umožňují žít v bezpečí a svobodě. Letošní svátek u našeho oddělení neprobíhal ve znamení žádných veřejných akcí nebo oficiálních ceremonií. Zvolili jsme cestu klidné a osobní připomínky během výkonu naší běžné služby. Vzhledem k tomu, že mnozí z našich zástupců šerifa mají za sebou vojenskou minulost, měl pro nás včerejší den o to hlubší význam. Společně s padlými vojáky jsme s úctou zavzpomínali i na naše kolegy z řad LSSD a dalších bezpečnostních sborů, kteří zaplatili nejvyšší daň při ochraně obyvatel okresu Los Santos a Blaine County. Služba veřejnosti s sebou nese mnohá rizika a my nikdy nezapomeneme na ty, kteří se z výkonu služby nevrátili domů ke svým rodinám. Děkujeme všem občanům, kteří se včera během dne na malou chvíli zastavili a připojili se k nám tichou myšlenkou věnovanou těm, kteří položili život za náš klid a mír. Čest jejich památce.",
+      images: [
+        "/images/media/2026-05-27/image.png",
+      ],
+      author: "Lieutenant - Jayden Sinns"
+    },
+    {
+      date: "2026-03-08",
+      title: "Odvaha v barvách LSSD: Děkujeme našim ženám",
+      excerpt: "Los Santos Sheriff's Department vzdává hold všem ženám, které tvoří pilíře naší společnosti a zasvětily svůj život ochraně zákona.",
+      category: "Mezinárodní den žen",
+      content: "Vážení občané a kolegové, dnes, 8. března, si připomínáme Mezinárodní den žen. Los Santos Sheriff's Department by rád využil této příležitosti, aby vyjádřil hlubokou úctu všem ženám, které tvoří pilíře naší společnosti, a především těm, které se rozhodly zasvětit svůj život ochraně zákona. Práce u LSSD vyžaduje charakter, integritu a schopnost zachovat chladnou hlavu v situacích, kdy jde o vteřiny. Naše kolegyně každý den dokazují, že profesionalita a odvaha neznají hranic. Ať už jde o hlídkovou činnost v drsných ulicích, náročné vyjednávání v terénu nebo precizní práci v administrativě, ženy jsou v našem sboru nepostradatelné. Zároveň děkujeme všem manželkám, matkám a dcerám našich zástupců. Vaše trpělivost a podpora jsou tím, co nám umožňuje každý den se vracet domů a znovu vyrážet do služby pro bezpečí Los Santos County. Všem ženám přejeme k dnešnímu svátku hodně štěstí, bezpečí a zaslouženého respektu.",
+      images: [
+        "/images/media/2026-03-08/image.png",
+      ],
+      author: "Lieutenant - Jayden Sinns"
+    },
     {
       date: "2026-02-22",
       title: "TISKOVÁ ZPRÁVA: Zásah LSSD a součinnostních složek u incidentu „Stand for Liberty“",
