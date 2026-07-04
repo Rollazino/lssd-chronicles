@@ -42,7 +42,18 @@ function getTypeColor(type: string) {
 
 const Media = () => {
   const pressReleases = [
-      {
+    {
+      date: "2026-07-04",
+      title: "Tisková zpráva: Oslavy Dne nezávislosti",
+      excerpt: "Los Santos Sheriff's Department přeje všem občanům radostné a bezpečné prožití čtvrtého července. Letošní svátek je pro mnohé z vás ve znamení rodinných setkání, oslav a večerních ohňostrojů.",
+      category: "Oslavy a svátky",
+      content: "Dnes s hrdostí oslavujeme Den nezávislosti, svátek připomínající zrod našeho národa a neutuchající touhu po svobodě. Los Santos Sheriff's Department přeje všem občanům radostné a bezpečné prožití čtvrtého července. Letošní svátek je pro mnohé z vás ve znamení rodinných setkání, oslav a večerních ohňostrojů. Pro naše oddělení to znamená den plného nasazení, kdy naši příslušníci hlídkují v ulicích, aby zajistili bezproblémový průběh všech veřejných i soukromých akcí. Vzhledem k rozsahu dnešních oslav je pro nás zachování veřejného pořádku absolutní prioritou. Společně s oslavami vás žádáme o maximální zodpovědnost a ohleduplnost ke svému okolí, ať už při manipulaci s pyrotechnikou, nebo za volantem. Naše hlídky jsou připraveny nepřetržitě chránit obyvatele i návštěvníky celého okresu Los Santos a Blaine County. Služba veřejnosti je naším hlavním posláním a jsme tu od toho, abyste se mohli cítit bezpečně. Děkujeme všem občanům, kteří s námi spolupracují na tom, aby dnešní sváteční den proběhl v klidu a bez zbytečných incidentů. Užijte si tento výjimečný den po boku svých rodin a přátel. Šťastný čtvrtý červenec!",
+      images: [
+        "/images/media/2026-07-04/image.png",
+      ],
+      author: "Lieutenant - Jayden Sinns"
+    },
+    {
       date: "2026-06-29",
       title: "Tisková zpráva: Ocenění příslušníků LSSD policejním komisařstvím",
       excerpt: "Los Santos Sheriff's Department s hrdostí oznamuje, že několik našich příslušníků bylo oceněno Policejním komisařstvím za jejich vynikající službu a přínos pro bezpečnost komunity.",
