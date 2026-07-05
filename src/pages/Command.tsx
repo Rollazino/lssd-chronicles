@@ -102,6 +102,7 @@ const Command = () => {
   ];
   
   const supervisorStaff = [
+    /*
     {
       name: "James Hathron",
       title: "Sergeant II",
@@ -111,6 +112,7 @@ const Command = () => {
       achievements: ["Vedení detektivního oddělení na pozici Commander", "Zodpovědné řízení a rozvoj K-9 jednotky", "Medaile za vynikajicí službu", "Vyšetření vraždy a zkorumpovaného přislušníka policie"],
       status: "alive"
     },
+    */
     {
       name: "Bruno Cunha",
       title: "Sergeant II",

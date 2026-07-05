@@ -57,7 +57,7 @@ const Index = () => {
       date: "2026-07-05",
       title: "Odchod do výslužby - Sergeant II James Hathron",
       description: "Sergeant II James Hathron odchází po úctyhodných 43 letech služby u ozbrojených složek do zaslouženého důchodu.",
-      content: "Během své bohaté kariéry se nesmazatelně zapsal do historie naší komunity. Stál u zrodu a rozvoje kynologické jednotky K-9, úspěšně vedl detektivní oddělení z pozice Commander a své obrovské zkušenosti z vyšetřování v posledních letech předával kolegům u LSSD. Za jeho obětavost mu byla mimo jiné udělena Medaile za vynikající službu. Děkujeme mu za jeho celoživotní nasazení, profesionalitu a ochranu občanů. Přejeme mu mnoho zdraví a klidnou penzi.",
+      content: "Během své bohaté kariéry se nesmazatelně zapsal do historie naší komunity. Stál u zrodu a rozvoje kynologické jednotky K-9, úspěšně vedl detektivní oddělení z pozice Commander a své obrovské zkušenosti z vyšetřování v posledních letech předával kolegům u LSSD. Za jeho obětavost mu byla mimo jiné udělena Medaile za vynikající službu. Děkujeme mu za jeho celoživotní nasazení, profesionalitu a ochranu občanů. Přejeme mu mnoho zdraví a klidnou penzi. Více informací naleznete v záložce Média",
       author: "Lieutenant - Jayden Sinns",
       priority: "medium"
     },
