@@ -54,6 +54,14 @@ import patrolFleet from "@/assets/auata.png";
 const Index = () => {
   const announcements = [
     {
+      date: "2026-07-05",
+      title: "Odchod do výslužby - Sergeant II James Hathron",
+      description: "Sergeant II James Hathron odchází po úctyhodných 43 letech služby u ozbrojených složek do zaslouženého důchodu.",
+      content: "Během své bohaté kariéry se nesmazatelně zapsal do historie naší komunity. Stál u zrodu a rozvoje kynologické jednotky K-9, úspěšně vedl detektivní oddělení z pozice Commander a své obrovské zkušenosti z vyšetřování v posledních letech předával kolegům u LSSD. Za jeho obětavost mu byla mimo jiné udělena Medaile za vynikající službu. Děkujeme mu za jeho celoživotní nasazení, profesionalitu a ochranu občanů. Přejeme mu mnoho zdraví a klidnou penzi.",
+      author: "Lieutenant - Jayden Sinns",
+      priority: "medium"
+    },
+    {
       date: "2025-10-28",
       title: "Nové usnesení vedení ohledně stížností v rámci sboru",
       description: "Los Santos County Sheriff’s Department přijímá nové usnesení týkající se přijímání a řešení stížností.",

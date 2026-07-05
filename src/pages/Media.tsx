@@ -43,6 +43,17 @@ function getTypeColor(type: string) {
 const Media = () => {
   const pressReleases = [
     {
+      date: "2026-07-05",
+      title: "Tisková zpráva: Odchod legendy. Sergeant II James Hathron se loučí po 43 letech služby",
+      excerpt: "Dnes se s obrovským respektem a vděčností loučíme s mužem, který zasvětil celý svůj život ochraně a službě veřejnosti. Sergeant II James Hathron po neuvěřitelných 43 letech u ozbrojených složek odchází do zaslouženého důchodu.",
+      category: "Ocenění a vyznamenání",
+      content: "Dnes se s obrovským respektem a vděčností loučíme s mužem, který zasvětil celý svůj život ochraně a službě veřejnosti. Sergeant II James Hathron po neuvěřitelných 43 letech u ozbrojených složek odchází do zaslouženého důchodu. Jeho kariéra je příběhem oddanosti, profesionality a neúnavného boje za spravedlnost. James Hathron započal svou dráhu jako řadový Officer u Los Santos Police Department. Netrvalo dlouho a jeho talent se projevil naplno, když se ujal vedení tehdy nově vznikající K-9 Unit. Díky svým bohatým zkušenostem z pátracího a záchranného týmu (SAR) ve státě Washington pomohl divizi psovodů od samotných základů. Jeho vize a tvrdá práce stojí za tím, že dnes policie úspěšně operuje s více než 16 kynologickými jednotkami. Souběžně s budováním K-9 Unit se James vypracoval i na poli vyšetřování. U detektivního oddělení zanechal výraznou stopu a díky svým schopnostem to po několika letech dotáhl až na prestižní pozici Commander. V současnosti zastával u Los Santos Sheriff's Department hodnost Sergeant II, přičemž nadále předával své know-how kynologické jednotce. Své bohaté detektivní zkušenosti zúročil u LSSD především v těch nejdůležitějších fázích vyšetřování, při zajišťování místa činu v prvních momentech a při vedení odborných a klíčových výslechů. Během své dlouholeté kariéry dosáhl mnoha zásadních milníků. Mezi jeho klíčové úspěchy patří: Vedení detektivního oddělení na pozici Commander, Zodpovědné řízení a rozvoj K-9 jednotky, ze které vybudoval nepostradatelný pilíř policejní práce, Udělení Medaile za vynikající službu, která odráží jeho celoživotní přínos a obětavost, Rozkrytí zásadních případů, včetně složitého vyšetření vraždy a odhalení zkorumpovaného příslušníka policie. Sergeant II Hathron zanechává v našich řadách odkaz, na kterém budou stavět další generace zástupců šerifa i policistů. Děkujeme mu za jeho 43 let neochvějné služby a přejeme mu mnoho zdraví a klidu do nové životní etapy.",
+      images: [
+        "/images/media/2026-07-05/image.png",
+      ],
+      author: "Lieutenant - Jayden Sinns"
+    },
+    {
       date: "2026-07-04",
       title: "Tisková zpráva: Oslavy Dne nezávislosti",
       excerpt: "Los Santos Sheriff's Department přeje všem občanům radostné a bezpečné prožití čtvrtého července. Letošní svátek je pro mnohé z vás ve znamení rodinných setkání, oslav a večerních ohňostrojů.",
