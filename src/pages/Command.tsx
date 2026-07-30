@@ -5,14 +5,14 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 // Adjusted z-index of the overlay to ensure Navigation is clickable
-/*const UnderConstructionOverlay = () => (
-  <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-40">
-    <div className="text-center">
+const UnderConstructionOverlay = () => (
+  <div className="fixed inset-0 bg-black/30 backdrop-blur-xl flex items-center justify-center z-40">
+    <div className="text-center bg-black/20 px-8 py-10 rounded-2xl border border-white/10 shadow-2xl backdrop-blur-md">
       <h1 className="text-5xl font-bold text-yellow-400 mb-4">Ve výstavbě</h1>
-      <p className="text-lg text-white">Proběhla změna vedení, na aktualizaci tvrdě pracujeme.</p>
+      <p className="text-lg text-white/90">Proběhla změna vedení, na aktualizaci intenzivně pracujeme.</p>
     </div>
   </div>
-);*/
+);
 
 const Command = () => {
   const commandStaff = [
@@ -170,6 +170,7 @@ const Command = () => {
       status: "alive"
     },
   ];
+  
 
   return (
     <div className="min-h-screen bg-background relative">
@@ -177,7 +178,7 @@ const Command = () => {
 
 
       {/* Overlay */}
-      {/*<UnderConstructionOverlay />*/}
+      <UnderConstructionOverlay />
 
       {/* Hero Section */}
       <section className="py-24 bg-gradient-to-br from-primary/10 to-accent/10">
