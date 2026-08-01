@@ -43,6 +43,17 @@ function getTypeColor(type: string) {
 const Media = () => {
   const pressReleases = [
     {
+      date: "2026-07-30",
+      title: "Smutná zpráva: Zemřel Deputy II Thomas Carter",
+      excerpt: "S hlubokým zármutkem oznamujeme úmrtí dlouholetého člena LSSD, Deputy II Thomas Cartera.",
+      category: "Smuteční oznámení",
+      content: "S hlubokým zármutkem oznamujeme, že nás navždy opustil Deputy II Thomas Carter, dlouholetý a respektovaný člen Los Santos Sheriff’s Department. Deputy Carter zasvětil svůj profesní život službě veřejnosti, chránil občany našeho města a svým kolegům byl vzorem statečnosti, profesionality a oddanosti službě. Jeho odchod je nenahraditelnou ztrátou nejen pro naše oddělení, ale i pro celou komunitu, kterou s nasazením chránil. Celé vedení LSSD v této těžké chvíli stojí při jeho rodině a vyjadřuje upřímnou soustrast všem blízkým. Čest jeho památce.",
+      images: [
+        "/images/media/2026-07-30/image.png"
+      ],
+      author: "Lieutenant - Jayden Sinns"
+    },
+    {
       date: "2026-07-05",
       title: "Tisková zpráva: Odchod legendy. Sergeant II James Hathron se loučí po 43 letech služby",
       excerpt: "Dnes se s obrovským respektem a vděčností loučíme s mužem, který zasvětil celý svůj život ochraně a službě veřejnosti. Sergeant II James Hathron po neuvěřitelných 43 letech u ozbrojených složek odchází do zaslouženého důchodu.",

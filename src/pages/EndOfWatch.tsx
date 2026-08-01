@@ -7,6 +7,17 @@ import { Medal, Calendar } from "lucide-react";
 // Deceased colleagues with date of death and memorial quote
 const deceasedStaff = [
   {
+    name: "Thomas Carter",
+    title: "Deputy II",
+    experience: "4 roky",
+    image: "/images/Thomas_Carter.png",      
+    description: "Celý svůj život přežíval v touze po pomstě své matky a snaze pomáhat druhým.",
+    achievements: ["Ocenění za statečnost.", "Ocenění za záchranu života."],
+    status: "dead",
+    dateOfDeath: "2026-07-30",
+    memorialQuote: "I když sis někdy nevěděl rady, tak jsi nikdy nenechal někoho v problémech. Odpočívej v pokoji.",
+  },
+  {
     name: "Raffael Jeter",
     title: "Commander",
     experience: "20 let, 15 let v detektivních týmech",
