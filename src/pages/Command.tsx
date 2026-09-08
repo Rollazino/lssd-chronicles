@@ -66,10 +66,10 @@ const Command = () => {
     {
       name: "Bruno Cunha",
       title: "Captain",
-      experience: "15 let",
+      experience: "20 let",
       image: "/images/Cunha.png",
-      description: "",
-      achievements: ["Člen jednotky SWAT", "MBU instruktor"],
+      description: "Jako zkušený příslušník s bohatými zkušenostmi z terénu i velení se Sergant II Bruno Cunha specializuje na vedení speciálních jednotek, výcvik nových příslušníků a koordinaci vysoce rizikových operací. Od svého nástupu do Los Santos Sheriff's Department dne 25. 7. 2025 si vybudoval pověst spolehlivého, disciplinovaného a rozhodného velitele, který dokáže zachovat klid i v těch nejnáročnějších situacích.",
+      achievements: ["Policajná medaila za záslužnú službu", "Zasahujíci jednotka S.W.A.T. při únosu guvernéra, které vedlo k bezpečné záchraně rukojmí a zadržení pachatelů", "Vybudování respektu napříč několika specializovanými divizemi a dlouhodobé vedení jejich rozvoje"],
       status: "alive"
     },
     {
@@ -93,10 +93,10 @@ const Command = () => {
     {
       name: "Kenji Kiroshi",
       title: "Lieutenant",
-      experience: "",
+      experience: "14 let",
       image: "/images/Kiroshi.jpg",
-      description: "",
-      achievements: [],
+      description: "Ako skúsený a zodpovedný člen Los Santos Sheriff Department sa Lieutenant Kiroshi dlhodobo zameriava na budovanie profesionálneho a rešpektovaného prostredia. Počas svojej kariéry si vybudoval povesť človeka, ktorý dokáže zachovať chladnú hlavu a zároveň viesť svojich kolegov správnym smerom. K svojej práci pristupuje s dôrazom na disciplínu, spravodlivosť a dôveru medzi jednotlivými členmi LSSD. Vo svojej súčasnej pozícii sa aktívne podieľa na dohľade a rozvoji zboru a podpore mladších členov. Zároveň verí v otvorenú komunikáciu, tímovú spoluprácu a neustále zlepšovanie, vďaka čomu sa snaží prispievať k modernému a efektívnemu fungovaniu LSSD.",
+      achievements: ["Medaile za záslužnú službu"],
       status: "alive"
     },
     /*
@@ -156,10 +156,10 @@ const Command = () => {
     {
       name: "Harry Potterson",
       title: "Sergeant",
-      experience: "",
+      experience: "15 let",
       image: "/images/Potterson.jpg",
-      description: "",
-      achievements: [],
+      description: "Vyrastal som v rodine, kde bol zmysel pre povinnosť, poctivosť a spravodlivosť na prvom mieste. Práve vzor môjho otca a prirodzená túžba chrániť slabších ma priviedli až do radov policajnej akadémie. Vďaka vytrvalosti, disciplíne a rozvážnemu prístupu sa mi podarilo postupne vypracovať na hodnosť Sergeanta. V súčasnosti pôsobím predovšetkým ako sergeant, kde sa venujem svojej smene, ktorú vediem, zároveň, zodpovedám za transparentnú komunikáciu, mediálnu prezentáciu a budovanie dobrých vzťahov s verejnosťou. Popri reprezentácii sboru aktívne nasadzujem svoje skúsenosti v teréne v rámci špeciálnych jednotiek High Speed Interception Unit, Motor Bike Unit a oddelenia Department of Corrections.",
+      achievements: ["Úspešné absolvovanie policajnej akadémie", "Medaila za záslužnú službu", "Povýšenie do hodnosti Sergeanta"],
       status: "alive"
     },
     {
@@ -174,10 +174,10 @@ const Command = () => {
     {
       name: "Ethan Rose",
       title: "Sergeant",
-      experience: "",
-      image: "/images/Rose.jpg",
-      description: "",
-      achievements: [],
+      experience: "9 let",
+      image: "/images/Rose.png",
+      description: "Sergeant Ethan Rose je známý především svým profesionálním, férovým a zároveň lidským přístupem ke službě. Během svého působení u Los Santos Sheriff’s Department si vybudoval respekt nejen mezi kolegy, ale také mezi členy dalších oddělení. Ke své práci přistupuje s důrazem na čest, disciplínu a odpovědnost, přičemž nikdy nezapomíná na důležitost týmové spolupráce a vzájemné podpory. Jako člen MBU Division se zaměřuje především na udržování pořádku, podporu ostatních jednotek a řešení situací, které vyžadují klidný, rozhodný a profesionální přístup. Je přátelský a ochotný pomoci každému, kdo jeho pomoc potřebuje, zároveň však dokáže být ve službě přísný a nekompromisní, pokud jde o dodržování pravidel a standardů sboru. Rose věří, že dobrý vedoucí není pouze ten, kdo dokáže vydávat rozkazy, ale především ten, kdo jde ostatním příkladem. Ke svým podřízeným proto přistupuje férově, snaží se jim předávat své zkušenosti a podporuje jejich profesní růst. Jeho cílem je vytvářet prostředí založené na důvěře, respektu a vzájemné spolupráci, kde každý člen sboru ví, že se může na své kolegy spolehnout.",
+      achievements: ["Postup na hodnost Sergeant díky dlouhodobému profesionálnímu přístupu a spolehlivosti ve službě", "Budování dobrých vztahů mezi jednotlivými odděleními a jednotkami LSSD", "Výrazný přínos k výcviku a rozvoji nových členů sboru"],
       status: "alive"
     },
     {
