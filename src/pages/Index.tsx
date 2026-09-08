@@ -41,12 +41,13 @@ function ScrollToUniformSectionNavLink(props: any) {
   }, [props]);
   return <NavLink {...props} onClick={handleClick} />;
 }
-import { Shield, Users, Car, Phone, AlertTriangle, FileText, Calendar, Award, ChevronRight, Building, Eye } from "lucide-react";
+import { Shield, Users, Car, Phone, AlertTriangle, FileText, Calendar, Award, ChevronRight, Building, Eye, ArrowRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import lssdHQ from "@/assets/Sbor.png";
 import sheriffPortrait from "@/assets/Sheriff.png";
 import patrolFleet from "@/assets/auata.png";
+import { isSeptemberRemembrancePeriod } from "@/lib/remembrance";
 
 //low - aktualizace, medium - důležité, high - priorita
 
@@ -125,10 +126,28 @@ const Index = () => {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
   const visibleAnnouncements = showAll ? announcements : announcements.slice(0, 3);
+  const showRemembranceBanner = isSeptemberRemembrancePeriod();
 
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
+
+      {showRemembranceBanner && (
+        <section className="border-b border-amber-300/30 bg-[#171b18] text-stone-100">
+          <div className="container mx-auto flex flex-col items-start justify-between gap-4 px-4 py-5 sm:flex-row sm:items-center">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-amber-300">11/09/2001</p>
+              <p className="mt-1 text-sm text-stone-300">Vzpomínáme na ty, kteří sloužili druhým.</p>
+            </div>
+            <ScrollToTopNavLink to="/11-zari">
+              <Button variant="outline" className="border-stone-500 bg-transparent text-stone-100 hover:bg-stone-100 hover:text-stone-950">
+                Vzpomínková stránka
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </ScrollToTopNavLink>
+          </div>
+        </section>
+      )}
 
       {/* Hero Section */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">

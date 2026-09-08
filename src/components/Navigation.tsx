@@ -13,9 +13,11 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Phone, AlertTriangle } from "lucide-react";
 import lssdBadge from "@/assets/lssd-logo.png";
+import { isSeptemberRemembrancePeriod } from "@/lib/remembrance";
 
 const Navigation = ({ className }: { className?: string }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const showRemembranceLink = isSeptemberRemembrancePeriod();
 
   const navItems = [
     { to: "/", label: "Domů" },
@@ -27,6 +29,7 @@ const Navigation = ({ className }: { className?: string }) => {
     //{ to: "/community", label: "Komunita" },
     { to: "/contact", label: "Kontakt" },
     { to: "/endofwatch", label: "End of Watch" },
+    ...(showRemembranceLink ? [{ to: "/11-zari", label: "9/11" }] : []),
   ];
 
   const NavContent = () => (
