@@ -5,6 +5,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 // Adjusted z-index of the overlay to ensure Navigation is clickable
+{/*
 const UnderConstructionOverlay = () => (
   <div className="fixed inset-0 bg-black/30 backdrop-blur-xl flex items-center justify-center z-40">
     <div className="text-center bg-black/20 px-8 py-10 rounded-2xl border border-white/10 shadow-2xl backdrop-blur-md">
@@ -13,6 +14,7 @@ const UnderConstructionOverlay = () => (
     </div>
   </div>
 );
+*/}
 
 const Command = () => {
   const commandStaff = [
@@ -62,6 +64,15 @@ const Command = () => {
       status: "alive"
     },
     {
+      name: "Bruno Cunha",
+      title: "Captain",
+      experience: "15 let",
+      image: "/images/Cunha.png",
+      description: "",
+      achievements: ["Člen jednotky SWAT", "MBU instruktor"],
+      status: "alive"
+    },
+    {
       name: "Jayden Sinns",
       title: "Lieutenant",
       experience: "38 let",
@@ -71,21 +82,21 @@ const Command = () => {
       status: "alive"
     },
     {
-      name: "Aiden Pearce",
-      title: "Lieutenant",
-      experience: "",
-      image: "/images/Pearce.png",
-      description: "",
-      achievements: [""],
-      status: "alive"
-    },
-    {
       name: "Bryan Walker",
       title: "Lieutenant",
       experience: "",
       image: "/images/Walker.jpg",
       description: "",
       achievements: [""],
+      status: "alive"
+    },
+    {
+      name: "Kenji Kiroshi",
+      title: "Lieutenant",
+      experience: "",
+      image: "/images/Kiroshi.jpg",
+      description: "",
+      achievements: [],
       status: "alive"
     },
     /*
@@ -113,15 +124,6 @@ const Command = () => {
       status: "alive"
     },
     */
-    {
-      name: "Bruno Cunha",
-      title: "Sergeant II",
-      experience: "15 let",
-      image: "/images/Cunha.png",
-      description: "",
-      achievements: ["Člen jednotky SWAT", "MBU instruktor"],
-      status: "alive"
-    },
     /*
     {
       name: "Mason Cooper",
@@ -134,17 +136,8 @@ const Command = () => {
     },
     */
     {
-      name: "Kenji Kiroshi",
-      title: "Sergeant",
-      experience: "",
-      image: "/images/Kiroshi.jpg",
-      description: "",
-      achievements: [],
-      status: "alive"
-    },
-    {
       name: "Noah Cromwell",
-      title: "Sergeant",
+      title: "Sergeant II",
       experience: "",
       image: "/images/Cromwell.jpg",
       description: "",
@@ -152,19 +145,46 @@ const Command = () => {
       status: "alive"
     },
     {
-      name: "Theodore Kinsley",
-      title: "Sergeant",
+      name: "Glenn Hawkins",
+      title: "Sergeant II",
       experience: "",
-      image: "/images/Kinsley.jpg",
+      image: "/images/Hawkins.jpg",
       description: "",
       achievements: [],
       status: "alive"
     },
     {
-      name: "Glenn Hawkins",
+      name: "Harry Potterson",
       title: "Sergeant",
       experience: "",
-      image: "/images/Hawkins.jpg",
+      image: "/images/Potterson.jpg",
+      description: "",
+      achievements: [],
+      status: "alive"
+    },
+    {
+      name: "James Clark",
+      title: "Sergeant",
+      experience: "",
+      image: "/images/Clark.jpg",
+      description: "",
+      achievements: [],
+      status: "alive"
+    },
+    {
+      name: "Ethan Rose",
+      title: "Sergeant",
+      experience: "",
+      image: "/images/Rose.jpg",
+      description: "",
+      achievements: [],
+      status: "alive"
+    },
+    {
+      name: "Mason Sebranski",
+      title: "Sergeant",
+      experience: "",
+      image: "/images/Sebranski.jpg",
       description: "",
       achievements: [],
       status: "alive"
@@ -176,9 +196,8 @@ const Command = () => {
     <div className="min-h-screen bg-background relative">
       <Navigation className="relative z-50" />
 
-
       {/* Overlay */}
-      <UnderConstructionOverlay />
+      {/* <UnderConstructionOverlay /> */}
 
       {/* Hero Section */}
       <section className="py-24 bg-gradient-to-br from-primary/10 to-accent/10">
