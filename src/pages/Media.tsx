@@ -43,6 +43,32 @@ function getTypeColor(type: string) {
 const Media = () => {
   const pressReleases = [
     {
+      date: "2026-09-11",
+      title: "Výročí 11. září: Nikdy nezapomeneme",
+      excerpt: "Los Santos Sheriff's Department si s hlubokým zármutkem a nejvyšší úctou připomíná oběti 11. září 2001 a všechny hrdiny, kteří tehdy sloužili druhým.",
+      category: "Vzpomínkové dny",
+      content: `Dnes si s hlubokým zármutkem a nejvyšší úctou připomínáme tragické události 11. září 2001 – den, který navždy změnil nejen Spojené státy americké, ale také způsob, jakým celý svět nahlíží na bezpečnost, službu veřejnosti a obětavost těch, kteří každý den chrání životy druhých.
+
+Před pětadvaceti lety přišlo během několika hodin o život téměř tři tisíce nevinných lidí. Dnes však nevzpomínáme pouze na oběti samotného útoku. Vzdáváme hold především těm, kteří ve chvíli největšího nebezpečí běželi opačným směrem, než kam utíkali ostatní.
+
+Mezi prvními na místě byli příslušníci policie, hasiči, zdravotníci a další záchranáři. Mnozí z nich věděli, že vstupují do prostředí, ze kterého se nemusí vrátit. Přesto pokračovali dál. Jejich oběť nám připomíná, že skutečná služba veřejnosti není pouze o pravomocích a uniformě. Je o ochotě postavit se nebezpečí ve chvíli, kdy ostatní potřebují pomoc.
+
+Do rozsáhlých pátracích a záchranných operací byli nasazeni také záchranářští psi. Společně se svými psovody prohledávali trosky a pomáhali hledat známky života i pozůstatky těch, kteří se již domů nevrátili. Dnes proto vzpomínáme také na čtyřnohé členy záchranných týmů.
+
+Letošní připomínka 11. září se u Los Santos Sheriff's Department nesla ve znamení společného uctění památky. Na observatoři jsme se sešli s příslušníky Los Santos Police Department, San Andreas Highway Patrol, Emergency Medical Services a Los Santos Fire Department. Toto setkání pro nás představovalo symbol toho, že bez ohledu na barvu uniformy, odznak nebo konkrétní úkol stojíme jako složky veřejné bezpečnosti vedle sebe se stejným posláním – chránit životy, pomáhat lidem a být připraveni sloužit ve chvílích, kdy nás společnost potřebuje nejvíce.
+
+Události 11. září nám připomínají, že za každou uniformou stojí člověk. Dnes proto na chvíli odkládáme každodenní povinnosti a zastavujeme se v tiché vzpomínce na ty, kteří zahynuli, na ty, kteří pomáhali, na ty, kteří se nevrátili domů, i na jejich rodiny a blízké.
+
+Děkujeme všem občanům, kteří si dnes najdou chvíli a věnují tichou myšlenku těm, jejichž životy byly předčasně ukončeny, i těm, kteří v ten den prokázali mimořádnou odvahu. Ať jejich příběhy nikdy nezmizí. Čest jejich památce.
+
+Los Santos Sheriff's Department
+"A Tradition of Service"`,
+      images: [
+        "/images/media/2001-09-11/image8.jpg",
+      ],
+      author: "Lieutenant - Jayden Sinns"
+    },
+    {
       date: "2026-07-30",
       title: "Smutná zpráva: Zemřel Deputy II Thomas Carter",
       excerpt: "S hlubokým zármutkem oznamujeme úmrtí dlouholetého člena LSSD, Deputy II Thomas Cartera.",
@@ -465,8 +491,12 @@ const Media = () => {
                           {release.excerpt}
                         </p>
                         {expandedIndex === index && (
-                          <div className="mt-4 text-muted-foreground">
-                            {release.content}
+                          <div className="mt-4 space-y-4 text-muted-foreground leading-relaxed">
+                            {release.content.split("\n\n").map((paragraph, paragraphIndex) => (
+                              <p key={paragraphIndex} className={paragraphIndex === release.content.split("\n\n").length - 1 ? "font-semibold text-primary" : undefined}>
+                                {paragraph}
+                              </p>
+                            ))}
                             {release.images && release.images.length > 0 && (
                               <div className="flex flex-wrap gap-4 mt-6">
                                 {release.images.map((img, idx) => (

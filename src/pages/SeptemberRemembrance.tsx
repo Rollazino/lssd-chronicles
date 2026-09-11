@@ -68,6 +68,62 @@ const memories = [
   },
 ];
 
+const officialMessageSections = [
+  {
+    title: "Úvodní poselství",
+    paragraphs: [
+      "Dnes si s hlubokým zármutkem a nejvyšší úctou připomínáme tragické události 11. září 2001 – den, který navždy změnil nejen Spojené státy americké, ale také způsob, jakým celý svět nahlíží na bezpečnost, službu veřejnosti a obětavost těch, kteří každý den chrání životy druhých.",
+      "Před pětadvaceti lety přišlo během několika hodin o život téměř tři tisíce nevinných lidí. Byli mezi nimi lidé různých profesí, věku i životních příběhů. Lidé, kteří ráno odešli do práce, cestovali letadlem nebo jednoduše žili svůj běžný den. Nikdo z nich netušil, že se jejich život během několika okamžiků navždy změní.",
+      "Dnes však nevzpomínáme pouze na oběti samotného útoku. Vzdáváme hold především těm, kteří ve chvíli největšího nebezpečí běželi opačným směrem, než kam utíkali ostatní.",
+    ],
+  },
+  {
+    title: "Hrdinové, kteří se nevrátili",
+    paragraphs: [
+      "Mezi prvními na místě byli příslušníci policie, hasiči, zdravotníci a další záchranáři. Mnozí z nich věděli, že vstupují do prostředí, ze kterého se nemusí vrátit. Přesto pokračovali dál.",
+      "Policisté pomáhali evakuovat lidi z ohrožených budov, hasiči vstupovali do hořících pater, zdravotníci poskytovali pomoc zraněným a další záchranáři se bez váhání zapojili do pátracích a záchranných prací.",
+      "Někteří z těchto mužů a žen položili svůj život během samotných útoků. Další se v následujících letech potýkali s následky práce v nebezpečných podmínkách Ground Zero.",
+      "Jejich oběť nám připomíná, že skutečná služba veřejnosti není pouze o pravomocích a uniformě. Je o ochotě postavit se nebezpečí ve chvíli, kdy ostatní potřebují pomoc.",
+    ],
+  },
+  {
+    title: "Ti, kteří hledali i tam, kde už nikdo nedoufal",
+    paragraphs: [
+      "Do rozsáhlých pátracích a záchranných operací byli nasazeni také záchranářští psi. Společně se svými psovody prohledávali trosky, procházeli místy, kam se člověk často nemohl bezpečně dostat, a pomáhali hledat známky života i pozůstatky těch, kteří se již domů nevrátili.",
+      "Jejich práce byla tichá, vytrvalá a nesmírně náročná. Navzdory únavě, prachu, kouři, hluku a nebezpečnému prostředí pokračovali ve své práci po boku svých psovodů.",
+      "Dnes proto vzpomínáme nejen na všechny lidské životy, které byly 11. září ztraceny, ale také na čtyřnohé členy záchranných týmů, kteří společně se svými psovody pomáhali v jednom z největších záchranných nasazení moderní historie.",
+    ],
+  },
+  {
+    title: "Společná vzpomínka",
+    paragraphs: [
+      "Letošní připomínka 11. září se u Los Santos Sheriff's Department nenesla ve znamení samostatné velké akce. Místo toho jsme se rozhodli tento den uctít především společně s našimi kolegy z dalších složek.",
+      "Na observatoři jsme se společně sešli s příslušníky Los Santos Police Department, San Andreas Highway Patrol, Emergency Medical Services a Los Santos Fire Department, abychom si společně připomněli všechny oběti a hrdiny událostí 11. září 2001.",
+      "Společné setkání pro nás představovalo symbol toho, že bez ohledu na barvu uniformy, odznak nebo konkrétní úkol stojíme jako složky veřejné bezpečnosti vedle sebe se stejným posláním – chránit životy, pomáhat lidem a být připraveni sloužit ve chvílích, kdy nás společnost potřebuje nejvíce.",
+      "Tiché uctění památky na observatoři nebylo pouze vzpomínkou na události před pětadvaceti lety. Bylo také připomínkou všech mužů a žen, kteří dodnes každý den nastupují do služby s vědomím, že jejich práce může být nepředvídatelná a někdy i nebezpečná.",
+    ],
+  },
+  {
+    title: "Odkaz pro každého, kdo obléká uniformu",
+    paragraphs: [
+      "Mnozí naši deputies vnímají 11. září jako jeden z okamžiků, který ukazuje skutečný význam služby veřejnosti. Uniforma totiž není pouze symbolem pravomoci. Je především symbolem odpovědnosti, odvahy a závazku chránit ostatní.",
+      "Každý den naši deputies nastupují do služby s vědomím, že se mohou dostat do situace, kdy budou muset dát bezpečí druhých před vlastní. Právě 11. září nám připomíná, kam až může taková povinnost vést a jakou cenu jsou někteří lidé ochotni zaplatit za to, aby ochránili ostatní.",
+      "Stejně jako si dnes připomínáme policisty, hasiče, zdravotníky a záchranáře, kteří se v roce 2001 nevrátili domů, vzpomínáme také na všechny příslušníky bezpečnostních a záchranných složek, kteří během výkonu služby přišli o život kdykoliv předtím i potom.",
+      "Také Los Santos Sheriff's Department s úctou vzpomíná na své padlé kolegy a všechny muže a ženy, kteří položili svůj život při ochraně obyvatel Los Santos County a Blaine County.",
+      "Jejich služba skončila. Jejich odkaz však pokračuje.",
+    ],
+  },
+  {
+    title: "Nikdy nezapomeneme",
+    paragraphs: [
+      "Události 11. září nám připomínají, že za každou uniformou stojí člověk. Člověk, který má rodinu, přátele, sny a někoho, kdo na něj čeká doma.",
+      "Připomínají nám také, že hrdinství nemusí být vždy hlasité. Někdy má podobu policisty, který zůstane u posledního evakuovaného člověka. Hasiče, který se vrací do hořící budovy. Zdravotníka, který pokračuje v ošetřování zraněných. Psovoda, který vede svého parťáka troskami. Nebo záchranářského psa, který pokračuje v hledání, přestože je unavený a okolí je plné nebezpečí.",
+      "Dnes proto na chvíli odkládáme každodenní povinnosti a zastavujeme se v tiché vzpomínce.",
+      "Děkujeme všem občanům, kteří si dnes najdou chvíli a věnují tichou myšlenku těm, jejichž životy byly předčasně ukončeny, i těm, kteří v ten den prokázali mimořádnou odvahu. Ať jejich příběhy nikdy nezmizí.",
+    ],
+  },
+];
+
 const SeptemberRemembrance = () => {
   return (
     <div className="min-h-screen bg-[#101311] text-stone-100">
@@ -129,6 +185,63 @@ const SeptemberRemembrance = () => {
                 <p className="font-semibold text-stone-900">
                   Za všechny, kteří sloužili. Za všechny, na které vzpomínáme.
                 </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="oficialni-zprava" className="bg-[#ede9df] py-16 text-stone-900 md:py-24">
+          <div className="container mx-auto px-4">
+            <div className="mx-auto max-w-5xl overflow-hidden border border-stone-300 bg-white shadow-sm">
+              <div className="grid lg:grid-cols-[0.8fr_1.2fr]">
+                <div className="relative min-h-[280px] bg-stone-900 lg:min-h-full">
+                  <img
+                    src="/images/media/2001-09-11/image8.jpg"
+                    alt="Vzpomínkový snímek k výročí 11. září"
+                    className="absolute inset-0 h-full w-full object-cover grayscale"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-stone-950/10 to-transparent" />
+                  <div className="absolute bottom-6 left-6 right-6 text-stone-50">
+                    <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-300">11. září 2026</p>
+                    <p className="mt-2 text-2xl font-bold">Nikdy nezapomeneme</p>
+                  </div>
+                </div>
+                <article className="p-7 md:p-10">
+                  <div className="mb-8 border-b border-stone-200 pb-6">
+                    <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-amber-700">Oficiální vzpomínkové poselství</p>
+                    <h2 className="text-3xl font-bold text-stone-950 md:text-4xl">Výročí 11. září – nikdy nezapomeneme</h2>
+                    <p className="mt-3 text-sm text-stone-500">Los Santos Sheriff's Department | 11. září 2026</p>
+                  </div>
+                  <div className="space-y-8">
+                    {officialMessageSections.map((section) => (
+                      <section key={section.title}>
+                        <h3 className="mb-3 text-xl font-bold text-stone-950">{section.title}</h3>
+                        <div className="space-y-3 text-base leading-relaxed text-stone-600">
+                          {section.paragraphs.map((paragraph) => (
+                            <p key={paragraph} className={paragraph === "Jejich služba skončila. Jejich odkaz však pokračuje." ? "font-bold text-stone-950" : undefined}>
+                              {paragraph}
+                            </p>
+                          ))}
+                        </div>
+                      </section>
+                    ))}
+                  </div>
+                  <div className="mt-8 border-t border-stone-200 pt-6 text-stone-700">
+                    <p className="font-semibold">Na ty, kteří zahynuli.</p>
+                    <p className="font-semibold">Na ty, kteří pomáhali.</p>
+                    <p className="font-semibold">Na ty, kteří se nevrátili domů.</p>
+                    <p className="font-semibold">Na jejich rodiny a blízké.</p>
+                    <p className="mt-4 font-semibold">Čest jejich památce.</p>
+                    <p className="mt-5 text-sm italic">Los Santos Sheriff's Department<br />"A Tradition of Service"</p>
+
+                  </div>
+                  <Button asChild variant="outline" className="mt-8 border-stone-400">
+                    <NavLink to="/media">
+                      Otevřít tiskovou zprávu v Médiích
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </NavLink>
+                  </Button>
+                </article>
               </div>
             </div>
           </div>
