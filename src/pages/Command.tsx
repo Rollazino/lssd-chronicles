@@ -84,10 +84,10 @@ const Command = () => {
     {
       name: "Bryan Walker",
       title: "Lieutenant",
-      experience: "",
+      experience: "15 let",
       image: "/images/Walker.jpg",
-      description: "",
-      achievements: [""],
+      description: "Pán Walker už od začiatku dbal na funkčnosť a hlavne udržiavanie vzťahov a profesionality v zbore Sheriffa. Najskôr začal dobrovoľne ako FTO už pri hodnosti Deputy II, kde školil Deputies a preukázal svoj záujem o pomoc svojim ľuďom. Okrem rôznych zásluh vo fielde sa následne uchádzal o pozíciu Sergeanta, kde uspel s výbornými výsledkami a následne sa staral o zmenu na stanici v Sandy Shores HQ. Pán Walker okrem iného usporadúval aj rôzne akcie pre ľud alebo práve pre úrad Sheriffa, kde sa na mnohých aj účastnil, čo ho viedlo práve k neskorším povýšeniam až k medaile za zásluhy. Walker sa naďalej usiluje o to, aby boli jednotky úradu Sheriffa ústretové k občanom a v dobrom kolektíve.",
+      achievements: ["Policajná medaila za záslužnú službu"],
       status: "alive"
     },
     {
