@@ -42,6 +42,17 @@ function getTypeColor(type: string) {
 
 const Media = () => {
   const pressReleases = [
+      {
+      date: "2026-10-15",
+      title: "Tisková zpráva: Říjen, měsíc boje proti rakovině prsu",
+      excerpt: "Los Santos Sheriff's Department se připojuje k iniciativě boje proti rakovině prsu a připomíná důležitost prevence a včasného odhalení.",
+      category: "Osvěta a prevence",
+      content: "Říjen je každoročně věnován boji proti rakovině prsu, osvětě, prevenci a podpoře všech, kterých se toto onemocnění dotýká. Los Santos Sheriff's Department se připojuje k této iniciativě a připomíná důležitost včasného odhalení, pravidelných preventivních prohlídek a otevřeného přístupu k tématu, které se každoročně dotýká mnoha životů. Růžová barva, která je symbolem tohoto měsíce, představuje nejen podporu pacientek a pacientů, ale také naději, odvahu a solidaritu. Za každým příběhem spojeným s rakovinou stojí člověk, jeho rodina a blízcí, kteří společně čelí náročné životní situaci. Právě proto je důležité nezapomínat, že nikdo by na takový boj neměl zůstat sám. Prevence a včasná diagnóza mohou zachraňovat životy. Pravidelné preventivní prohlídky, znalost vlastního těla a včasná konzultace s lékařem při neobvyklých změnách mohou významně přispět k odhalení onemocnění v jeho raném stadiu. Vyzýváme proto občany, aby péči o své zdraví nepodceňovali a věnovali prevenci náležitou pozornost. Los Santos Sheriff's Department si zároveň uvědomuje, že služba veřejnosti nespočívá pouze v ochraně bezpečnosti, ale také v podpoře hodnot, které pomáhají budovat zdravější a soudržnější společnost. Vyjadřujeme proto podporu všem, kteří s tímto onemocněním bojují, těm, kteří léčbou již prošli, i rodinám, které své blízké na této cestě doprovázejí. Říjen je příležitostí zastavit se, šířit povědomí a připomenout si, že i malý krok může mít velký význam. Ať už jde o preventivní prohlídku, podporu blízkého člověka nebo pouhé šíření důležitých informací, každý z nás může přispět k tomu, aby se o tomto tématu více mluvilo a méně se na něj zapomínalo. Podporujeme prevenci. Stojíme při těch, kteří bojují. Nezapomínáme na ty, kteří svůj boj prohráli.",
+      images: [
+        "/images/media/2026-10-15/image.png"
+      ],
+      author: "Lieutenant - Jayden Sinns"
+    },
     {
       date: "2026-09-11",
       title: "Výročí 11. září: Nikdy nezapomeneme",
