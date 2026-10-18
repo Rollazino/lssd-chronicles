@@ -1,9 +1,8 @@
 import { ArrowRight, Calendar, Camera, Clock3, Quote, Shield, Star } from "lucide-react";
 import { NavLink } from "react-router-dom";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { useLocalization } from "@/lib/localization-context";
 
 const timeline = [
   { time: "08:46", title: "První náraz", text: "Let American Airlines 11 zasáhl severní věž Světového obchodního centra." },
@@ -125,9 +124,10 @@ const officialMessageSections = [
 ];
 
 const SeptemberRemembrance = () => {
+  const { t } = useLocalization();
+
   return (
-    <div className="min-h-screen bg-[#101311] text-stone-100">
-      <Navigation />
+    <div className="bg-[#101311] text-stone-100">
 
       <main>
         <section className="relative overflow-hidden border-b border-amber-200/20 bg-[radial-gradient(circle_at_top_right,_rgba(183,145,63,0.2),_transparent_40%),linear-gradient(135deg,_#101311_0%,_#1b211c_55%,_#0b0d0c_100%)] py-24 md:py-32">
@@ -138,7 +138,7 @@ const SeptemberRemembrance = () => {
                 11/09/2001
               </Badge>
               <h1 className="mb-6 text-4xl font-bold tracking-tight text-stone-50 md:text-6xl">
-                Vzpomínáme. Sloužíme. Nezapomínáme.
+                {t("remembranceTitle")}
               </h1>
               <p className="mx-auto max-w-2xl text-lg leading-relaxed text-stone-300 md:text-xl">
                 V tento den se zastavujeme, abychom vzdali úctu obětem, jejich rodinám
@@ -326,7 +326,6 @@ const SeptemberRemembrance = () => {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 };

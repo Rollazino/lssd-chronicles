@@ -1,8 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users, Medal, Calendar } from "lucide-react";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
+import { useLocalization } from "@/lib/localization-context";
 
 // Adjusted z-index of the overlay to ensure Navigation is clickable
 {/*
@@ -17,6 +16,8 @@ const UnderConstructionOverlay = () => (
 */}
 
 const Command = () => {
+  const { t } = useLocalization();
+
   const commandStaff = [
     {
       name: "Dino Lopez",
@@ -193,8 +194,7 @@ const Command = () => {
   
 
   return (
-    <div className="min-h-screen bg-background relative">
-      <Navigation className="relative z-50" />
+    <div className="bg-background relative">
 
       {/* Overlay */}
       {/* <UnderConstructionOverlay /> */}
@@ -204,7 +204,7 @@ const Command = () => {
         <div className="container mx-auto px-4 text-center">
           <Badge variant="outline" className="mb-6">Vedení</Badge>
           <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6">
-            Vedení oddělení
+            {t("leadershipTitle")}
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Seznamte se se zkušeným vedením, které řídí Los Santos Sheriff's Department s oddaností, odborností a neochvějným závazkem k veřejné bezpečnosti.
@@ -436,7 +436,6 @@ const Command = () => {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 };

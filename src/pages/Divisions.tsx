@@ -12,8 +12,7 @@ import {
   Clock,
   MapPin
 } from "lucide-react";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
+import { useLocalization } from "@/lib/localization-context";
 
 // Lucide-style Beaver icon (based on your image)
 const BeaverIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -50,6 +49,8 @@ const BeaverIcon = (props: React.SVGProps<SVGSVGElement>) => (
 );
 
 const Divisions = () => {
+  const { t } = useLocalization();
+
   const divisions = [
     {
       icon: Car,
@@ -177,19 +178,17 @@ const Divisions = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
+    <div className="bg-background">
       
       {/* Hero Section */}
       <section className="py-24 bg-gradient-to-br from-primary/10 to-accent/10">
         <div className="container mx-auto px-4 text-center">
           <Badge variant="outline" className="mb-6">Specializované jednotky</Badge>
           <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6">
-            Naše divize
+            {t("divisionsTitle")}
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Los Santos Sheriff's Department provozuje několik specializovaných jednotek, 
-            které jsou odborně vyškoleny pro konkrétní oblasti policejní práce a služby veřejnosti.
+            {t("divisionsDescription")}
           </p>
         </div>
       </section>
@@ -327,7 +326,6 @@ const Divisions = () => {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 };

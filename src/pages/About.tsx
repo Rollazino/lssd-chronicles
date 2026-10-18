@@ -1,11 +1,12 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Calendar, Award, Users, TrendingUp } from "lucide-react";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 import lssdHQ from "@/assets/Sbor.png";
+import { useLocalization } from "@/lib/localization-context";
 
 const About = () => {
+  const { t } = useLocalization();
+
   const timeline = [
     {
       year: "1872",
@@ -58,8 +59,7 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
+    <div className="bg-background">
       
       {/* Hero Section */}
       <section className="relative py-24 overflow-hidden">
@@ -68,12 +68,12 @@ const About = () => {
           style={{ backgroundImage: `url(${lssdHQ})` }}
         />
         <div className="relative container mx-auto px-4 text-center">
-          <Badge variant="outline" className="mb-6">Náš příběh</Badge>
+          <Badge variant="outline" className="mb-6">{t("ourStory")}</Badge>
           <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6">
-            O Los Santos Sheriff's Department
+            {t("aboutDepartment")}
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Již více než 150 let hrdě sloužíme občanům okresu San Andreas s neochvějným nasazením, profesionalitou a integritou.
+            {t("yearsServing")}
           </p>
         </div>
       </section>
@@ -85,36 +85,36 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-2xl text-primary">Naše mise</CardTitle>
+                  <CardTitle className="text-2xl text-primary">{t("mission")}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground leading-relaxed">
-                    Chráníme a sloužíme obyvatelům okresu Los Santos s profesionalitou, integritou a respektem při zachování nejvyšších standardů policejní práce. Zavazujeme se budovat partnerství s komunitou pro zvýšení bezpečnosti a kvality života všech obyvatel.
+                    {t("protectMission")}
                   </p>
                 </CardContent>
               </Card>
 
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-2xl text-primary">Naše hodnoty</CardTitle>
+                  <CardTitle className="text-2xl text-primary">{t("values")}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">
                     <div>
-                      <h4 className="font-semibold text-primary mb-1">Integrita</h4>
-                      <p className="text-sm text-muted-foreground">Dodržujeme nejvyšší etické standardy ve všech našich činnostech.</p>
+                      <h4 className="font-semibold text-primary mb-1">{t("integrity")}</h4>
+                      <p className="text-sm text-muted-foreground">{t("valuesIntegrity")}</p>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-primary mb-1">Respekt</h4>
-                      <p className="text-sm text-muted-foreground">Jednáme s každým jednotlivcem důstojně a spravedlivě.</p>
+                      <h4 className="font-semibold text-primary mb-1">{t("respect")}</h4>
+                      <p className="text-sm text-muted-foreground">{t("valuesRespect")}</p>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-primary mb-1">Odpovědnost</h4>
-                      <p className="text-sm text-muted-foreground">Neseme odpovědnost za naše činy a rozhodnutí.</p>
+                      <h4 className="font-semibold text-primary mb-1">{t("accountability")}</h4>
+                      <p className="text-sm text-muted-foreground">{t("valuesAccountability")}</p>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-primary mb-1">Excelence</h4>
-                      <p className="text-sm text-muted-foreground">Usilujeme o nejvyšší kvalitu ve všem, co děláme.</p>
+                      <h4 className="font-semibold text-primary mb-1">{t("excellence")}</h4>
+                      <p className="text-sm text-muted-foreground">{t("valuesExcellence")}</p>
                     </div>
                   </div>
                 </CardContent>
@@ -130,7 +130,7 @@ const About = () => {
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-4">Naše dědictví</Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Historie oddělení
+              {t("departmentHistory")}
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Klíčové milníky, které formovaly Los Santos Sheriff's Department v profesionální organizaci, jakou je dnes.
@@ -260,7 +260,6 @@ const About = () => {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 };

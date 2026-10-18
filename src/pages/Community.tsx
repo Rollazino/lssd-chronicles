@@ -11,8 +11,7 @@ import {
   Phone,
   MapPin
 } from "lucide-react";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
+import { useLocalization } from "@/lib/localization-context";
 import React, { useState } from "react";
 // Formulář pro registraci na akci s webhookem
 function EventRegistrationForm({ event, onClose }: { event: { title: string; webhook: string }; onClose: () => void }) {
@@ -63,6 +62,8 @@ function EventRegistrationForm({ event, onClose }: { event: { title: string; web
 }
 
 const Community = () => {
+  const { t } = useLocalization();
+
   const [showFormIndex, setShowFormIndex] = useState<number|null>(null);
   const programs = [
   /*{
@@ -141,15 +142,14 @@ const Community = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
+    <div className="bg-background">
       
       {/* Hero Section */}
       <section className="py-24 bg-gradient-to-br from-primary/10 to-accent/10">
         <div className="container mx-auto px-4 text-center">
           <Badge variant="outline" className="mb-6">Zapojení komunity</Badge>
           <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6">
-            Programy pro komunitu - WIP
+            {t("communityTitle")}
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Budujeme silnější a bezpečnější komunity prostřednictvím partnerství, zapojení a společné odpovědnosti. 
@@ -371,7 +371,6 @@ const Community = () => {
       </section>
       */}
 
-      <Footer />
     </div>
   );
 };

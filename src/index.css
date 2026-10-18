@@ -8,6 +8,8 @@ All colors MUST be HSL - Sheriff department branding with dark greens, beige, br
 
 @layer base {
   :root {
+    color-scheme: light;
+
     /* Sheriff Department Brand Colors */
     --background: 42 23% 95%; /* Warm beige background */
     --foreground: 20 14% 15%; /* Dark brown text */
@@ -59,9 +61,14 @@ All colors MUST be HSL - Sheriff department branding with dark greens, beige, br
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --sheriff-gradient: linear-gradient(135deg, hsl(120 25% 20%) 0%, hsl(120 25% 15%) 100%);
+    --badge-glow: 0 0 20px hsl(45 75% 55% / 0.3);
   }
 
   .dark {
+    color-scheme: dark;
+
     /* Dark mode for professional sheriff website */
     --background: 20 14% 8%; /* Very dark brown */
     --foreground: 42 23% 95%;
@@ -103,6 +110,73 @@ All colors MUST be HSL - Sheriff department branding with dark greens, beige, br
   
   .badge-glow {
     box-shadow: var(--badge-glow);
+  }
+
+  .google-translate-control {
+    position: relative;
+  }
+
+  .google-translate-widget .goog-te-gadget {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    color: hsl(var(--foreground));
+    font-family: inherit;
+    font-size: 0;
+    white-space: nowrap;
+  }
+
+  .google-translate-widget .goog-te-gadget > span {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    left: 0;
+    z-index: 60;
+    display: none;
+    width: max-content;
+    max-width: min(18rem, calc(100vw - 2rem));
+    padding: 0.5rem 0.75rem;
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
+    background: hsl(var(--popover));
+    color: hsl(var(--popover-foreground));
+    box-shadow: 0 8px 24px hsl(20 14% 15% / 0.18);
+    white-space: normal;
+  }
+
+  .google-translate-widget .goog-te-gadget:hover > span,
+  .google-translate-widget .goog-te-gadget:focus-within > span {
+    display: block;
+  }
+
+  .google-translate-widget .goog-te-gadget .goog-te-combo {
+    width: clamp(108px, 11vw, 148px);
+    max-width: clamp(108px, 11vw, 148px);
+    height: 2.25rem;
+    margin: 0;
+    padding: 0 0.5rem;
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
+    background: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: inherit;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: border-color 150ms, box-shadow 150ms;
+  }
+
+  .google-translate-widget .goog-te-gadget .goog-te-combo:hover {
+    border-color: hsl(var(--ring) / 0.6);
+  }
+
+  .google-translate-widget .goog-te-gadget .goog-te-combo:focus-visible {
+    outline: none;
+    border-color: hsl(var(--ring));
+    box-shadow: 0 0 0 2px hsl(var(--ring) / 0.2);
+  }
+
+  .google-translate-widget .goog-te-gadget > span {
+    font-size: 0.75rem;
   }
   
   .professional-shadow {

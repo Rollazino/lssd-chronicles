@@ -1,8 +1,10 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { useLocalization } from "@/lib/localization-context";
 
 const NotFound = () => {
   const location = useLocation();
+  const { t } = useLocalization();
 
   useEffect(() => {
     console.error(
@@ -12,12 +14,12 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="flex min-h-[50vh] items-center justify-center bg-background text-foreground">
       <div className="text-center">
         <h1 className="text-4xl font-bold mb-4">404</h1>
-        <p className="text-xl text-gray-600 mb-4">Stránka nebyla nalezena</p>
-        <a href="/" className="text-blue-500 hover:text-blue-700 underline">
-          Zpět na hlavní stránku
+        <p className="text-xl text-muted-foreground mb-4">{t("pageNotFound")}</p>
+        <a href="/" className="text-primary hover:opacity-80 underline">
+          {t("backHome")}
         </a>
       </div>
     </div>

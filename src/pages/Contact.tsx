@@ -14,11 +14,12 @@ import {
   Building,
   Send
 } from "lucide-react";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 import { Dialog, DialogContent, DialogTitle, DialogDescription, DialogHeader } from "@/components/ui/dialog";
+import { useLocalization } from "@/lib/localization-context";
 
 const Contact = () => {
+  const { t } = useLocalization();
+
   // Neurgentní formulář
   const [nonUrgentFirstName, setNonUrgentFirstName] = useState("");
   const [nonUrgentLastName, setNonUrgentLastName] = useState("");
@@ -228,15 +229,14 @@ const Contact = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
+    <div className="bg-background">
       
       {/* Hero Section */}
       <section className="py-24 bg-gradient-to-br from-primary/10 to-accent/10">
         <div className="container mx-auto px-4 text-center">
           <Badge variant="outline" className="mb-6">Kontaktujte nás</Badge>
           <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6">
-            Spojte se s námi
+            {t("contactTitle")}
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Jsme tu pro vás a vaši bezpečnost. Kontaktujte nás pro pomoc, informace nebo nahlášení neurgentních situací.
@@ -600,7 +600,6 @@ const Contact = () => {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 };

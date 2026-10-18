@@ -11,11 +11,12 @@ import {
   CheckCircle,
   Clock
 } from "lucide-react";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 import recruitmentBg from "@/assets/uvod.png"; // uprav cestu dle skutečného umístění
+import { useLocalization } from "@/lib/localization-context";
 
 const Recruitment = () => {
+  const { t } = useLocalization();
+
   const benefits = [
     {
       icon: DollarSign,
@@ -85,8 +86,7 @@ const Recruitment = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
+    <div className="bg-background">
       
       {/* Hero Section */}
       <section
@@ -99,19 +99,18 @@ const Recruitment = () => {
       >
         <div className="absolute inset-0 bg-primary/70"></div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <Badge variant="outline" className="mb-6 text-primary-foreground">Přidejte se k nám</Badge>
+          <Badge variant="outline" className="mb-6 text-primary-foreground">{t("joinUs")}</Badge>
           <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6">
-            Začněte kariéru u šerifů
+            {t("careerTitle")}
           </h1>
           <p className="text-xl text-primary-foreground max-w-3xl mx-auto leading-relaxed">
-            Připojte se k Los Santos Sheriff's Department a mějte pozitivní vliv na svou komunitu. 
-            Hledáme odhodlané jedince připravené chránit a sloužit.
+            {t("recruitmentDescription")}
           </p>
           <div className="mt-8">
             <a href="https://forms.gle/QjbCLukX6KjjKRcv5" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="text-lg px-8">
                 <Shield className="mr-2 h-5 w-5" />
-                Přidejte se k nám
+                {t("joinUs")}
               </Button>
             </a>
           </div>
@@ -122,12 +121,12 @@ const Recruitment = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <Badge variant="outline" className="mb-4">Zaměstnanecké benefity</Badge>
+            <Badge variant="outline" className="mb-4">{t("employeeBenefits")}</Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Komplexní balíček výhod
+              {t("benefitsTitle")}
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Vážíme si našich šerifů a poskytujeme jim vynikající benefity pro podporu jejich kariéry i rodiny.
+              {t("benefitsDescription")}
             </p>
           </div>
 
@@ -154,7 +153,7 @@ const Recruitment = () => {
             <div className="text-center mb-12">
               <Badge variant="outline" className="mb-4">Podmínky přijetí</Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-                Minimální požadavky
+                {t("requirementsTitle")}
               </h2>
               <p className="text-muted-foreground">
                 Pro přijetí k Los Santos Sheriff's Department musí uchazeči splnit následující podmínky:
@@ -183,10 +182,10 @@ const Recruitment = () => {
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-4">Průběh přijímacího řízení</Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Jak se přihlásit
+              {t("applicationTitle")}
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Důkladný výběrový proces zajišťuje, že do týmu přijímáme ty nejlepší kandidáty.
+              {t("applicationDescription")}
             </p>
           </div>
 
@@ -222,7 +221,7 @@ const Recruitment = () => {
       <section className="py-16 bg-primary/5">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-            Připraveni sloužit své komunitě?
+            {t("readyToServe")}
           </h2>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
             Udělejte první krok ke smysluplné kariéře u šerifského sboru. Přidejte se k nám a měňte svět k lepšímu.
@@ -231,7 +230,7 @@ const Recruitment = () => {
             <a href="https://forms.gle/QjbCLukX6KjjKRcv5" target="_blank" rel="noopener noreferrer">
             <Button size="lg" className="text-lg px-8">
               <Shield className="mr-2 h-5 w-5" />
-              Přihlásit se online
+              {t("applyOnline")}
             </Button>
             </a>
 
@@ -246,7 +245,6 @@ const Recruitment = () => {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 };

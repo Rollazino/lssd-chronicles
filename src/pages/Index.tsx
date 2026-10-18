@@ -42,16 +42,17 @@ function ScrollToUniformSectionNavLink(props: any) {
   return <NavLink {...props} onClick={handleClick} />;
 }
 import { Shield, Users, Car, Phone, AlertTriangle, FileText, Calendar, Award, ChevronRight, Building, Eye, ArrowRight } from "lucide-react";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 import lssdHQ from "@/assets/Sbor.png";
 import sheriffPortrait from "@/assets/Sheriff.png";
 import patrolFleet from "@/assets/auata.png";
 import { isSeptemberRemembrancePeriod } from "@/lib/remembrance";
+import { useLocalization } from "@/lib/localization-context";
 
 //low - aktualizace, medium - důležité, high - priorita
 
 const Index = () => {
+  const { language, t } = useLocalization();
+
   const announcements = [
     {
       date: "2026-07-05",
@@ -116,10 +117,10 @@ const Index = () => {
   ];
 
   const quickStats = [
-    { icon: Shield, label: "Počet sloužících šerifů", value: "40+" },
-    { icon: Users, label: "Obyvatel chráněných", value: "2,1M" },
-    { icon: Car, label: "Typů služebních vozidel", value: "30+" },
-    { icon: Building, label: "Stanice", value: "2" }
+    { icon: Shield, label: t("statsDeputies"), value: "40+" },
+    { icon: Users, label: t("statsResidents"), value: "2,1M" },
+    { icon: Car, label: t("statsVehicles"), value: "30+" },
+    { icon: Building, label: t("stations"), value: "2" }
   ];
 
   const [showAll, setShowAll] = useState(false);
@@ -129,19 +130,18 @@ const Index = () => {
   const showRemembranceBanner = isSeptemberRemembrancePeriod();
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
+    <div className="bg-background">
 
       {showRemembranceBanner && (
         <section className="border-b border-amber-300/30 bg-[#171b18] text-stone-100">
           <div className="container mx-auto flex flex-col items-start justify-between gap-4 px-4 py-5 sm:flex-row sm:items-center">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.16em] text-amber-300">11/09/2001</p>
-              <p className="mt-1 text-sm text-stone-300">Vzpomínáme na ty, kteří sloužili druhým.</p>
+              <p className="mt-1 text-sm text-stone-300">{t("remembranceMessage")}</p>
             </div>
             <ScrollToTopNavLink to="/11-zari">
               <Button variant="outline" className="border-stone-500 bg-transparent text-stone-100 hover:bg-stone-100 hover:text-stone-950">
-                Vzpomínková stránka
+                {t("remembrancePage")}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </ScrollToTopNavLink>
@@ -163,13 +163,12 @@ const Index = () => {
             Los Santos Sheriff's Department
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
-            Sloužíme naší komunitě s integritou, profesionalitou a odhodláním.
-            Chráníme a sloužíme okresu San Andreas již více než 150 let.
+            {t("homeTagline")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" className="text-lg px-8">
               <AlertTriangle className="mr-2 h-5 w-5" />
-              Tísňová linka: 911
+              {t("emergency")}
             </Button>
             {/*
             <Button size="lg" variant="outline" className="text-lg px-8 bg-primary-foreground/10 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
@@ -222,9 +221,9 @@ const Index = () => {
                 </div>
               </div> */}
               <div>
-                  <Badge variant="outline" className="mb-4">Uvítací zpráva</Badge>
+                  <Badge variant="outline" className="mb-4">{t("welcomeMessage")}</Badge>
                   <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-                    Zpráva od šerifa Lopez
+                    {t("sheriffMessage")}
                   </h2>
                 </div>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
@@ -232,7 +231,7 @@ const Index = () => {
                     „Vítejte na strankách úřadu Los Santos Sheriffʼs Department“
                   </p>
                   <p>
-                    „Naším posláním je udržovat klid a pořádek a harmonii nejen Blaine County.“
+                    „{t("serviceStatement")}“
                   </p>
                   <p>
                     „Úřad Sheriffa zastává tradiční hodnoty, kdy každý kolega a kolegyně denně usilují o zachování bezpečí a klidu.“
@@ -274,12 +273,12 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <Badge variant="outline" className="mb-4">Aktuality z komunity</Badge>
+              <Badge variant="outline" className="mb-4">{t("latestUpdates")}</Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-                Nejnovější oznámení
+                {t("announcements")}
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Sledujte nejnovější zprávy, iniciativy a důležité informace z Los Santos Sheriff's Department.
+                {t("latestUpdatesDescription")}
               </p>
             </div>
 
@@ -294,11 +293,13 @@ const Index = () => {
                             variant={announcement.priority === "high" ? "destructive" :
                               announcement.priority === "medium" ? "default" : "secondary"}
                           >
-                            {announcement.priority === "high" ? "Priorita" :
-                              announcement.priority === "medium" ? "Důležité" : "Aktualizace"}
+                            {announcement.priority === "high" ? t("priority") :
+                              announcement.priority === "medium" ? t("important") : t("updates")}
                           </Badge>
                           <span className="text-sm text-muted-foreground">
-                            {new Date(announcement.date).toLocaleDateString("cs-CZ")}
+                            {new Date(announcement.date).toLocaleDateString(
+                              { cs: "cs-CZ", sk: "sk-SK", en: "en-US", de: "de-DE" }[language],
+                            )}
                           </span>
                         </div>
                         <h3 className="text-xl font-semibold text-primary mb-2">
@@ -335,7 +336,7 @@ const Index = () => {
                               </div>
                             )}
                             <div className="mt-6 text-right text-sm italic text-primary">
-                              {announcement.author && <>Autor: {announcement.author}</>}
+                              {announcement.author && <>{t("author")}: {announcement.author}</>}
                             </div>
                           </div>
                         )}
@@ -347,7 +348,7 @@ const Index = () => {
                             ? setExpandedIndex(null)
                             : setExpandedIndex(index)
                         }
-                        aria-label={expandedIndex === index ? "Skrýt oznámení" : "Zobrazit celé oznámení"}
+                        aria-label={expandedIndex === index ? t("hideAnnouncement") : t("showAnnouncement")}
                       >
                         <ChevronRight
                           className={`h-5 w-5 text-muted-foreground transition-transform ${expandedIndex === index ? "rotate-90" : ""}`}
@@ -368,7 +369,7 @@ const Index = () => {
                 }}
               >
                 <FileText className="mr-2 h-4 w-4" />
-                {showAll ? "Zobrazit méně" : "Zobrazit všechna oznámení"}
+                {showAll ? t("showLess") : t("showAllAnnouncements")}
               </Button>
             </div>
           </div>
@@ -379,12 +380,12 @@ const Index = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <Badge variant="outline" className="mb-4">Služby oddělení</Badge>
+            <Badge variant="outline" className="mb-4">{t("departmentServices")}</Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Rychlý přístup
+              {t("quickAccess")}
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Najděte rychle a snadno potřebné zdroje a informace.
+              {t("quickAccessDescription")}
             </p>
           </div>
 
@@ -392,15 +393,15 @@ const Index = () => {
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <Shield className="h-8 w-8 text-primary mb-2" />
-                <CardTitle>Přidejte se k nám</CardTitle>
+                <CardTitle>{t("joinUs")}</CardTitle>
                 <CardDescription>
-                  Prozkoumejte kariérní příležitosti a zjistěte více o našem náboru.
+                  {t("exploreCareer")}
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <ScrollToTopNavLink to="/recruitment">
                   <Button className="w-full">
-                    Více informací
+                    {t("moreInformation")}
                     <ChevronRight className="ml-2 h-4 w-4" />
                   </Button>
                 </ScrollToTopNavLink>
@@ -430,15 +431,15 @@ const Index = () => {
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <Award className="h-8 w-8 text-primary mb-2" />
-                <CardTitle>Naše oddělení</CardTitle>
+                <CardTitle>{t("ourDivisions")}</CardTitle>
                 <CardDescription>
-                  Seznamte se s našimi specializovanými jednotkami a jejich odpovědnostmi.
+                  {t("exploreSpecialized")}
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <ScrollToTopNavLink to="/divisions">
                   <Button className="w-full">
-                    Prozkoumat oddělení
+                    {t("exploreDivisions")}
                     <ChevronRight className="ml-2 h-4 w-4" />
                   </Button>
                 </ScrollToTopNavLink>
@@ -543,7 +544,6 @@ const Index = () => {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 };

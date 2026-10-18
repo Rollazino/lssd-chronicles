@@ -1,8 +1,8 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 import { Medal, Calendar } from "lucide-react";
+import { useLocalization } from "@/lib/localization-context";
+import type { Language } from "@/lib/languages";
 
 // Deceased colleagues with date of death and memorial quote
 const deceasedStaff = [
@@ -42,9 +42,9 @@ const deceasedStaff = [
   // Add more deceased colleagues here as needed
 ];
 
-const formatDate = (dateStr: string) => {
+const formatDate = (dateStr: string, language: Language) => {
   const date = new Date(dateStr);
-  return date.toLocaleDateString("cs-CZ", {
+  return date.toLocaleDateString({ cs: "cs-CZ", sk: "sk-SK", en: "en-US", de: "de-DE" }[language], {
     year: "numeric",
     month: "long",
     day: "numeric",
@@ -52,19 +52,20 @@ const formatDate = (dateStr: string) => {
 };
 
 const EndOfWatch = () => {
+  const { language, t } = useLocalization();
+
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
+    <div className="bg-background">
       <section className="py-24 bg-gradient-to-br from-primary/10 to-accent/10">
         <div className="container mx-auto px-4 text-center">
           <Badge variant="outline" className="mb-6">
             End of Watch
           </Badge>
           <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6">
-            Vzpomínka na zesnulé kolegy
+            {t("memorialTitle")}
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Tato stránka je věnována památce kolegů, kteří odešli, ale jejich služba a odkaz zůstávají navždy v našich srdcích.
+            {t("memorialDescription")}
           </p>
           <p className="mt-6 text-center text-base italic text-gray-400">
             “Odpočívejte v pokoji. Odteď to tu přebíráme my!”
@@ -112,7 +113,7 @@ const EndOfWatch = () => {
                         {officer.title}
                       </CardDescription>
                       <div className="mt-2 text-sm text-gray-400 font-semibold">
-                        EOW: {formatDate(officer.dateOfDeath)}
+                        EOW: {formatDate(officer.dateOfDeath, language)}
                       </div>
                     </div>
                   </div>
@@ -152,7 +153,6 @@ const EndOfWatch = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </div>
   );
 };

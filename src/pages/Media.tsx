@@ -11,8 +11,7 @@ import {
   Eye,
   Users
 } from "lucide-react";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
+import { useLocalization } from "@/lib/localization-context";
 // Utility funkce pro ikony a barvy typů assetů
 function getIcon(type: string) {
   switch (type) {
@@ -41,6 +40,8 @@ function getTypeColor(type: string) {
 }
 
 const Media = () => {
+  const { t } = useLocalization();
+
   const pressReleases = [
       {
       date: "2026-10-15",
@@ -451,15 +452,14 @@ Los Santos Sheriff's Department
   const visibleReleases = showAll ? pressReleases : pressReleases.slice(0, 3);
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
+    <div className="bg-background">
 
       {/* Hero Section */}
       <section className="py-24 bg-gradient-to-br from-primary/10 to-accent/10">
         <div className="container mx-auto px-4 text-center">
           <Badge variant="outline" className="mb-6">Mediální centrum</Badge>
           <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6">
-            Mediální zdroje
+            {t("mediaTitle")}
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Získejte tiskové zprávy, fotografie, videa a další mediální materiály pro zpravodajství
@@ -765,7 +765,6 @@ Los Santos Sheriff's Department
           </div>
         </div>
       </section>
-      <Footer />
     </div>
   );
 };
