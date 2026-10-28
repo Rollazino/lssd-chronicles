@@ -43,6 +43,17 @@ const Media = () => {
   const { t } = useLocalization();
 
   const pressReleases = [
+    {
+      date: "2026-10-28",
+      title: "Tisková zpráva: National First Responders Day – Hrdinové, kteří odpovídají na volání o pomoc",
+      excerpt: "Los Santos Sheriff's Department vzdává hold všem příslušníkům policie, hasičům, zdravotníkům, záchranářům a dalším pracovníkům první pomoci, jejichž každodenní služba je nepostradatelnou součástí bezpečné společnosti.",
+      category: "Osvěta a prevence",
+      content: "Dne 28. října si připomínáme National First Responders Day, den věnovaný všem mužům a ženám, kteří stojí v první linii při mimořádných událostech a neváhají riskovat vlastní bezpečí, aby ochránili životy ostatních. Los Santos Sheriff's Department vzdává hold všem příslušníkům policie, hasičům, zdravotníkům, záchranářům a dalším pracovníkům první pomoci, jejichž každodenní služba je nepostradatelnou součástí bezpečné společnosti. Práce těchto lidí často začíná ve chvíli, kdy ostatní potřebují pomoc nejvíce. Dopravní nehody, požáry, zdravotní komplikace, násilné incidenty nebo jiné krizové situace vyžadují rychlé rozhodování, profesionalitu a odvahu. Za každým výjezdem se přitom skrývá nejen povinnost, ale také člověk, který má vlastní rodinu, přátele a někoho, kdo na něj po skončení směny čeká doma. Příslušníci Los Santos Sheriff's Department si uvědomují, že služba veřejnosti není pouze o odznaku, uniformě nebo pravomocích. Je především o odpovědnosti, odhodlání a ochotě pomoci i v okamžicích, kdy situace přináší nečekaná rizika. Stejné hodnoty sdílíme s našimi kolegy z řad LSPD, SAHP, EMS a LSFD, se kterými každodenně spolupracujeme při ochraně obyvatel Los Santos County a Blaine County. National First Responders Day je zároveň příležitostí poděkovat nejen těm, kteří právě slouží, ale také těm, kteří svou službu již ukončili, a uctít památku těch, kteří se ze zásahu nikdy nevrátili. Jejich odvaha a obětavost zůstávají trvalou připomínkou toho, co znamená skutečně sloužit druhým. Nezapomínáme ani na rodiny a blízké příslušníků záchranných a bezpečnostních složek. Právě oni často nesou část tíhy této služby, čekají na návrat svých blízkých a podporují je i v těch nejnáročnějších chvílích. Dnes proto patří naše poděkování všem, kteří odpovídají na volání o pomoc, zasahují tam, odkud ostatní utíkají, a každý den dokazují, že odvaha se neprojevuje pouze velkými činy, ale také každodenní ochotou být tu pro druhé. Děkujeme za vaši službu, odvahu a obětavost. Vaše práce má smysl a vaše služba nezůstává bez povšimnutí.",
+      images: [
+        "/images/media/2026-10-28/image.jpg"
+      ],
+      author: "Lieutenant - Jayden Sinns"
+    },
       {
       date: "2026-10-15",
       title: "Tisková zpráva: Říjen, měsíc boje proti rakovině prsu",
