@@ -44,6 +44,17 @@ const Media = () => {
 
   const pressReleases = [
     {
+      date: "2026-11-01",
+      title: "Tisková zpráva: Movember – Měsíc mužského zdraví",
+      excerpt: "Los Santos Sheriff's Department se připojuje k iniciativě Movemberu a připomíná důležitost péče o mužské zdraví, prevenci rakoviny a duševní pohody.",
+      category: "Osvěta a prevence",
+      content: "Listopad je měsícem Movemberu, celosvětové iniciativy zaměřené na podporu mužského zdraví, prevenci rakoviny prostaty a varlat a také na duševní zdraví mužů. Los Santos Sheriff's Department se připojuje k této osvětové iniciativě a připomíná, že starat se o své zdraví není projevem slabosti, ale odpovědnosti vůči sobě i svým blízkým. Symbolickým znakem Movemberu je knír, který si muži během listopadu nechávají narůst, aby upozornili na témata, o kterých se často nemluví dostatečně otevřeně. Za touto jednoduchou symbolikou se však skrývá důležité poselství – prevence, včasné odhalení onemocnění a ochota požádat o pomoc mohou zachraňovat životy. Rakovina prostaty a varlat patří mezi onemocnění, jejichž včasné rozpoznání může významně ovlivnit možnosti léčby. Pravidelné konzultace s lékařem, znalost vlastního těla a nepodceňování neobvyklých změn jsou důležitými kroky k ochraně zdraví. Vyzýváme proto všechny muže, aby péči o sebe neodkládali a nebáli se vyhledat odbornou pomoc, pokud mají pochybnosti nebo zdravotní potíže. Movember však není pouze o fyzickém zdraví. Stejně důležitá je také duševní pohoda. Každý člověk se může ocitnout v náročné životní situaci, potýkat se se stresem, osobními problémy nebo pocitem osamělosti. Přesto se mnoho mužů stále zdráhá o svých pocitech mluvit, protože mají dojem, že musí všechno zvládnout sami. Pravdou však je, že požádat o pomoc vyžaduje odvahu a může být prvním krokem ke změně. Příslušníci bezpečnostních a záchranných složek se ve své práci pravidelně setkávají s náročnými situacemi, vysokou mírou stresu a událostmi, které mohou zanechat dlouhodobé následky. I proto považuje Los Santos Sheriff's Department za důležité připomínat, že péče o zdraví nekončí odložením uniformy a že nikdo by neměl mít pocit, že na své problémy musí zůstat sám. V rámci letošního Movemberu proto vyjadřujeme podporu všem, kteří se potýkají se zdravotními obtížemi, procházejí náročným obdobím nebo podporují své blízké v jejich boji. Povzbuzujeme občany, aby o těchto tématech otevřeně mluvili, zajímali se o své okolí a nebáli se nabídnout pomocnou ruku. Skutečná síla nespočívá v tom, že všechno zvládneme sami, ale také v odvaze říct si o pomoc. Los Santos Sheriff's Department připomíná, že prevence, otevřenost a vzájemná podpora mohou mít zásadní význam. Věnujme proto během listopadu pozornost nejen svému fyzickému zdraví, ale také tomu, jak se cítíme my sami a lidé kolem nás. Pečujme o své zdraví. Mluvme otevřeně. Podporujme se navzájem.",
+      images: [
+        "/images/media/2026-11-01/image.png"
+      ],
+      author: "Lieutenant - Jayden Sinns"
+    },
+    {
       date: "2026-10-28",
       title: "Tisková zpráva: National First Responders Day – Hrdinové, kteří odpovídají na volání o pomoc",
       excerpt: "Los Santos Sheriff's Department vzdává hold všem příslušníkům policie, hasičům, zdravotníkům, záchranářům a dalším pracovníkům první pomoci, jejichž každodenní služba je nepostradatelnou součástí bezpečné společnosti.",

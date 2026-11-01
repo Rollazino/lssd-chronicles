@@ -181,15 +181,6 @@ const Command = () => {
       achievements: ["Postup na hodnost Sergeant díky dlouhodobému profesionálnímu přístupu a spolehlivosti ve službě", "Budování dobrých vztahů mezi jednotlivými odděleními a jednotkami LSSD", "Výrazný přínos k výcviku a rozvoji nových členů sboru"],
       status: "alive"
     },
-    {
-      name: "Mason Sebranski",
-      title: "Sergeant",
-      experience: "",
-      image: "/images/Sebranski.jpg",
-      description: "",
-      achievements: [],
-      status: "alive"
-    },
   ];
   
 
