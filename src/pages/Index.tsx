@@ -46,6 +46,7 @@ import lssdHQ from "@/assets/Sbor.png";
 import sheriffPortrait from "@/assets/Sheriff.png";
 import patrolFleet from "@/assets/auata.png";
 import { isSeptemberRemembrancePeriod } from "@/lib/remembrance";
+import { isMovemberPeriod } from "@/lib/movember";
 import { useLocalization } from "@/lib/localization-context";
 
 //low - aktualizace, medium - důležité, high - priorita
@@ -128,6 +129,7 @@ const Index = () => {
 
   const visibleAnnouncements = showAll ? announcements : announcements.slice(0, 3);
   const showRemembranceBanner = isSeptemberRemembrancePeriod();
+  const showMovemberBanner = isMovemberPeriod();
 
   return (
     <div className="bg-background">
@@ -142,6 +144,34 @@ const Index = () => {
             <ScrollToTopNavLink to="/11-zari">
               <Button variant="outline" className="border-stone-500 bg-transparent text-stone-100 hover:bg-stone-100 hover:text-stone-950">
                 {t("remembrancePage")}
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </ScrollToTopNavLink>
+          </div>
+        </section>
+      )}
+
+      {showMovemberBanner && (
+        <section className="border-b border-sky-300/30 bg-[#171e27] text-slate-100">
+          <div className="container mx-auto flex flex-col items-start justify-between gap-4 px-4 py-5 sm:flex-row sm:items-center">
+            <div className="flex items-center gap-4">
+              <img
+                src="/images/media/2026-11-01/image.png"
+                alt=""
+                className="hidden h-16 w-28 rounded object-cover sm:block"
+              />
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-sky-300">
+                  Movember · Měsíc mužského zdraví
+                </p>
+                <p className="mt-1 text-sm text-slate-300">
+                  Pečujme o své zdraví, mluvme otevřeně a podporujme se navzájem.
+                </p>
+              </div>
+            </div>
+            <ScrollToTopNavLink to="/movember">
+              <Button variant="outline" className="border-slate-500 bg-transparent text-slate-100 hover:bg-slate-100 hover:text-slate-950">
+                Stránka Movember
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </ScrollToTopNavLink>

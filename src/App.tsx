@@ -18,6 +18,7 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import EndOfWatch from "./pages/EndOfWatch";
 import SeptemberRemembrance from "./pages/SeptemberRemembrance";
+import Movember from "./pages/Movember";
 
 const queryClient = new QueryClient();
 
@@ -43,6 +44,7 @@ const App = () => (
                   <Route path="/contact" element={<Contact />} />
                   <Route path="/endofwatch" element={<EndOfWatch />} />
                   <Route path="/11-zari" element={<SeptemberRemembrance />} />
+                  <Route path="/movember" element={<Movember />} />
                   {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                   <Route path="*" element={<NotFound />} />
                 </Routes>

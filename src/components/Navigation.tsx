@@ -17,6 +17,7 @@ import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/s
 import { AlertTriangle, Languages, Menu, Moon, Sun } from "lucide-react";
 import lssdBadge from "@/assets/lssd-logo.png";
 import { isSeptemberRemembrancePeriod } from "@/lib/remembrance";
+import { isMovemberPeriod } from "@/lib/movember";
 import { useTheme } from "next-themes";
 import { useLocalization } from "@/lib/localization-context";
 import GoogleTranslateWidget from "@/components/GoogleTranslateWidget";
@@ -46,6 +47,7 @@ const PreferencesControls = ({ id }: { id: string }) => {
 const Navigation = ({ className }: { className?: string }) => {
   const [isOpen, setIsOpen] = useState(false);
   const showRemembranceLink = isSeptemberRemembrancePeriod();
+  const showMovemberLink = isMovemberPeriod();
   const { t } = useLocalization();
 
   const navItems = [
@@ -59,6 +61,7 @@ const Navigation = ({ className }: { className?: string }) => {
     { to: "/contact", label: t("contact") },
     { to: "/endofwatch", label: t("endOfWatch") },
     ...(showRemembranceLink ? [{ to: "/11-zari", label: "9/11" }] : []),
+    ...(showMovemberLink ? [{ to: "/movember", label: "Movember" }] : []),
   ];
 
   const NavContent = () => (
@@ -68,7 +71,7 @@ const Navigation = ({ className }: { className?: string }) => {
           key={item.to}
           to={item.to}
           className={({ isActive }) =>
-            `px-4 py-2 rounded-md transition-colors font-medium ${
+            `shrink-0 whitespace-nowrap rounded-md px-2.5 py-2 transition-colors font-medium ${
               isActive
                 ? "bg-primary text-primary-foreground"
                 : "text-foreground hover:bg-accent hover:text-accent-foreground"
@@ -100,12 +103,12 @@ const Navigation = ({ className }: { className?: string }) => {
           </ScrollToTopNavLink>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-2">
+          <div className="hidden 2xl:flex shrink-0 items-center gap-1">
             <NavContent />
           </div>
 
           {/* Emergency Contact */}
-          <div className="hidden xl:flex items-center space-x-4">
+          <div className="hidden 2xl:flex shrink-0 items-center space-x-4">
             <div className="flex items-center space-x-2 text-sm">
               <AlertTriangle className="h-4 w-4 text-destructive" />
               <span className="font-semibold text-destructive">{t("emergency")}</span>
@@ -119,7 +122,7 @@ const Navigation = ({ className }: { className?: string }) => {
           {/* Mobile Menu */}
           <div className="shrink-0">
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
-            <SheetTrigger asChild className="lg:hidden">
+            <SheetTrigger asChild className="2xl:hidden">
               <Button variant="outline" size="icon">
                 <Menu className="h-5 w-5" />
                 <span className="sr-only">{t("openNavigation")}</span>

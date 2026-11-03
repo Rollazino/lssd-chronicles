@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogOverlay, DialogPortal, DialogTitle } from "@/components/ui/dialog";
 import {
   FileText,
   Image,
@@ -9,7 +10,9 @@ import {
   Calendar,
   Download,
   Eye,
-  Users
+  Users,
+  ChevronLeft,
+  ChevronRight
 } from "lucide-react";
 import { useLocalization } from "@/lib/localization-context";
 // Utility funkce pro ikony a barvy typů assetů
@@ -39,10 +42,89 @@ function getTypeColor(type: string) {
   }
 }
 
+type ArticleSection = {
+  title: string;
+  paragraphs: string[];
+  images?: string[];
+};
+
+type PressRelease = {
+  date: string;
+  title: string;
+  excerpt: string;
+  category: string;
+  content?: string;
+  sections?: ArticleSection[];
+  images?: string[];
+  author?: string;
+};
+
+type GalleryImage = {
+  src: string;
+  alt: string;
+};
+
 const Media = () => {
   const { t } = useLocalization();
 
-  const pressReleases = [
+  const pressReleases: PressRelease[] = [
+    /*
+    {
+      date: "2026-11-XX",
+      title: "Tisková zpráva: Los Santos Sheriff's Department představuje novou stanici",
+      excerpt: "Los Santos Sheriff's Department s hrdostí oznamuje otevření nové policejní stanice, která posílí bezpečnost a dostupnost služeb pro obyvatele okresu Los Santos.",
+      category: "Oznámení",
+      sections: [
+        {
+          title: "Nová stanice",
+          paragraphs: [
+            "Los Santos Sheriff's Department s potěšením oznamuje otevření nové stanice, která představuje významný krok v dalším rozvoji našeho oddělení. Nové prostory přinášejí příslušníkům modernější a rozsáhlejší zázemí pro každodenní výkon služby a zároveň poskytují lepší podmínky pro administrativní činnost, vzdělávání a komunikaci s občany.",
+            "Nová stanice byla navržena s důrazem na praktičnost, funkčnost a potřeby každodenního provozu. Její umístění v klidnějším prostředí obklopeném přírodou nabízí příslušníkům vhodné zázemí pro výkon služby a zároveň umožňuje efektivní organizaci služebních činností v přilehlých oblastech okresu Los Santos a Blaine County."
+          ],
+          images: [
+            "/images/media/2026-11-XX/image.jpg",
+            ...Array.from({ length: 5 }, (_, index) => `/images/media/2026-11-XX/image${index + 2}.jpg`)
+          ]
+        },
+        {
+          title: "Vnitřní prostory a zázemí LSSD",
+          paragraphs: [
+            "Součástí stanice je vstupní hala s recepcí, která slouží jako první kontaktní místo pro občany přicházející řešit své záležitosti. K dispozici jsou také čekací prostory a další společné místnosti, které zajišťují potřebné pohodlí a odpovídající prostředí pro návštěvníky.",
+            "Stanice disponuje rovněž administrativním zázemím, kancelářemi a dalšími pracovními prostory určenými pro každodenní činnost našich deputies. Důležitou součástí objektu je také školící a konferenční místnost, která poskytne prostor pro pravidelná setkání, porady, odborná školení a další vzdělávací aktivity.",
+            "Nové prostory tak umožňují soustředit větší část činností oddělení na jednom místě a vytvářejí vhodné podmínky pro další profesní rozvoj našich příslušníků."
+          ],
+          images: Array.from({ length: 6 }, (_, index) => `/images/media/2026-11-XX/image${index + 7}.jpg`)
+        },
+        {
+          title: "Zázemí Park Rangers",
+          paragraphs: [
+            "Nová stanice nebude sloužit výhradně příslušníkům Sheriff's Departmentu. Její součástí je také menší zázemí určené členům jednotky Park Rangers, kteří se podílejí na ochraně přírody, dohledu nad vybranými oblastmi a zajišťování pořádku v přírodních lokalitách.",
+            "Pro členy Park Rangers byla vyčleněna samostatná místnost, která jim poskytne potřebné pracovní zázemí a prostor pro jejich činnost. Toto řešení představuje další krok k užší spolupráci mezi jednotlivými složkami a umožňuje jejich efektivnější propojení při plnění společných úkolů.",
+            "Ačkoliv se nejedná o plnohodnotnou samostatnou stanici Park Rangers, nové prostory jim nabídnou důležité zázemí přímo v objektu LSSD."
+          ],
+          images: ["/images/media/2026-11-XX/image13.jpg"]
+        },
+        {
+          title: "Další prostory stanice",
+          paragraphs: [
+            "Nedílnou součástí nového objektu jsou také venkovní prostory a parkoviště určené pro služební vozidla. Stanice poskytuje potřebné zázemí pro jejich parkování, přípravu a každodenní využívání při výkonu služby.",
+            "Součástí objektu jsou rovněž prostory určené k bezpečnému zajištění zadržených osob a dalším úkonům spojeným s policejní činností. Díky tomu bude možné efektivněji zajišťovat jednotlivé činnosti přímo v prostorách stanice.",
+            "Nové zázemí přináší nejen větší komfort, ale především lepší podmínky pro organizaci práce a připravenost našich příslušníků reagovat na potřeby občanů."
+          ],
+          images: ["/images/media/2026-11-XX/image14.jpg", "/images/media/2026-11-XX/image15.jpg"]
+        },
+        {
+          title: "Nová kapitola pro Los Santos Sheriff's Department",
+          paragraphs: [
+            "Otevření nové stanice představuje důležitý milník v historii našeho oddělení. Nejde pouze o nové prostory a vybavení, ale především o investici do lidí, kteří každý den oblékají uniformu a přijímají odpovědnost za bezpečnost obyvatel našeho okresu.",
+            "Věříme, že nové zázemí přispěje k dalšímu rozvoji LSSD, posílí spolupráci s jednotkou Park Rangers a umožní nám poskytovat občanům kvalitní a profesionální služby.",
+            "Rádi bychom poděkovali všem, kteří se podíleli na přípravě a realizaci tohoto projektu. Jejich práce a úsilí nám umožnily otevřít nové prostory, které budou sloužit nejen současným, ale i budoucím generacím příslušníků našeho oddělení.",
+            "Nová stanice, nové možnosti, ale stále stejné poslání – chránit a sloužit."
+          ]
+        }
+      ],
+      author: "Lieutenant - Jayden Sinns"
+    },*/
     {
       date: "2026-11-01",
       title: "Tisková zpráva: Movember – Měsíc mužského zdraví",
@@ -468,7 +550,24 @@ Los Santos Sheriff's Department
 
   const [showAll, setShowAll] = useState(false);
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
-  const [fullscreenImage, setFullscreenImage] = useState<string | null>(null);
+  const [fullscreenImageIndex, setFullscreenImageIndex] = useState<number | null>(null);
+  const [activeImageGallery, setActiveImageGallery] = useState<GalleryImage[] | null>(null);
+  const fullscreenImage = fullscreenImageIndex === null ? null : activeImageGallery?.[fullscreenImageIndex];
+
+  const getReleaseGallery = (release: PressRelease): GalleryImage[] =>
+    release.sections
+      ? release.sections.flatMap((section) =>
+        (section.images ?? []).map((src) => ({ src, alt: section.title }))
+      )
+      : (release.images ?? []).map((src) => ({ src, alt: release.title }));
+
+  const openImageGallery = (gallery: GalleryImage[], src: string) => {
+    const imageIndex = gallery.findIndex((image) => image.src === src);
+    if (imageIndex >= 0) {
+      setActiveImageGallery(gallery);
+      setFullscreenImageIndex(imageIndex);
+    }
+  };
 
   // Zobrazit pouze první 3 nebo všechny podle stavu
   const visibleReleases = showAll ? pressReleases : pressReleases.slice(0, 3);
@@ -505,7 +604,9 @@ Los Santos Sheriff's Department
 
           <div className="max-w-4xl mx-auto">
             <div className="space-y-6">
-              {visibleReleases.map((release, index) => (
+              {visibleReleases.map((release, index) => {
+                const releaseGallery = getReleaseGallery(release);
+                return (
                 <Card key={index} className="hover:shadow-lg transition-shadow">
                   <CardContent className="p-6">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between">
@@ -525,11 +626,52 @@ Los Santos Sheriff's Department
                         </p>
                         {expandedIndex === index && (
                           <div className="mt-4 space-y-4 text-muted-foreground leading-relaxed">
-                            {release.content.split("\n\n").map((paragraph, paragraphIndex) => (
-                              <p key={paragraphIndex} className={paragraphIndex === release.content.split("\n\n").length - 1 ? "font-semibold text-primary" : undefined}>
-                                {paragraph}
-                              </p>
-                            ))}
+                            {release.sections
+                              ? release.sections.map((section) => (
+                                <section key={section.title} className="space-y-4">
+                                  <h4 className="text-xl font-semibold text-primary">{section.title}</h4>
+                                  {section.paragraphs.map((paragraph, paragraphIndex) => (
+                                    <p
+                                      key={paragraphIndex}
+                                      className={
+                                        !section.images &&
+                                        section === release.sections?.[release.sections.length - 1] &&
+                                        paragraphIndex === section.paragraphs.length - 1
+                                          ? "font-semibold text-primary"
+                                          : undefined
+                                      }
+                                    >
+                                      {paragraph}
+                                    </p>
+                                  ))}
+                                  {section.images && (
+                                    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                                      {section.images.map((img) => (
+                                        <figure key={img} className="space-y-2">
+                                          <button
+                                            type="button"
+                                            className="block w-full cursor-zoom-in"
+                                            aria-label={`Zvětšit fotografii: ${section.title}`}
+                                            onClick={() => openImageGallery(releaseGallery, img)}
+                                          >
+                                            <img
+                                              src={img}
+                                              alt={section.title}
+                                              className="h-auto w-full rounded-lg border"
+                                              style={{ objectFit: "contain", maxHeight: "500px" }}
+                                            />
+                                          </button>
+                                        </figure>
+                                      ))}
+                                    </div>
+                                  )}
+                                </section>
+                              ))
+                              : release.content?.split("\n\n").map((paragraph, paragraphIndex, paragraphs) => (
+                                <p key={paragraphIndex} className={paragraphIndex === paragraphs.length - 1 ? "font-semibold text-primary" : undefined}>
+                                  {paragraph}
+                                </p>
+                              ))}
                             {release.images && release.images.length > 0 && (
                               <div className="flex flex-wrap gap-4 mt-6">
                                 {release.images.map((img, idx) => (
@@ -544,12 +686,19 @@ Los Santos Sheriff's Department
                                     }`}
                                     style={{ minWidth: release.images.length > 1 && idx < 2 ? "300px" : "100%" }}
                                   >
-                                    <img
-                                      src={img}
-                                      alt={`Obrázek k článku ${release.title}`}
-                                      className="w-full h-auto rounded-lg border"
-                                      style={{ objectFit: "contain", maxHeight: "500px" }}
-                                    />
+                                    <button
+                                      type="button"
+                                      className="block w-full cursor-zoom-in"
+                                      aria-label={`Zvětšit fotografii: ${release.title}`}
+                                      onClick={() => openImageGallery(releaseGallery, img)}
+                                    >
+                                      <img
+                                        src={img}
+                                        alt={release.title}
+                                        className="w-full h-auto rounded-lg border"
+                                        style={{ objectFit: "contain", maxHeight: "500px" }}
+                                      />
+                                    </button>
                                   </div>
                                 ))}
                               </div>
@@ -577,7 +726,8 @@ Los Santos Sheriff's Department
                     </div>
                   </CardContent>
                 </Card>
-              ))}
+                );
+              })}
             </div>
 
             <div className="text-center mt-8">
@@ -695,13 +845,22 @@ Los Santos Sheriff's Department
                   <CardDescription>{uniform.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <img
-                    src={uniform.image}
-                    alt={uniform.title}
-                    className="w-full h-auto rounded-lg border cursor-pointer"
-                    style={{ objectFit: "contain", maxHeight: "600px" }}
-                    onClick={() => setFullscreenImage(uniform.image)}
-                  />
+                  <button
+                    type="button"
+                    className="block w-full cursor-zoom-in"
+                    aria-label={`Zvětšit fotografii: ${uniform.title}`}
+                    onClick={() => openImageGallery(
+                      uniformShowcase.map((item) => ({ src: item.image, alt: item.title })),
+                      uniform.image
+                    )}
+                  >
+                    <img
+                      src={uniform.image}
+                      alt={uniform.title}
+                      className="w-full h-auto rounded-lg border"
+                      style={{ objectFit: "contain", maxHeight: "600px" }}
+                    />
+                  </button>
                 </CardContent>
               </Card>
             ))}
@@ -710,24 +869,68 @@ Los Santos Sheriff's Department
       </section>
 
       {/* Fullscreen Image Modal */}
-      {fullscreenImage && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
-          onClick={() => setFullscreenImage(null)}
-        >
-          <img
-            src={fullscreenImage}
-            alt="Fullscreen Uniform"
-            className="max-w-full max-h-full rounded-lg"
-          />
-          <button
-            className="absolute top-4 right-4 text-white text-2xl"
-            onClick={() => setFullscreenImage(null)}
+      <Dialog
+        open={fullscreenImage !== null}
+        onOpenChange={(open) => {
+          if (!open) {
+            setFullscreenImageIndex(null);
+            setActiveImageGallery(null);
+          }
+        }}
+      >
+        <DialogPortal>
+          <DialogOverlay className="bg-black/90 backdrop-blur-sm" />
+          <DialogContent
+            className="flex h-[95vh] w-[95vw] max-w-none items-center justify-center border-0 bg-transparent p-0 shadow-none sm:rounded-none [&>button]:right-2 [&>button]:top-2 [&>button]:z-10 [&>button]:text-white"
+            onKeyDown={(event) => {
+              if (!activeImageGallery || activeImageGallery.length < 2 || fullscreenImageIndex === null) return;
+              if (event.key === "ArrowLeft") {
+                event.preventDefault();
+                setFullscreenImageIndex((fullscreenImageIndex - 1 + activeImageGallery.length) % activeImageGallery.length);
+              } else if (event.key === "ArrowRight") {
+                event.preventDefault();
+                setFullscreenImageIndex((fullscreenImageIndex + 1) % activeImageGallery.length);
+              }
+            }}
           >
-            ×
-          </button>
-        </div>
-      )}
+            <DialogTitle className="sr-only">Náhled fotografie</DialogTitle>
+            {fullscreenImage && (
+              <>
+                <img
+                  src={fullscreenImage.src}
+                  alt={fullscreenImage.alt}
+                  className="max-h-[90vh] max-w-[95vw] rounded-lg object-contain"
+                />
+                {activeImageGallery && activeImageGallery.length > 1 && (
+                  <div className="absolute bottom-5 left-1/2 flex -translate-x-1/2 items-center gap-8 rounded-full bg-neutral-800/90 px-4 py-2 text-white shadow-lg">
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      className="h-12 w-12 rounded-full bg-black text-white hover:bg-black/80 hover:text-white"
+                      aria-label="Předchozí fotografie"
+                      onClick={() => setFullscreenImageIndex((fullscreenImageIndex - 1 + activeImageGallery.length) % activeImageGallery.length)}
+                    >
+                      <ChevronLeft className="h-6 w-6" />
+                    </Button>
+                    <span className="min-w-16 text-center text-xl tabular-nums" aria-live="polite">
+                      {fullscreenImageIndex + 1} / {activeImageGallery.length}
+                    </span>
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      className="h-12 w-12 rounded-full bg-black text-white hover:bg-black/80 hover:text-white"
+                      aria-label="Další fotografie"
+                      onClick={() => setFullscreenImageIndex((fullscreenImageIndex + 1) % activeImageGallery.length)}
+                    >
+                      <ChevronRight className="h-6 w-6" />
+                    </Button>
+                  </div>
+                )}
+              </>
+            )}
+          </DialogContent>
+        </DialogPortal>
+      </Dialog>
 
       {/* Media Contact */}
       <section className="py-16 bg-background">
