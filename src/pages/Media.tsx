@@ -69,7 +69,7 @@ const Media = () => {
 
   const pressReleases: PressRelease[] = [
     {
-      date: "2026-11-XX",
+      date: "2026-11-18",
       title: "Tisková zpráva: Los Santos Sheriff's Department představuje novou stanici",
       excerpt: "Los Santos Sheriff's Department s hrdostí oznamuje otevření nové policejní stanice, která posílí bezpečnost a dostupnost služeb pro obyvatele okresu Los Santos.",
       category: "Oznámení",
@@ -81,8 +81,8 @@ const Media = () => {
             "Nová stanice byla navržena s důrazem na praktičnost, funkčnost a potřeby každodenního provozu. Její umístění v klidnějším prostředí obklopeném přírodou nabízí příslušníkům vhodné zázemí pro výkon služby a zároveň umožňuje efektivní organizaci služebních činností v přilehlých oblastech okresu Los Santos a Blaine County."
           ],
           images: [
-            "/images/media/2026-11-XX/image.jpg",
-            ...Array.from({ length: 5 }, (_, index) => `/images/media/2026-11-XX/image${index + 2}.jpg`)
+            "/images/media/2026-11-18/image.jpg",
+            ...Array.from({ length: 5 }, (_, index) => `/images/media/2026-11-18/image${index + 2}.jpg`)
           ]
         },
         {
@@ -92,7 +92,7 @@ const Media = () => {
             "Stanice disponuje rovněž administrativním zázemím, kancelářemi a dalšími pracovními prostory určenými pro každodenní činnost našich deputies. Důležitou součástí objektu je také školící a konferenční místnost, která poskytne prostor pro pravidelná setkání, porady, odborná školení a další vzdělávací aktivity.",
             "Nové prostory tak umožňují soustředit větší část činností oddělení na jednom místě a vytvářejí vhodné podmínky pro další profesní rozvoj našich příslušníků."
           ],
-          images: Array.from({ length: 6 }, (_, index) => `/images/media/2026-11-XX/image${index + 7}.jpg`)
+          images: Array.from({ length: 6 }, (_, index) => `/images/media/2026-11-18/image${index + 7}.jpg`)
         },
         {
           title: "Zázemí Park Rangers",
@@ -101,7 +101,7 @@ const Media = () => {
             "Pro členy Park Rangers byla vyčleněna samostatná místnost, která jim poskytne potřebné pracovní zázemí a prostor pro jejich činnost. Toto řešení představuje další krok k užší spolupráci mezi jednotlivými složkami a umožňuje jejich efektivnější propojení při plnění společných úkolů.",
             "Ačkoliv se nejedná o plnohodnotnou samostatnou stanici Park Rangers, nové prostory jim nabídnou důležité zázemí přímo v objektu LSSD."
           ],
-          images: ["/images/media/2026-11-XX/image13.jpg"]
+          images: ["/images/media/2026-11-18/image13.jpg"]
         },
         {
           title: "Další prostory stanice",
@@ -110,7 +110,7 @@ const Media = () => {
             "Součástí objektu jsou rovněž prostory určené k bezpečnému zajištění zadržených osob a dalším úkonům spojeným s policejní činností. Díky tomu bude možné efektivněji zajišťovat jednotlivé činnosti přímo v prostorách stanice.",
             "Nové zázemí přináší nejen větší komfort, ale především lepší podmínky pro organizaci práce a připravenost našich příslušníků reagovat na potřeby občanů."
           ],
-          images: ["/images/media/2026-11-XX/image14.jpg", "/images/media/2026-11-XX/image15.jpg"]
+          images: ["/images/media/2026-11-18/image14.jpg", "/images/media/2026-11-18/image15.jpg"]
         },
         {
           title: "Nová kapitola pro Los Santos Sheriff's Department",
