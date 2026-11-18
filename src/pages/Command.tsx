@@ -114,28 +114,6 @@ const Command = () => {
   ];
   
   const supervisorStaff = [
-    /*
-    {
-      name: "James Hathron",
-      title: "Sergeant II",
-      experience: "31 let",
-      image: "/images/Hathron.jpg",
-      description: "James Hathron začal jako klasický Officer u LSPD a následně se za brzkou dobu stal vedením jednotky K-9 Unit ktrerá v té době teprve začínala u policie působit. Díky jeho vedení a zkušenosti u SAR týmu ve Washingtonu pomohl divizi začít fungovat a dnes operuje policie s více než 16 K-9 jednotky. Při službě u K-9 Unit pomalu budoval kariéru u detektivního oddělení kde se za několik let později stal i Cmd. Detective Bureau V součastnosti stále vede jednotku K-9 ale nyní už není zazařen u Detective Bureau ale u Los Santos Sheriff Department kde slouží jako Sergeant. Zkušenosti které nabral u Detective Bureau se snaží využít i u LSSD převážně u prvních momentů místa činu a provádění odborných výslechů a prvních kroků.",
-      achievements: ["Vedení detektivního oddělení na pozici Commander", "Zodpovědné řízení a rozvoj K-9 jednotky", "Medaile za vynikajicí službu", "Vyšetření vraždy a zkorumpovaného přislušníka policie"],
-      status: "alive"
-    },
-    */
-    /*
-    {
-      name: "Mason Cooper",
-      title: "Sergeant",
-      experience: "15 let",
-      image: "/images/Cooper.jpg",
-      description: "Jmenuju se Mason Cooper a jsem seržant u Los Santos County Sheriff's Department. Ve službě jsem patnáct let. Když jsem nastupoval, byl jsem mladej kluk, co si myslel, že ví, co je správný a co špatný. Dneska už vím, že svět takhle jednoduchej není. Začínal jsem v patrolách v částech Los Sabtis, kde se člověk rychle naučí dávat pozor. První roky mě změnily nejvíc. Viděl jsem věci, na který se nedá připravit – gangy, domácí násilí, nehody, u kterých bys nejradši zavřel oči a dělal, že to není skutečný. Ale taky jsem zažil chvíle, kdy jsem někomu fakt pomohl. A právě ty tě drží nad vodou. Postupně jsem si vybudoval respekt. Ne tím, že bych byl nejtvrdší, ale tím, že jsem byl spolehlivej. Když jsem na směně, lidi ví, že udělám všechno pro to, aby se situace zvládla. Dneska vedu vlastní tým. Už to není jen o mně – nesu odpovědnost za každýho z nich. Rozhoduju vteřiny před tím, než se něco pokazí, a učím nový kluky, jak přežít první roky ve službě. Protože to je ta nejtěžší část. Nejsem žádnej hrdina. Mám za sebou rozvod, pár nocí, kdy jsem nespal, a vzpomínky, který se občas vrací. Naučíš se s tím žít, ale nikdy to úplně nezmizí. Můj přístup je jednoduchej: „Nechci hrdiny. Chci, aby se všichni vrátili domů živí.“ Po patnácti letech už nehledám uznání ani postup. Vím, že tahle práce není o slávě. Je o tom být tam, když to ostatní nezvládnou. A i když jsem už párkrát přemýšlel, že s tím skončím… vždycky si tu uniformu oblíknu znovu.",
-      achievements: [""],
-      status: "alive"
-    },
-    */
     {
       name: "Noah Cromwell",
       title: "Sergeant II",
@@ -155,15 +133,6 @@ const Command = () => {
       status: "alive"
     },
     {
-      name: "Harry Potterson",
-      title: "Sergeant",
-      experience: "15 let",
-      image: "/images/Potterson.jpg",
-      description: "Vyrastal som v rodine, kde bol zmysel pre povinnosť, poctivosť a spravodlivosť na prvom mieste. Práve vzor môjho otca a prirodzená túžba chrániť slabších ma priviedli až do radov policajnej akadémie. Vďaka vytrvalosti, disciplíne a rozvážnemu prístupu sa mi podarilo postupne vypracovať na hodnosť Sergeanta. V súčasnosti pôsobím predovšetkým ako sergeant, kde sa venujem svojej smene, ktorú vediem, zároveň, zodpovedám za transparentnú komunikáciu, mediálnu prezentáciu a budovanie dobrých vzťahov s verejnosťou. Popri reprezentácii sboru aktívne nasadzujem svoje skúsenosti v teréne v rámci špeciálnych jednotiek High Speed Interception Unit, Motor Bike Unit a oddelenia Department of Corrections.",
-      achievements: ["Úspešné absolvovanie policajnej akadémie", "Medaila za záslužnú službu", "Povýšenie do hodnosti Sergeanta"],
-      status: "alive"
-    },
-    {
       name: "James Clark",
       title: "Sergeant",
       experience: "",
@@ -179,6 +148,24 @@ const Command = () => {
       image: "/images/Rose.png",
       description: "Sergeant Ethan Rose je známý především svým profesionálním, férovým a zároveň lidským přístupem ke službě. Během svého působení u Los Santos Sheriff’s Department si vybudoval respekt nejen mezi kolegy, ale také mezi členy dalších oddělení. Ke své práci přistupuje s důrazem na čest, disciplínu a odpovědnost, přičemž nikdy nezapomíná na důležitost týmové spolupráce a vzájemné podpory. Jako člen MBU Division se zaměřuje především na udržování pořádku, podporu ostatních jednotek a řešení situací, které vyžadují klidný, rozhodný a profesionální přístup. Je přátelský a ochotný pomoci každému, kdo jeho pomoc potřebuje, zároveň však dokáže být ve službě přísný a nekompromisní, pokud jde o dodržování pravidel a standardů sboru. Rose věří, že dobrý vedoucí není pouze ten, kdo dokáže vydávat rozkazy, ale především ten, kdo jde ostatním příkladem. Ke svým podřízeným proto přistupuje férově, snaží se jim předávat své zkušenosti a podporuje jejich profesní růst. Jeho cílem je vytvářet prostředí založené na důvěře, respektu a vzájemné spolupráci, kde každý člen sboru ví, že se může na své kolegy spolehnout.",
       achievements: ["Postup na hodnost Sergeant díky dlouhodobému profesionálnímu přístupu a spolehlivosti ve službě", "Budování dobrých vztahů mezi jednotlivými odděleními a jednotkami LSSD", "Výrazný přínos k výcviku a rozvoji nových členů sboru"],
+      status: "alive"
+    },
+    {
+      name: "Alex Brooks",
+      title: "Sergeant",
+      experience: "",
+      image: "/images/Brooks.jpg",
+      description: "",
+      achievements: [],
+      status: "alive"
+    },
+    {
+      name: "Dorian Stone",
+      title: "Sergeant",
+      experience: "",
+      image: "/images/Stone.jpg",
+      description: "",
+      achievements: [],
       status: "alive"
     },
   ];

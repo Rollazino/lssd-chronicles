@@ -68,7 +68,6 @@ const Media = () => {
   const { t } = useLocalization();
 
   const pressReleases: PressRelease[] = [
-    /*
     {
       date: "2026-11-XX",
       title: "Tisková zpráva: Los Santos Sheriff's Department představuje novou stanici",
@@ -124,7 +123,7 @@ const Media = () => {
         }
       ],
       author: "Lieutenant - Jayden Sinns"
-    },*/
+    },
     {
       date: "2026-11-01",
       title: "Tisková zpráva: Movember – Měsíc mužského zdraví",
